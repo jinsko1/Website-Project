@@ -3,7 +3,7 @@ title: "Iron and the Motility of CFT073"
 date: "2025-08-17" 
 categories: 
     - "Lab Research"
-bibliography: references.bib
+bibliography: ../references.bib
 ---
 
 # Preface
