@@ -14,19 +14,19 @@ After writing a first draft of this page, which came out to a couple thousand wo
 
 ## Introduction to Infection and Motility
 
-In order to introduce the purpose of the project, one must first learn the necessary background information. The subject can be introduced by learning about the mechanism of bacterial colonization to induce infection.
+In order to introduce the purpose of the project, one must first learn the necessary background information. The subject can be introduced by learning about the mechanism of colonization to induce infection.
 
-CFT073 is a strain of E. coli that is known widely to be the main cause of Urinary Tract Infections (UTIs). The mechanism of infection involves the bacterial flagella, suggested to contribute to virulence by enabling UPEC to disseminate to the urinary tract, escape host immune responses, and disperse to new sites within the urinary tract [@laneRoleMotilityColonization2005].
+CFT073 is a strain of *Escherichia coli* known widely to be the main cause of Urinary Tract Infections (UTIs). Infection is heavily dependent on the bacterial flagella, suggested to contribute to virulence by enabling UPEC to disseminate throughout urinary tract and escape host immune responses [@laneRoleMotilityColonization2005].
 
-fliC is the cistron that codes for flagellin, the main component of the bacterial flagella, as lesions in cistron F of region III result in loss of ability to produce flagellin [@silvermanGeneticAnalysisFlagellar]. Cistron F was later renamed as fliC.
+fliC, the cistron that codes for flagellin, is the main component of the bacterial flagella, as lesions in cistron F of region III result in loss of ability to produce flagellin [@silvermanGeneticAnalysisFlagellar]. Cistron F was later renamed fliC.
 
-So when the deletion of fliC, the gene domain, was made, the absence of flagella was induced, so we expect to see a complete loss in motility, which is what was observed in the fliC deletion mutant [@laneRoleMotilityColonization2005]. The deletion of the gene rendered the mutant completely non-motile, severely compromising virulence.
+So when the deletion of fliC, the gene domain, is made, the absence of flagella is induced, so we expect to see a complete loss in motility, which is what was observed in the fliC deletion mutant [@laneRoleMotilityColonization2005]. The deletion of the gene rendered the mutant completely non-motile, severely compromising virulence.
 
-So, it would follow that studying the inhibition of CFT073 motility could lead to novel ways of treating UTIs.
+Naturally, it would follow that studying the inhibition of CFT073 motility could lead to novel ways of treating UTIs.
 
 ## Purpose of Project
 
-More than half of women in their lifetime will experience a urinary tract infection (UTI), with most cases caused by uropathogenic *E. coli* [@bachellerURINARYTRACTINFECTIONS1997]. Its prevalence is one which should capture the attention of many, as its implications on the wellbeing of any female patients is significant.
+More than half of women in their lifetime will experience a urinary tract infection (UTI), with most cases caused by uropathogenic *E. coli* [@bachellerURINARYTRACTINFECTIONS1997].
 
 Studying motility, a major virulence factor, makes sense when trying the understand mechanisms of infection for CFT073 and other infectious agents of the urinary tract
 
@@ -34,27 +34,27 @@ This is precisely why we turn to the role of iron in motility and its implicatio
 
 ## Why do we study Iron?
 
-It has been known since the dawn of bacteriology that iron is an essential nutrient facilitating the survival of the *E. coli* cell. This piece of information is, for all practical purposes, assumed to be true since this information is essentially archaic.
+It has been known since the dawn of bacteriology that iron is an essential nutrient facilitating the survival of the *E. coli* cell.
 
-The importance of iron is understood but the specific reason for its importance reveals itself in the role iron plays as a cofactor. There are specific enzymes within the citric acid cycle that require iron as a cofactor for proper catalysis and therefore, energy production.
+The importance of iron is understood but the specific reason for its importance reveals itself in the role iron plays as a cofactor. There are specific enzymes within the citric acid cycle that require iron as a cofactor for proper catalysis and therefore, energy production. We expect depletion of iron to negatively impact growth.
 
-Now, the above talked about how iron impacts growth, but we have not yet understood its impacts on motility.
+We know how iron impacts growth, but we have not yet understood its impacts on motility.
 
-The deletion of the Fur expressed an excess of iron intracellularly [@mchughGlobalIrondependentGene2003]. Fur was proven to be a master regulator of iron dependent uptake systems and the synthesis of conjugated proteins with iron as its prosthetic group
+The deletion of the Fur (ferric uptake repressor) expressed an excess of iron intracellularly [@mchughGlobalIrondependentGene2003]. Fur was proven to be a master regulator of iron dependent uptake systems and the synthesis of conjugated proteins with iron as its prosthetic group. Under iron repleted conditions, fur binds to iron, attaching itself to the furbox upstream of iron-related genes, restricting the amount of iron imported into the cell and allowing production of conjugated proteins. Conversely, under iron depleted conditions, fur falls off the furbox, allowing the uptake of iron and decreasing the production of conjugated proteins.
 
-Motility happens to be one of the genes that were effected by the Fur repression. There is evidence that the Fe 2-Fur complex also represses genes (cyoA, flbB, fumC, gpmA, metH, nohB, purR, and sodA) involved in various noniron functions (respiration, **flagella chemotaxis**, the TCA cycle) [@mchughGlobalIrondependentGene2003].
+Motility happens to be one of the genes that is affected by the Fur repression. There is evidence that the Fe 2-Fur complex also represses genes (cyoA, flbB, fumC, gpmA, metH, nohB, purR, and sodA) involved in various noniron functions (respiration, **flagella chemotaxis**, the TCA cycle) [@mchughGlobalIrondependentGene2003].
 
 ### Why not explore other nutrients?
 
-iron concentration is, under normal conditions, very restricted in the urinary tract. It is therefore one of the limiting nutrients in the environment of infection.
+Iron concentration is, under normal conditions, very restricted in the urinary tract. It is therefore one of the limiting nutrients in the environment of infection.
 
 Iron content of human urine is normally very low (∼0.1 μmol per liter) in the uninfected state. Even in the absence of inﬂammatory stimuli, iron is subject to tight physiologic control [@robinsonIronHandUropathogenic2018].
 
-The idea behind understanding \[\[iron\]\] lies in the fact that \[\[iron\]\] concentration in the urinary tract is already very low, and when thinking of treatment options, a provider should be considering iron availability as a possible factor contributing to virulence.
+The idea behind understanding iron lies in the fact that iron concentration in the urinary tract is already very low. So when thinking of treatment options, a provider should be considering iron availability as a possible factor contributing to virulence.
 
 ## Modes of Motility Expressed by CFT073
 
-There are generally three modes of motility expressed by CFT073 that we are concerned with: swimming, swarming, and biofilm formation. Inhibition of these virulence factors should decrease the likelihood, and if not, severity of infection.
+There are generally three modes of motility, hence avenues for virulence, expressed by CFT073 that we are concerned with: swimming, swarming, and biofilm formation. Inhibition of these virulence factors should decrease the likelihood, and if not, severity of infection.
 
 ### Swimming
 
@@ -68,4 +68,4 @@ Concerted, multicellular, and energy intense raft-like movement across semi-soli
 
 Matrix of extracellular polymeric substances protecting the pathogen from potentially harmful external conditions, facilitating attachment of the colony. Major causative agent of recurrent infections. Attachment is vital since the human bladder is emptied every couple hours, requiring the pathogen to attach itself to the bladder walls for successful infection [@yangSubinhibitoryConcentrationsAllicin2016].
 
-We hope to inhibit the preceding modes of motility in CFT073 via iron availability.
+In addition to modifying the availability of extracellular iron, we are also looking at 2 mutants which have different iron acquisition capabilities. ∆tonB has low intracellular iron since the import of iron is compromised with the deletion of a crucial component of the iron acquisition system. ∆fur has high intracellular iron because the repressor is lacking, hence, allowing for as much iron import via systems like TonB-ExbB-ExbD to occur.
