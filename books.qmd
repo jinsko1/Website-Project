@@ -2,12 +2,15 @@
 title: Books
 ---
 
-Just some of my favorites.
+Some favorites.
 
 # Nonfiction
 
 The Basic Laws of Human Stupidity, *Carlo M. Cipolla*  
 ISBN: [9780385546478](https://www.worldcat.org/isbn/9780385546478)
+
+The Selfish Gene, *Richard Dawkins*  
+ISBN: [9780199291151](https://www.worldcat.org/isbn/9780199291151)
 
 The Spirit Catches You and You Fall Down, *Anne Fadiman*  
 ISBN: [9780374533403](https://www.worldcat.org/isbn/9780374533403)
@@ -30,9 +33,6 @@ ISBN: [9780812988406](https://www.worldcat.org/isbn/9780812988406)
 The Ghost Map, *Steven Johnson*  
 ISBN: [9781594482694](https://www.worldcat.org/isbn/9781594482694)
 
-The Immortal Life of Henrietta Lacks, *Rebecca Skloot*  
-ISBN: [9781400052172](https://www.worldcat.org/isbn/9781400052172)
-
 I Contain Multitudes: The Microbes Within Us and a Grander View of Life, *Ed Yong*  
 ISBN: [9780062368591](https://www.worldcat.org/isbn/9780062368591)
 
@@ -40,9 +40,6 @@ ISBN: [9780062368591](https://www.worldcat.org/isbn/9780062368591)
 
 A Man Called Ove, *Fredrik Backman*  
   ISBN: [9781476738024](https://www.worldcat.org/isbn/9781476738024)
-
-Manazuru, *Hiromi Kawakami*  
-  ISBN: [9781934287278](https://www.worldcat.org/isbn/9781934287278)
 
 1Q84, *Haruki Murakami*  
   ISBN: [9780307593313](https://www.worldcat.org/isbn/9780307593313)
@@ -52,6 +49,9 @@ Colorless Tsukuru Tazaki and His Years of Pilgrimage, *Haruki Murakami*
 
 One More Thing: Stories and Other Stories, *B.J. Novak*  
   ISBN: [9780385351836](https://www.worldcat.org/isbn/9780385351836)
+
+1984, *George Orwell*  
+  ISBN: [9780451524935](https://www.worldcat.org/isbn/9780451524935)  
 
 Bel Canto, *Ann Patchett*  
   ISBN: [9780060838720](https://www.worldcat.org/isbn/9780060838720)

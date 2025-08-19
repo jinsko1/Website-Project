@@ -10,4 +10,4 @@ listing:
     table-hover: true
 ---
 
-Literature review and an explanation of my own research, for my own understanding.
+Literature review and explanations of my own research, for my own understanding.
