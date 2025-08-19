@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "df957d5b"
+  },
+  "research.qmd": {
+    "research.html": "3b23c128"
+  },
+  "research/8-17-2025.qmd": {
+    "8-17-2025.html": "0bb3e07c"
+  },
+  "research/another_research_post.qmd": {
+    "another_research_post.html": "325434a5"
+  },
+  "research/research_post.qmd": {
+    "research_post.html": "83cf87c1"
+  },
+  "books.qmd": {
+    "books.html": "b9d64938"
+  },
+  "blog/blog_post.qmd": {
+    "blog_post.html": "089c7a67"
+  },
+  "blog.qmd": {
+    "blog.html": "8d7a17a3"
+  }
+}

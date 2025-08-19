@@ -1,0 +1,14 @@
+---
+title: "Blog"
+listing: 
+    contents: blog # look at research folder
+    date-format: iso
+    categories: true
+    sort: "date asc"
+    fields: [date, title]
+    type: table
+    table-hover: true
+    feed: true
+---
+
+Biology, medicine, and maybe some computer science.

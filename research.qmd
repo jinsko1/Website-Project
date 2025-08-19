@@ -1,0 +1,13 @@
+---
+title: "Research"
+listing:
+    contents: research # look at research folder
+    date-format: iso
+    categories: true
+    sort: "date asc"
+    fields: [date, title, reading-time]
+    type: table
+    table-hover: true
+---
+
+Literature review and an explanation of my own research, for my own understanding.

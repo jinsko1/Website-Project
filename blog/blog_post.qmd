@@ -1,0 +1,7 @@
+---
+title: "How this Website was Made"
+date: "2025-08-17" 
+category: Quarto
+---
+
+This is the content of my newest post about how I was able to build the website.

@@ -1,0 +1,39 @@
+project:
+  type: website
+  preview: 
+      port: 1313
+
+website:
+  title: "Jin Saeki Ko"
+  site-url: "https://jinsaekiko.github.io"
+  description: "A personal website for my research and writing."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: blog.qmd
+        text: Blog
+      - href: books.qmd
+        text: Books
+      - text: Substack
+        href: https://jinsaekiko.substack.com/
+        target: "_blank"  
+        icon: box-arrow-up-right 
+      - icon: rss
+        href: blog.xml
+  page-navigation: true
+  search: false
+
+# In your _quarto.yml file
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme: lightly
+    toc-title: "Table of Contents"
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-expand: true

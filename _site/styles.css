@@ -1,0 +1,137 @@
+/* css styles */
+/* 1. Import the Computer Modern web font family */
+@import url('https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css');
+
+/* 2. Apply the font to the main body text of the website */
+body {
+  font-family: "Computer Modern Serif", serif;
+}
+
+/* 3. (Optional) Apply the font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Computer Modern Serif", serif;
+}
+
+/* 4. (Optional) Use the Computer Modern Typewriter font for code */
+code, pre {
+  font-family: "Computer Modern Typewriter", monospace;
+}
+
+/* This block reverses the position of the logo next to the external link */
+.navbar-nav .nav-link:has(i.bi) {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.4em;
+}
+
+/* This rule makes the header fixed to the top of the screen */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050; /* Keep header on the highest layer */
+  border-bottom: none;
+}
+
+/* Main container for the title and navbar links */
+.navbar > .container, .navbar > .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2.5rem;
+  padding-bottom: 0;
+  padding-left: 5%;
+}
+
+/* Style for your name (the site title) */
+.navbar-brand .navbar-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Container for the navigation links */
+.navbar-nav {
+  border-top: none;
+  border-bottom: none;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Spacing for individual navigation links */
+.nav-item {
+  padding: 0 1rem 0 0;
+}
+
+/* Page transition animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#quarto-document-content {
+  animation: fadeIn 0.4s ease-in-out;
+}
+#quarto-document-content.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+/* --- STICKY HEADER, TOC, AND COLOR FIXES --- */
+
+/* Pushes content down from header and creates space on the right for the TOC */
+#quarto-content {
+  padding-top: 210px;
+  margin-right: 0px; /* Space for the TOC */
+  margin-left: 0px;
+}
+
+/* Set the correct background and TEXT color for the navbar in LIGHT mode */
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background: #ffffff !important;
+  }
+  .navbar-brand .navbar-title, .navbar-nav .nav-link {
+    color: #212529 !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+  }
+}
+
+/* Set the correct background and TEXT color for the navbar in DARK mode */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: #222222 !important;
+  }
+  .navbar-brand .navbar-title, .navbar-nav .nav-link {
+    color: #dee2e6 !important;
+  }
+  body {
+    background-color: #222222 !important;
+    color: #dee2e6 !important;
+  }
+}
+
+/* --- NAVBAR LINK HOVER AND ACTIVE STYLES --- */
+.navbar-nav .nav-link {
+  transition: color 0.2s ease-in-out;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* Make Quarto Table of Contents fixed */
+#TOC, .toc {
+  position: fixed;
+  top: 210px;       /* adjust depending on your navbar/header height */
+  right: 20px;     /* adjust if you want it aligned differently */
+  max-height: calc(100vh - 100px); /* keep it within screen */
+  overflow-y: auto; /* allow scrolling if TOC is too long */
+  z-index: 1000;   /* keep it above other content */
+}
