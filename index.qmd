@@ -4,10 +4,10 @@ title: "Home"
 
 Hi, my name is Jin. I'm an undergraduate studying Microbiology at [California Polytechnic State University, San Luis Obispo](https://en.wikipedia.org/wiki/California_Polytechnic_State_University,_San_Luis_Obispo). 
 
-I'm largely interested in pathogenesis and mutualistic host-microbe relationships, though I also do some computer science, nominally, in the lab. Learn more in the [research](research.qmd) section.
-
-I also enjoy reading and writing in my freetime, though I'm fully aware that no one will ever read what I write. You can check the Substack.
+I'm largely interested in pathogenesis and mutualistic host-microbe relationships, but I also do some computer science (nominally) in the lab. Learn more in the [research section](research.qmd).
 
 The [blog](blog.qmd) will simply be a place where I learn about whatever I want; I'm a curious person.
+
+I also enjoy reading and writing in my freetime, though I'm fully aware that no one will ever read what I write. You can check the Substack if you'd like.
 
 In any case, this website should mainly serve as my hub for thinking, a way to learn via soliloquy; I'm also forced to post accurate information and therefore, to truly understand a subject before I write about it.
