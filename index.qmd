@@ -10,6 +10,6 @@ The [blog section](blog.qmd) is simply a place where I learn about whatever I wa
 
 I enjoy reading and writing in my freetime, though I'm fully aware that no one will ever read what I write. You can check the Substack if you'd like.
 
-In any case, this website should primarily serve as my central hub for thinking, a way to learn via soliloquy. Since this is on the internet, I'm also forced to post accurate information which should aid my learning.
+In any case, this website should primarily serve as my central hub for thinking, a way to learn via soliloquy. Since this is on the internet, I'm also obligated to post accurate information which should aid my learning.
 
 You can contact me via email here: [jko23@calpoly.edu](mailto:jko23@calpoly.edu).
