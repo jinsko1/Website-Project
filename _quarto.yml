@@ -21,8 +21,6 @@ website:
         href: https://jinsaekiko.substack.com/
         target: "_blank"  
         icon: box-arrow-up-right 
-      - icon: rss
-        href: blog.xml
   page-navigation: true
   search: false
 
@@ -37,3 +35,9 @@ format:
     toc: true
     toc-depth: 3
     toc-expand: true
+
+execute:
+  freeze: auto
+
+resources:
+  - "static/*"
