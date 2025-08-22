@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Biology, medicine, and maybe some computer science.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n2025-08-17\n\n\nHow this Website was Made\n\n\n\n\n\n\nNo matching items"
+    "text": "Biology, medicine, and maybe some computer science.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nReading Time\n\n\n\n\n\n\n\n\n2025-08-21\n\n\nHow this Website was Made\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -67,6 +67,6 @@
     "href": "blog/blog_post.html",
     "title": "How this Website was Made",
     "section": "",
-    "text": "This is the content of my newest post about how I was able to build the website."
+    "text": "I used Quarto, which was recommended to me by a friend for its simplicity and ease of management. I could have used any number of other tools to build the website for greater customization, but I don’t sweat the details; the uncouth aesthetics of a website don’t bring me much displeasure. I’m also lazy, which I suppose is the real reason.\nWhat I did to deploy my website is by no means special, so writing about this process is merely a way for me to fully understand it.\nTo customize the website to my needs (though it is still a bleak website and may eventually require an update), I made a few adjustments to the styles.css file, including—but not limited to—setting the font, making the TOC and navbar sticky, and adding page transition animations. As for the theme specified in the configuration file, I simply built the website off the “lightly” theme.\nI hosted the website on GitHub Pages but bought a custom domain, so the DNS records needed to point to four A records that connect to GitHub’s servers. From there, a CNAME record points to my GitHub Page. Then, all I needed to do was tell GitHub that I had a custom domain ready.\nRather than publishing from the main branch, I set up a separate branch, gh-pages, and published from there. This keeps the repo clean: I can isolate the build artifacts in that branch and deploy from there, relieving the main branch of unnecessary clutter. _site is also included in .gitignore to reduce clutter on the main branch, ensuring that only actual edits are visible in the version history.\nThat concludes the mechanics behind the website. I’m sure I’ve mentioned this on the home page, but this website is primarily a way for me to put what I learn into words, which I hope will aid the learning process. I’ll continue doing this with other subjects of interest."
   }
 ]

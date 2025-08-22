@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jinsaekiko.github.io/blog.html</loc>
-    <lastmod>2025-08-19T01:39:31.696Z</lastmod>
+    <loc>https://jinsko.com/blog.html</loc>
+    <lastmod>2025-08-22T01:23:18.808Z</lastmod>
   </url>
   <url>
-    <loc>https://jinsaekiko.github.io/index.html</loc>
+    <loc>https://jinsko.com/index.html</loc>
     <lastmod>2025-08-22T00:06:26.782Z</lastmod>
   </url>
   <url>
-    <loc>https://jinsaekiko.github.io/research.html</loc>
-    <lastmod>2025-08-19T06:47:34.759Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsaekiko.github.io/research/8-17-2025.html</loc>
-    <lastmod>2025-08-19T17:42:18.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsaekiko.github.io/books.html</loc>
-    <lastmod>2025-08-19T06:53:21.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsaekiko.github.io/blog/blog_post.html</loc>
-    <lastmod>2025-08-19T17:50:08.628Z</lastmod>
+    <loc>https://jinsko.com/research.html</loc>
+    <lastmod>2025-08-22T01:23:22.759Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/8-17-2025.html</loc>
     <lastmod>2025-08-19T17:42:18.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/books.html</loc>
+    <lastmod>2025-08-19T06:53:21.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/blog_post.html</loc>
+    <lastmod>2025-08-22T01:31:12.371Z</lastmod>
   </url>
 </urlset>
