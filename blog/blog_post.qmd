@@ -1,7 +1,8 @@
 ---
 title: "How this Website was Made"
-date: "2025-08-17" 
-category: Quarto
+date: "2025-08-21" 
+categories: 
+    - "Quarto"
 ---
 
 I used Quarto, which was recommended to me by a friend for its simplicity and ease of management. I could have used any number of other tools to build the website for greater customization, but I don’t sweat the details; the uncouth aesthetics of a website don’t bring me much displeasure. I’m also lazy, which I suppose is the real reason.
@@ -12,6 +13,6 @@ To customize the website to my needs (though it is still a bleak website and may
 
 I hosted the website on GitHub Pages but bought a custom domain, so the DNS records needed to point to four `A` records that connect to GitHub’s servers. From there, a `CNAME` record points to my GitHub Page. Then, all I needed to do was tell GitHub that I had a custom domain ready.
 
-Rather than publishing from the `main` branch, I set up a separate branch, `gh-pages`, and published from there. This keeps the repo clean: I can isolate the build artifacts in that branch and deploy from there, relieving the main branch of unnecessary clutter. `_site` is also included in .`.gitignore` to reduce clutter on the main branch, ensuring that only actual edits are visible in the version history.
+Rather than publishing from the `main` branch, I set up a separate branch, `gh-pages`, and published from there. This keeps the repo clean: I can isolate the build artifacts in that branch and deploy from there, relieving the main branch of unnecessary clutter. `_site` is also included in.`.gitignore` to reduce clutter on the main branch, ensuring that only actual edits are visible in the version history.
 
 That concludes the mechanics behind the website. I’m sure I’ve mentioned this on the home page, but this website is primarily a way for me to put what I learn into words, which I hope will aid the learning process. I’ll continue doing this with other subjects of interest.

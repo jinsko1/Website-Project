@@ -5,7 +5,7 @@ listing:
     date-format: iso
     categories: true
     sort: "date asc"
-    fields: [date, title]
+    fields: [date, title, reading-time]
     type: table
     table-hover: true
     feed: true
