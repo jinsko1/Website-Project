@@ -129,9 +129,9 @@ code, pre {
 /* Make Quarto Table of Contents fixed */
 #TOC, .toc {
   position: fixed;
-  top: 210px;       /* adjust depending on your navbar/header height */
-  right: 20px;     /* adjust if you want it aligned differently */
-  max-height: calc(100vh - 100px); /* keep it within screen */
-  overflow-y: auto; /* allow scrolling if TOC is too long */
-  z-index: 1000;   /* keep it above other content */
+  top: 210px;
+  right: 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  z-index: 1000;
 }
