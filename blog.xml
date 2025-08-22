@@ -10,7 +10,7 @@
 <atom:link href="https://jinsaekiko.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A personal website for my research and writing.</description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Sun, 17 Aug 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>How this Website was Made</title>
   <link>https://jinsaekiko.github.io/blog/blog_post.html</link>
@@ -23,14 +23,15 @@
 <p>What I did to deploy my website is by no means special, so writing about this process is merely a way for me to fully understand it.</p>
 <p>To customize the website to my needs (though it is still a bleak website and may eventually require an update), I made a few adjustments to the <code>styles.css</code> file, including—but not limited to—setting the font, making the TOC and navbar sticky, and adding page transition animations. As for the theme specified in the configuration file, I simply built the website off the “lightly” theme.</p>
 <p>I hosted the website on GitHub Pages but bought a custom domain, so the DNS records needed to point to four <code>A</code> records that connect to GitHub’s servers. From there, a <code>CNAME</code> record points to my GitHub Page. Then, all I needed to do was tell GitHub that I had a custom domain ready.</p>
-<p>Rather than publishing from the <code>main</code> branch, I set up a separate branch, <code>gh-pages</code>, and published from there. This keeps the repo clean: I can isolate the build artifacts in that branch and deploy from there, relieving the main branch of unnecessary clutter. <code>_site</code> is also included in .<code>.gitignore</code> to reduce clutter on the main branch, ensuring that only actual edits are visible in the version history.</p>
+<p>Rather than publishing from the <code>main</code> branch, I set up a separate branch, <code>gh-pages</code>, and published from there. This keeps the repo clean: I can isolate the build artifacts in that branch and deploy from there, relieving the main branch of unnecessary clutter. <code>_site</code> is also included in.<code>.gitignore</code> to reduce clutter on the main branch, ensuring that only actual edits are visible in the version history.</p>
 <p>That concludes the mechanics behind the website. I’m sure I’ve mentioned this on the home page, but this website is primarily a way for me to put what I learn into words, which I hope will aid the learning process. I’ll continue doing this with other subjects of interest.</p>
 
 
 
  ]]></description>
+  <category>Quarto</category>
   <guid>https://jinsaekiko.github.io/blog/blog_post.html</guid>
-  <pubDate>Sun, 17 Aug 2025 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
