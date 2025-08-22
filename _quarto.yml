@@ -5,7 +5,7 @@ project:
 
 website:
   title: "Jin Saeki Ko"
-  site-url: "https://jinsaekiko.github.io"
+  site-url: "https://jinsko.com"
   description: "A personal website for my research and writing."
   navbar:
     left:
