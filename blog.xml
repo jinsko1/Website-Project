@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Jin Saeki Ko</title>
-<link>https://jinsaekiko.github.io/blog.html</link>
-<atom:link href="https://jinsaekiko.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://jinsko.com/blog.html</link>
+<atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A personal website for my research and writing.</description>
 <generator>quarto-1.7.33</generator>
 <lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>How this Website was Made</title>
-  <link>https://jinsaekiko.github.io/blog/blog_post.html</link>
+  <link>https://jinsko.com/blog/blog_post.html</link>
   <description><![CDATA[ 
 
 
@@ -30,7 +30,7 @@
 
  ]]></description>
   <category>Quarto</category>
-  <guid>https://jinsaekiko.github.io/blog/blog_post.html</guid>
+  <guid>https://jinsko.com/blog/blog_post.html</guid>
   <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
