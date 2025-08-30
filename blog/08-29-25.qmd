@@ -1,0 +1,43 @@
+---
+title: "Overview Of Sequencing"
+date: "2025-08-29" 
+categories: 
+    - "Genetics"
+---
+
+I was reading _An Introduction to Genetic Engineering—4th_ by Nicholl and wanted to write about the applications of the Klenow fragment but instead got distracted by a different subject altogether.
+
+## 1st Gen Sequencing
+Dideoxy gene sequencing uses what is called "primed synthesis" for sequencing. Primed synthesis works as follows: primers anneal onto a denatured strand of DNA, yielding ssDNA and creating a free 3'-OH group. A DNA polymerase then binds to the oligonucleotide primer, copying the remainder of the template strand. Understanding this mechanism is important for understanding the later stages of sequencing.
+
+To sequence a specific section of the genome, the DNA sequence in question is cloned via PCR. This ensures the proper strength of the signal on the autoradiograph later on. The DNA duplex is then denatured, and primers are annealed. The Klenow fragment then synthesizes the copy of the template strand. The Klenow fragment is used instead of DNA polymerase I because the fragment lacks the 5'→3' endonuclease function. This ensures the primer is not digested when the polymerase is introduced to the sample.
+
+Within the test tubes, along with the dNTPs used to elongate the daughter strand, one type of ddNTP is included in low concentrations, hence the name "dideoxy" sequencing. The ddNTPs are missing the 3'-OH group, disallowing elongation of the strand as phosphodiester bonds aren't allowed to form. The concentrations of ddNTPs are kept low to ensure that termination of the daughter strand does not happen too often. This is done four times in four different test tubes to create fragments that terminate at corresponding nucleotides.
+
+As a result, nested fragments are formed. These are fragments of DNA that differ in length due to the random incorporation of ddNTPs. You can run these fragments along a four-channel agarose gel (each channel corresponds to a test tube with a specific ddNTP), usually with urea and high temperature to ensure denaturing conditions. You don't want secondary structures to interfere with the distance traveled by the fragments.
+
+You can then take the gel and expose it onto a film to create the autoradiograph. Reading this is pretty simple: just read the film from the bottom up. Keep your eyes peeled for minuscule differences between the base pairs across the four channels. First-generation sequencing is pretty accurate and is still used today; it is the gold standard of sequencing due to its accuracy.
+
+## NGS
+NGS stands for next-generation sequencing. 
+
+After dideoxy sequencing was developed, large-scale sequencing consisted of large machines in increasingly larger buildings. This was obviously not very cost-effective, and scientists needed a different approach to sequencing.
+
+While second-generation sequencing requires the amplification of identical fragments via PCR, third-gen sequencing does not, eliminating any errors that may arise at this stage. For both generations, you can use two types of gene libraries: _Fragment libraries_, which are produced via sonication of the genome, or _amplicon libraries_, which are produced via PCR of a certain subsection of the genome. Naturally, since you are targeting the entire genome, there is less coverage (less likelihood of sequencing a certain base pair) with fragment libraries. Fragment libraries are more probability-based than amplicon libraries since fragment libraries cover a larger area. To fix this, you could increase the depth of the read, but that's more work. Under normal circumstances, one achieves what they need from an amplicon library that tells them something about a specific gene of interest or a subsection of the genome. The ends of the fragments are usually edited so that detection of the fragments becomes possible.
+
+Third-gen sequencing is more interesting to me, so I'll talk about that and skip second-gen, though I feel a bit bad (not really). This type of sequencing has absolutely no semblance to 1st-gen (Dideoxy sequencing).
+
+### SMRT Sequencing
+SMRT stands for Single-Molecule Real-Time sequencing.
+
+The contraption used for sequencing consists of a DNA polymerase attached to the bottom of zero-mode waveguides (very small wells), approximately 100 nm in diameter. A strand of ssDNA is then passed into the well, along with dNTP-fl (fluorophore-labeled dNTPs). From the bottom of the well, an excitatory wavelength is shot out, so when the ssDNA incorporates the dNTP-fl as its daughter strand, a wavelength of light is emitted specific to the nucleotide, allowing for sequencing. It helps to have the zero-mode waveguide so small to dampen any background noise.
+
+Note that if you are passing a linear sequence of DNA through the ZMW, the accuracy tends to be pretty low. Instead, adaptors are added to the ends of the DNA to make the fragment of DNA circular. This allows for repetition of reads, increasing the depth of sequencing. You could technically just throw a linear sequence in, but accuracy goes down real fast; something like 99.9% to 87%.
+
+### Nanopore Sequencing
+This is the most modern type of third-gen sequencing.  The smallest version of this device can be held in your palm and be plugged into a computer. This particular piece of technology consists of a membrane with embedded nanopores, usually constructed of proteins. A voltage is applied across this polymer membrane, and a current is created in the nanopore. When an ssDNA strand passes through this nanopore, small disturbances in the current are detected. These disturbances can be discerned from each other due to the different sizes of the nitrogenous bases. A sequence can then be generated with the disturbances plotted on a graph.
+
+An adaptor sequence is added onto the strand to improve entry into the nanopore. There's usually a motor protein of some sort passing the ssDNA into the pore, something like helicase.
+
+---
+Screw Sanger for casually receiving two Nobels. I hate geniuses.
