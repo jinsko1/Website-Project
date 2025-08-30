@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-08-17">
+<meta name="dcterms.date" content="2025-08-29">
 
-<title>Iron and the Motility of CFT073 – Jin Saeki Ko</title>
+<title>Overview Of Sequencing – Jin Saeki Ko</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -130,21 +110,11 @@ div.csl-indent {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  <li><a href="#iron-and-motility" id="toc-iron-and-motility" class="nav-link" data-scroll-target="#iron-and-motility">Iron and Motility</a>
+  <li><a href="#st-gen-sequencing" id="toc-st-gen-sequencing" class="nav-link active" data-scroll-target="#st-gen-sequencing">1st Gen Sequencing</a></li>
+  <li><a href="#ngs" id="toc-ngs" class="nav-link" data-scroll-target="#ngs">NGS</a>
   <ul class="collapse">
-  <li><a href="#introduction-to-infection-and-motility" id="toc-introduction-to-infection-and-motility" class="nav-link" data-scroll-target="#introduction-to-infection-and-motility">Introduction to Infection and Motility</a></li>
-  <li><a href="#purpose-of-project" id="toc-purpose-of-project" class="nav-link" data-scroll-target="#purpose-of-project">Purpose of Project</a></li>
-  <li><a href="#why-do-we-study-iron" id="toc-why-do-we-study-iron" class="nav-link" data-scroll-target="#why-do-we-study-iron">Why do we study Iron?</a>
-  <ul class="collapse">
-  <li><a href="#why-not-explore-other-nutrients" id="toc-why-not-explore-other-nutrients" class="nav-link" data-scroll-target="#why-not-explore-other-nutrients">Why not explore other nutrients?</a></li>
-  </ul></li>
-  <li><a href="#modes-of-motility-expressed-by-cft073" id="toc-modes-of-motility-expressed-by-cft073" class="nav-link" data-scroll-target="#modes-of-motility-expressed-by-cft073">Modes of Motility Expressed by CFT073</a>
-  <ul class="collapse">
-  <li><a href="#swimming" id="toc-swimming" class="nav-link" data-scroll-target="#swimming">Swimming</a></li>
-  <li><a href="#swarming" id="toc-swarming" class="nav-link" data-scroll-target="#swarming">Swarming</a></li>
-  <li><a href="#biofilm-formation" id="toc-biofilm-formation" class="nav-link" data-scroll-target="#biofilm-formation">Biofilm Formation</a></li>
-  </ul></li>
+  <li><a href="#smrt-sequencing" id="toc-smrt-sequencing" class="nav-link" data-scroll-target="#smrt-sequencing">SMRT Sequencing</a></li>
+  <li><a href="#nanopore-sequencing" id="toc-nanopore-sequencing" class="nav-link" data-scroll-target="#nanopore-sequencing">Nanopore Sequencing</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -154,9 +124,9 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Iron and the Motility of CFT073</h1>
+<h1 class="title">Overview Of Sequencing</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Lab Research</div>
+    <div class="quarto-category">Genetics</div>
   </div>
   </div>
 
@@ -168,7 +138,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 17, 2025</p>
+      <p class="date">August 29, 2025</p>
     </div>
   </div>
   
@@ -180,85 +150,39 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1">
-<h1>Preface</h1>
-<p>After writing a first draft of this page, which came out to a couple thousand words, I decided to break this post up into multiple posts. In this first one, I will explain only one of the several projects I’ve been working on.</p>
+<p>I was reading <em>An Introduction to Genetic Engineering—4th</em> by Nicholl and wanted to write about the applications of the Klenow fragment but instead got distracted by a different subject altogether.</p>
+<section id="st-gen-sequencing" class="level2">
+<h2 class="anchored" data-anchor-id="st-gen-sequencing">1st Gen Sequencing</h2>
+<p>Dideoxy gene sequencing uses what is called “primed synthesis” for sequencing. Primed synthesis works as follows: primers anneal onto a denatured strand of DNA, yielding ssDNA and creating a free 3’-OH group. A DNA polymerase then binds to the oligonucleotide primer, copying the remainder of the template strand. Understanding this mechanism is important for understanding the later stages of sequencing.</p>
+<p>To sequence a specific section of the genome, the DNA sequence in question is cloned via PCR. This ensures the proper strength of the signal on the autoradiograph later on. The DNA duplex is then denatured, and primers are annealed. The Klenow fragment then synthesizes the copy of the template strand. The Klenow fragment is used instead of DNA polymerase I because the fragment lacks the 5’→3’ endonuclease function. This ensures the primer is not digested when the polymerase is introduced to the sample.</p>
+<p>Within the test tubes, along with the dNTPs used to elongate the daughter strand, one type of ddNTP is included in low concentrations, hence the name “dideoxy” sequencing. The ddNTPs are missing the 3’-OH group, disallowing elongation of the strand as phosphodiester bonds aren’t allowed to form. The concentrations of ddNTPs are kept low to ensure that termination of the daughter strand does not happen too often. This is done four times in four different test tubes to create fragments that terminate at corresponding nucleotides.</p>
+<p>As a result, nested fragments are formed. These are fragments of DNA that differ in length due to the random incorporation of ddNTPs. You can run these fragments along a four-channel agarose gel (each channel corresponds to a test tube with a specific ddNTP), usually with urea and high temperature to ensure denaturing conditions. You don’t want secondary structures to interfere with the distance traveled by the fragments.</p>
+<p>You can then take the gel and expose it onto a film to create the autoradiograph. Reading this is pretty simple: just read the film from the bottom up. Keep your eyes peeled for minuscule differences between the base pairs across the four channels. First-generation sequencing is pretty accurate and is still used today; it is the gold standard of sequencing due to its accuracy.</p>
 </section>
-<section id="iron-and-motility" class="level1">
-<h1>Iron and Motility</h1>
-<section id="introduction-to-infection-and-motility" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-infection-and-motility">Introduction to Infection and Motility</h2>
-<p>In order to introduce the purpose of the project, one must first learn the necessary background information. The subject can be introduced by learning about the mechanism of colonization to induce infection.</p>
-<p>CFT073 is a strain of <em>Escherichia coli</em> known widely to be the main cause of Urinary Tract Infections (UTIs). Infection is heavily dependent on the bacterial flagella, suggested to contribute to virulence by enabling UPEC to disseminate throughout urinary tract and escape host immune responses <span class="citation" data-cites="laneRoleMotilityColonization2005">(<a href="#ref-laneRoleMotilityColonization2005" role="doc-biblioref">Lane et al. 2005</a>)</span>.</p>
-<p>fliC, the cistron that codes for flagellin, is the main component of the bacterial flagella, as lesions in cistron F of region III result in loss of ability to produce flagellin <span class="citation" data-cites="silvermanGeneticAnalysisFlagellar">(<a href="#ref-silvermanGeneticAnalysisFlagellar" role="doc-biblioref">Silverman and Simon n.d.</a>)</span>. Cistron F was later renamed fliC.</p>
-<p>So when the deletion of fliC, the gene domain, is made, the absence of flagella is induced, so we expect to see a complete loss in motility, which is what was observed in the fliC deletion mutant <span class="citation" data-cites="laneRoleMotilityColonization2005">(<a href="#ref-laneRoleMotilityColonization2005" role="doc-biblioref">Lane et al. 2005</a>)</span>. The deletion of the gene rendered the mutant completely non-motile, severely compromising virulence.</p>
-<p>Naturally, it would follow that studying the inhibition of CFT073 motility could lead to novel ways of treating UTIs.</p>
+<section id="ngs" class="level2">
+<h2 class="anchored" data-anchor-id="ngs">NGS</h2>
+<p>NGS stands for next-generation sequencing.</p>
+<p>After dideoxy sequencing was developed, large-scale sequencing consisted of large machines in increasingly larger buildings. This was obviously not very cost-effective, and scientists needed a different approach to sequencing.</p>
+<p>While second-generation sequencing requires the amplification of identical fragments via PCR, third-gen sequencing does not, eliminating any errors that may arise at this stage. For both generations, you can use two types of gene libraries: <em>Fragment libraries</em>, which are produced via sonication of the genome, or <em>amplicon libraries</em>, which are produced via PCR of a certain subsection of the genome. Naturally, since you are targeting the entire genome, there is less coverage (less likelihood of sequencing a certain base pair) with fragment libraries. Fragment libraries are more probability-based than amplicon libraries since fragment libraries cover a larger area. To fix this, you could increase the depth of the read, but that’s more work. Under normal circumstances, one achieves what they need from an amplicon library that tells them something about a specific gene of interest or a subsection of the genome. The ends of the fragments are usually edited so that detection of the fragments becomes possible.</p>
+<p>Third-gen sequencing is more interesting to me, so I’ll talk about that and skip second-gen, though I feel a bit bad (not really). This type of sequencing has absolutely no semblance to 1st-gen (Dideoxy sequencing).</p>
+<section id="smrt-sequencing" class="level3">
+<h3 class="anchored" data-anchor-id="smrt-sequencing">SMRT Sequencing</h3>
+<p>SMRT stands for Single-Molecule Real-Time sequencing.</p>
+<p>The contraption used for sequencing consists of a DNA polymerase attached to the bottom of zero-mode waveguides (very small wells), approximately 100 nm in diameter. A strand of ssDNA is then passed into the well, along with dNTP-fl (fluorophore-labeled dNTPs). From the bottom of the well, an excitatory wavelength is shot out, so when the ssDNA incorporates the dNTP-fl as its daughter strand, a wavelength of light is emitted specific to the nucleotide, allowing for sequencing. It helps to have the zero-mode waveguide so small to dampen any background noise.</p>
+<p>Note that if you are passing a linear sequence of DNA through the ZMW, the accuracy tends to be pretty low. Instead, adaptors are added to the ends of the DNA to make the fragment of DNA circular. This allows for repetition of reads, increasing the depth of sequencing. You could technically just throw a linear sequence in, but accuracy goes down real fast; something like 99.9% to 87%.</p>
 </section>
-<section id="purpose-of-project" class="level2">
-<h2 class="anchored" data-anchor-id="purpose-of-project">Purpose of Project</h2>
-<p>More than half of women in their lifetime will experience a urinary tract infection (UTI), with most cases caused by uropathogenic <em>E. coli</em> <span class="citation" data-cites="bachellerURINARYTRACTINFECTIONS1997">(<a href="#ref-bachellerURINARYTRACTINFECTIONS1997" role="doc-biblioref">Bacheller and Bernstein 1997</a>)</span>.</p>
-<p>Studying motility, a major virulence factor, makes sense when trying the understand mechanisms of infection for CFT073 and other infectious agents of the urinary tract</p>
-<p>This is precisely why we turn to the role of iron in motility and its implications on the frequency and severity of infection. But why did we decide to study iron of all nutrients?</p>
-</section>
-<section id="why-do-we-study-iron" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-we-study-iron">Why do we study Iron?</h2>
-<p>It has been known since the dawn of bacteriology that iron is an essential nutrient facilitating the survival of the <em>E. coli</em> cell.</p>
-<p>The importance of iron is understood but the specific reason for its importance reveals itself in the role iron plays as a cofactor. There are specific enzymes within the citric acid cycle that require iron as a cofactor for proper catalysis and therefore, energy production. We expect depletion of iron to negatively impact growth.</p>
-<p>We know how iron impacts growth, but we have not yet understood its impacts on motility.</p>
-<p>The deletion of the Fur (ferric uptake repressor) expressed an excess of iron intracellularly <span class="citation" data-cites="mchughGlobalIrondependentGene2003">(<a href="#ref-mchughGlobalIrondependentGene2003" role="doc-biblioref">McHugh et al. 2003</a>)</span>. Fur was proven to be a master regulator of iron dependent uptake systems and the synthesis of conjugated proteins with iron as its prosthetic group. Under iron repleted conditions, fur binds to iron, attaching itself to the furbox upstream of iron-related genes, restricting the amount of iron imported into the cell and allowing production of conjugated proteins. Conversely, under iron depleted conditions, fur falls off the furbox, allowing the uptake of iron and decreasing the production of conjugated proteins.</p>
-<p>Motility happens to be one of the genes that is affected by the Fur repression. There is evidence that the Fe 2-Fur complex also represses genes (cyoA, flbB, fumC, gpmA, metH, nohB, purR, and sodA) involved in various noniron functions (respiration, <strong>flagella chemotaxis</strong>, the TCA cycle) <span class="citation" data-cites="mchughGlobalIrondependentGene2003">(<a href="#ref-mchughGlobalIrondependentGene2003" role="doc-biblioref">McHugh et al. 2003</a>)</span>.</p>
-<section id="why-not-explore-other-nutrients" class="level3">
-<h3 class="anchored" data-anchor-id="why-not-explore-other-nutrients">Why not explore other nutrients?</h3>
-<p>Iron concentration is, under normal conditions, very restricted in the urinary tract. It is therefore one of the limiting nutrients in the environment of infection.</p>
-<p>Iron content of human urine is normally very low (∼0.1 μmol per liter) in the uninfected state. Even in the absence of inﬂammatory stimuli, iron is subject to tight physiologic control <span class="citation" data-cites="robinsonIronHandUropathogenic2018">(<a href="#ref-robinsonIronHandUropathogenic2018" role="doc-biblioref">Robinson, Heffernan, and Henderson 2018</a>)</span>.</p>
-<p>The idea behind understanding iron lies in the fact that iron concentration in the urinary tract is already very low. So when thinking of treatment options, a provider should be considering iron availability as a possible factor contributing to virulence.</p>
-</section>
-</section>
-<section id="modes-of-motility-expressed-by-cft073" class="level2">
-<h2 class="anchored" data-anchor-id="modes-of-motility-expressed-by-cft073">Modes of Motility Expressed by CFT073</h2>
-<p>There are generally three modes of motility, hence avenues for virulence, expressed by CFT073 that we are concerned with: swimming, swarming, and biofilm formation. Inhibition of these virulence factors should decrease the likelihood, and if not, severity of infection.</p>
-<section id="swimming" class="level3">
-<h3 class="anchored" data-anchor-id="swimming">Swimming</h3>
-<p>Independent movement of the cells. The kind of motility we are all familiar with; powered by rotating flagella. This mode of motility is required to swim up the urethra into the bladder, and in severe cases, required to travel up the ureter to the kidneys <span class="citation" data-cites="laneRoleMotilityColonization2005">(<a href="#ref-laneRoleMotilityColonization2005" role="doc-biblioref">Lane et al. 2005</a>)</span>.</p>
-</section>
-<section id="swarming" class="level3">
-<h3 class="anchored" data-anchor-id="swarming">Swarming</h3>
-<p>Concerted, multicellular, and energy intense raft-like movement across semi-solid surfaces. Also powered by rotating flagella. Involves quorum sensing. In catheter associated UTIs (CAUTIs), swarming motility is oftentimes employed to travel up the catheter into the bladder, though most studies that looked at this possibility used <em>Proteus mirabilis</em> as the model uropathogen. <span class="citation" data-cites="jonesUltrastructureProteusMirabilis2004">(<a href="#ref-jonesUltrastructureProteusMirabilis2004" role="doc-biblioref">Jones et al. 2004</a>)</span>.</p>
-</section>
-<section id="biofilm-formation" class="level3">
-<h3 class="anchored" data-anchor-id="biofilm-formation">Biofilm Formation</h3>
-<p>Matrix of extracellular polymeric substances protecting the pathogen from potentially harmful external conditions, facilitating attachment of the colony. Major causative agent of recurrent infections. Attachment is vital since the human bladder is emptied every couple hours, requiring the pathogen to attach itself to the bladder walls for successful infection <span class="citation" data-cites="yangSubinhibitoryConcentrationsAllicin2016">(<a href="#ref-yangSubinhibitoryConcentrationsAllicin2016" role="doc-biblioref">Yang et al. 2016</a>)</span>.</p>
-<p>In addition to modifying the availability of extracellular iron, we are also looking at 2 mutants which have different iron acquisition capabilities. ∆tonB has low intracellular iron since the import of iron is compromised with the deletion of a crucial component of the iron acquisition system. ∆fur has high intracellular iron because the repressor is lacking, hence, allowing for as much iron import via systems like TonB-ExbB-ExbD to occur.</p>
-
+<section id="nanopore-sequencing" class="level3">
+<h3 class="anchored" data-anchor-id="nanopore-sequencing">Nanopore Sequencing</h3>
+<p>This is the most modern type of third-gen sequencing. The smallest version of this device can be held in your palm and be plugged into a computer. This particular piece of technology consists of a membrane with embedded nanopores, usually constructed of proteins. A voltage is applied across this polymer membrane, and a current is created in the nanopore. When an ssDNA strand passes through this nanopore, small disturbances in the current are detected. These disturbances can be discerned from each other due to the different sizes of the nitrogenous bases. A sequence can then be generated with the disturbances plotted on a graph.</p>
+<p>An adaptor sequence is added onto the strand to improve entry into the nanopore. There’s usually a motor protein of some sort passing the ssDNA into the pore, something like helicase.</p>
+<hr>
+<p>Screw Sanger for casually receiving two Nobels. I hate geniuses.</p>
 
 
 </section>
 </section>
-</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-bachellerURINARYTRACTINFECTIONS1997" class="csl-entry" role="listitem">
-Bacheller, Catherine D., and Jack M. Bernstein. 1997. <span>“<span>URINARY TRACT INFECTIONS</span>.”</span> <em>Medical Clinics of North America</em> 81 (3): 719–30. <a href="https://doi.org/10.1016/S0025-7125(05)70542-3">https://doi.org/10.1016/S0025-7125(05)70542-3</a>.
-</div>
-<div id="ref-jonesUltrastructureProteusMirabilis2004" class="csl-entry" role="listitem">
-Jones, Brian V., Robert Young, Eshwar Mahenthiralingam, and David J. Stickler. 2004. <span>“Ultrastructure of <span>Proteus</span> Mirabilis <span>Swarmer Cell Rafts</span> and <span>Role</span> of <span>Swarming</span> in <span>Catheter-Associated Urinary Tract Infection</span>.”</span> <em>Infection and Immunity</em> 72 (7): 3941–50. <a href="https://doi.org/10.1128/IAI.72.7.3941-3950.2004">https://doi.org/10.1128/IAI.72.7.3941-3950.2004</a>.
-</div>
-<div id="ref-laneRoleMotilityColonization2005" class="csl-entry" role="listitem">
-Lane, M. Chelsea, Virginia Lockatell, Greta Monterosso, Daniel Lamphier, Julia Weinert, J. Richard Hebel, David E. Johnson, and Harry L. T. Mobley. 2005. <span>“Role of <span>Motility</span> in the <span>Colonization</span> of <span>Uropathogenic Escherichia</span> Coli in the <span>Urinary Tract</span>.”</span> <em>Infection and Immunity</em> 73 (11): 7644–56. <a href="https://doi.org/10.1128/IAI.73.11.7644-7656.2005">https://doi.org/10.1128/IAI.73.11.7644-7656.2005</a>.
-</div>
-<div id="ref-mchughGlobalIrondependentGene2003" class="csl-entry" role="listitem">
-McHugh, Jonathan P., Francisco Rodríguez-Quiñones, Hossein Abdul-Tehrani, Dimitri A. Svistunenko, Robert K. Poole, Chris E. Cooper, and Simon C. Andrews. 2003. <span>“Global <span class="nocase">Iron-dependent Gene Regulation</span> in <span><em>Escherichia</em></span><span> <em>Coli</em></span>.”</span> <em>Journal of Biological Chemistry</em> 278 (32): 29478–86. <a href="https://doi.org/10.1074/jbc.M303381200">https://doi.org/10.1074/jbc.M303381200</a>.
-</div>
-<div id="ref-robinsonIronHandUropathogenic2018" class="csl-entry" role="listitem">
-Robinson, Anne E, James R Heffernan, and Jeffrey P Henderson. 2018. <span>“The Iron Hand of Uropathogenic <span>Escherichia</span> Coli: The Role of Transition Metal Control in Virulence.”</span> <em>Future Microbiology</em> 13 (7): 745–56. <a href="https://doi.org/10.2217/fmb-2017-0295">https://doi.org/10.2217/fmb-2017-0295</a>.
-</div>
-<div id="ref-silvermanGeneticAnalysisFlagellar" class="csl-entry" role="listitem">
-Silverman, and Simon. n.d. <span>“Genetic <span>Analysis</span> of <span>Flagellar Mutants</span> in <span>Escherichia</span> Coli.”</span> https://journals.asm.org/doi/epdf/10.1128/jb.113.1.105-113.1973. Accessed August 2, 2025. <a href="https://doi.org/10.1128/jb.113.1.105-113.1973">https://doi.org/10.1128/jb.113.1.105-113.1973</a>.
-</div>
-<div id="ref-yangSubinhibitoryConcentrationsAllicin2016" class="csl-entry" role="listitem">
-Yang, Xiaolong, Kaihui Sha, Guangya Xu, Hanwen Tian, Xiaoying Wang, Shanze Chen, Yi Wang, Jingyu Li, Junli Chen, and Ning Huang. 2016. <span>“Subinhibitory <span>Concentrations</span> of <span>Allicin Decrease Uropathogenic Escherichia</span> Coli (<span>UPEC</span>) <span>Biofilm Formation</span>, <span>Adhesion Ability</span>, and <span>Swimming Motility</span>.”</span> <em>International Journal of Molecular Sciences</em> 17 (7): 979. <a href="https://doi.org/10.3390/ijms17070979">https://doi.org/10.3390/ijms17070979</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
