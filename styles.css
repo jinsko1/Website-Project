@@ -135,3 +135,35 @@ code, pre {
   overflow-y: auto;
   z-index: 1000;
 }
+
+
+@media (max-width: 600px) {
+  .navbar-brand,
+  .navbar-brand .navbar-title {
+    display: block;
+    max-width: 100%;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.2;
+  }
+}
+
+.navbar-toggler { border: none; }
+@media (prefers-color-scheme: light) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33,37,41,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(222,226,230,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #quarto-content { padding-top: 160px; } /* was 210px */
+}
+
