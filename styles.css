@@ -84,6 +84,7 @@ code, pre {
 
 /* Pushes content down from header and creates space on the right for the TOC */
 #quarto-content {
+  padding-top: 210px;
   margin-right: 0px; /* Space for the TOC */
   margin-left: 0px;
 }
@@ -133,103 +134,4 @@ code, pre {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   z-index: 1000;
-}
-
-/* === MOBILE: header in normal flow (no overlap) + bigger title === */
-@media (max-width: 700px) {
-  /* 0) Turn off fixed positioning anywhere inside the Quarto header */
-  #quarto-header,
-  #quarto-header.fixed-top,
-  #quarto-header .navbar,
-  #quarto-header .navbar.fixed-top,
-  nav.navbar.fixed-top {
-    position: static !important;   /* header occupies layout, body starts below it */
-    top: auto !important;
-  }
-
-  /* 1) Title: wrap and use a comfortable, larger size */
-  .navbar-brand,
-  .navbar-brand .navbar-title {
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    font-size: clamp(1.5rem, 7vw, 2.25rem) !important;  /* ↑ adjust to taste */
-    line-height: 1.1 !important;
-    margin: 0.25rem 0 !important;
-    max-width: 80vw;                                    /* keeps it to ~2 lines */
-  }
-
-  /* 2) Keep the navbar’s vertical padding reasonable (not huge) */
-  #quarto-header .navbar {
-    --bs-navbar-padding-y: 0.4rem;
-  }
-
-  /* 3) Remove any leftover compensating padding from earlier attempts */
-  body,
-  #quarto-content,
-  main.content,
-  .page-columns,
-  .content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-}
-
-/* keep your hamburger light/dark icon overrides from earlier */
-
-/* === MOBILE-ONLY FIXES (desktop unchanged) =============================== */
-/* Applies only on phones. Keeps desktop exactly as in your original CSS.  */
-@media (max-width: 700px) {
-
-  /* 1) Prevent overlap: make header participate in layout on phones */
-  #quarto-header,
-  #quarto-header.fixed-top,
-  #quarto-header .navbar,
-  #quarto-header .navbar.fixed-top,
-  nav.navbar,
-  nav.navbar.fixed-top {
-    position: static !important;
-    top: auto !important;
-  }
-
-  /* 2) Cancel any desktop padding that compensated for a fixed header */
-  body,
-  #quarto-content,
-  main.content,
-  .page-columns,
-  .content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* 3) Allow the site title to wrap (no font-size change) */
-  .navbar-brand,
-  .navbar-brand .navbar-title {
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-
-  /* 4) If a sidebar/TOC is fixed on desktop, flow it normally on phones */
-  #TOC, .toc {
-    position: static !important;
-    top: auto !important;
-    right: auto !important;
-    max-height: none !important;
-  }
-}
-
-/* 5) Hamburger contrast on phones only */
-@media (max-width: 700px) and (prefers-color-scheme: light) {
-  .navbar-toggler { border: none; }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33,37,41,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
-}
-
-@media (max-width: 700px) and (prefers-color-scheme: dark) {
-  .navbar-toggler { border: none; }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(222,226,230,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
 }

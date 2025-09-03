@@ -1,0 +1,54 @@
+/* mobile.css — apply ONLY on phones; desktop remains exactly as-is */
+@media (max-width: 700px) {
+
+  /* Put header back in the normal flow so content starts below it */
+  #quarto-header,
+  #quarto-header.fixed-top,
+  #quarto-header .navbar,
+  #quarto-header .navbar.fixed-top,
+  nav.navbar,
+  nav.navbar.fixed-top {
+    position: static !important;
+    top: auto !important;
+  }
+
+  /* Remove any padding/margin that was used to compensate for a fixed header */
+  body,
+  #quarto-content,
+  main.content,
+  .page-columns,
+  .content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Let the site title wrap on multiple lines */
+  .navbar-brand,
+  .navbar-brand .navbar-title {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* If a sidebar/TOC is fixed on desktop, flow it normally on phones */
+  #TOC, .toc {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    max-height: none !important;
+  }
+}
+
+/* Make the hamburger visible on phones in light & dark */
+@media (max-width: 700px) and (prefers-color-scheme: light) {
+  .navbar-toggler { border: none; }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33,37,41,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
+@media (max-width: 700px) and (prefers-color-scheme: dark) {
+  .navbar-toggler { border: none; }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(222,226,230,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
