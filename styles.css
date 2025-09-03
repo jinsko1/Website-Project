@@ -164,6 +164,21 @@ code, pre {
 }
 
 @media (max-width: 600px) {
-  #quarto-content { padding-top: 160px; } /* was 210px */
+  #quarto-content { padding-top: 160px; }
 }
 
+@media (max-width: 600px) {
+  #quarto-header.fixed-top {
+    position: sticky !important;
+    top: 0;
+  }
+
+  body,
+  #quarto-content {
+    padding-top: 0 !important;
+  }
+
+  :root {
+    scroll-padding-top: 6rem;
+  }
+}
