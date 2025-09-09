@@ -84,6 +84,7 @@ code, pre {
 
 /* Pushes content down from header and creates space on the right for the TOC */
 #quarto-content {
+  padding-top: 210px;
   margin-right: 0px; /* Space for the TOC */
   margin-left: 0px;
 }
@@ -133,58 +134,4 @@ code, pre {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   z-index: 1000;
-}
-
-/* === MOBILE: sticky header, compact height, no overlap === */
-@media (max-width: 600px) {
-  /* Use sticky (your chosen method) so header takes layout space */
-  #quarto-header.fixed-top {
-    position: sticky !important;
-    top: 0;
-  }
-
-  /* Make sure no legacy fixed-header padding remains */
-  body,
-  #quarto-content,
-  main.content,
-  .page-columns,
-  .content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  /* Title can wrap, but keep it compact */
-  .navbar-brand,
-  .navbar-brand .navbar-title {
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    margin: 0 !important;
-    font-size: 1.05rem !important;   /* ↓ raise/lower to change header height */
-    line-height: 1.1 !important;
-    max-width: 70vw;                  /* try 60–80vw to control # of lines */
-  }
-
-  /* Slim the navbar vertical padding */
-  #quarto-header .navbar {
-    --bs-navbar-padding-y: 0.25rem;   /* try 0.2–0.5rem */
-  }
-
-  /* Offset for in-page anchor links */
-  :root { scroll-padding-top: 3.25rem; }  /* adjust to your actual header height */
-}
-
-/* --- Keep hamburger visible in light & dark --- */
-.navbar-toggler { border: none; }
-@media (prefers-color-scheme: light) {
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33,37,41,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(222,226,230,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
 }
