@@ -67,5 +67,5 @@ A Little Life, *Hanya Yanagihara*
 
 ---
 
-[Quotes](quotes.qmd) from my favorites
+[Quotes](quotes.qmd) from various sources, including digital media.
 
