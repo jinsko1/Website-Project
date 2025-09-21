@@ -1,8 +1,8 @@
 ---
-title: "Iron and the Motility of CFT073"
+title: "The Yep Lab: Iron and the Motility of CFT073"
 date: "2025-08-17" 
 categories: 
-    - "Lab Research"
+    - "Lit Review"
 bibliography: ../references.bib
 ---
 

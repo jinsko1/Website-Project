@@ -1,0 +1,46 @@
+---
+title: "∆waaF and Colanic Acid as a Surfactant"
+date: "2025-09-21" 
+categories: 
+    - "Lit Review"
+bibliography: ../references.bib
+---
+
+Over the summer, I got my hands on _Escherchia coli ∆waaF_. The researchers at UT Austin were kind enough to consider a collaboration. This strain overproduces colanic acid, which I wanted to take advantage of. I want to test whether external supplemementation can rescue a certain non-swarming strain. The following information will frequently reference their publication, so I will list it here [@hwangCdiGMPRequiredSwarming2025]. In the subsequent passages, I will attempt to digest their paper in a way I can understand and apply in the lab.
+
+# What is Colanic Acid
+Colanic acid (CA) is a polyanionic heteropolysaccharide composed of repeating six carbon sugars. Due to its overall negative charge throughout the molecule, strong hydration results, allowing water to spread over surfaces rather than form beads. These properties allow CA to act as a wetting agent/surfactant.
+
+![](images/CA.png){fig-cap="Structure of Colanic Acid"}
+
+# _E. coli_ and CA as a Surfactant 
+Since many swarming bacteria produce surfactants to aid this form of motility, it wouldn't be surprising to find the same in _E. coli_ [@kearnsFieldGuideBacterial2010]. Hitherto, no surfactants have been reported to be produced by _E. coli_.
+
+Since the publication in question refers to CA as a surfactant that is produced by _E. coli_, I'd like to review once again, though this wasn't their core finding, how they arrived at this conclusion.
+
+The authors of the publication performed a drop collapse test, which resulted in CA showing surfactant properties. Contact angles on Eiken agar were also observed. Of the conditions they tested, CA had the lowest angle. So in conclusion, CA does seem to possess surfactant qualities. 
+
+# CA and Swarming
+More importantly, the researchers contructed a mutant, ∆waaF, which resulted from the deletion of an multi-gene operon controlling LPS biosynthesis. This strain overproduced CA. This extract was added directly to a non-swarming strain that was lacking in CA via mutation. This rescued the non-swarming phenotype. Since I'd also like to supplement CA to a non-swarming strain, in the next section, I will walk myself through their methods, so that I can replicate it in the lab.
+
+# Methods of Extracellular Supplementation of CA
+Hwang 2025 refers to Obadia 2007 in the methods section specifying the purification of CA [@obadiaInfluenceTyrosineKinaseWzc2007]. The usage of CA in this context can be divided into three steps: purification, quantification, and supplementation.
+
+## Purification
+According to Obadia 2007, 
+
+> Colanic acid was prepared and quantified from an overnight culture of each strain used.
+
+> Bacteria were grown in LB medium at 37 °C.
+
+Subsequently, again, in Obadia 2007,
+
+> The 50 ml cell culture was heated for 15 min at 100 °C to denature EPS-degrading enzymes.
+
+The rest of the procedure follows in the paper; just find the passage above since I copied it verbatim. I'm not pasting the entire thing here. I also want to talk to Dr. Yep about this since the procedure is subject to change.
+
+## Quantification
+Hwang 2025 cites they measured fucose as a proxy for CA. They measured fucose using the Dische cysteine–sulfuric acid assay.
+
+## Supplementation
+Hwang 2025 uses beads (3mm) to distribute CA extracts across the plate. Eiken agar was made as usual, but the researchers dried the plates under the laminar flow hood for 1 hour rather than 1 day, which is what we occasionally do.
