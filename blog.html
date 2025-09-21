@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,14 +30,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-496fe84c207e48339a4f0fe0f76bf4ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-19c6f25d9c793ca7e0d0ad6a6391bd12.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -97,7 +98,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -124,6 +125,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jin Saeki Ko</span>
     </a>
@@ -238,7 +241,7 @@ Reading Time
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UXVhcnRv" data-listing-date-sort="1755734400000" data-listing-file-modified-sort="1757622877175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317" data-listing-title-sort="How this Website was Made" data-listing-filename-sort="blog_post.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="UXVhcnRv" data-listing-date-sort="1755734400000" data-listing-file-modified-sort="1758497868814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317" data-listing-title-sort="How this Website was Made" data-listing-filename-sort="blog_post.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <span class="listing-date">2025-08-21</span>
@@ -252,7 +255,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="1" data-categories="R2VuZXRpY3M=" data-listing-date-sort="1756425600000" data-listing-file-modified-sort="1757622877175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="920" data-listing-title-sort="Overview Of Sequencing" data-listing-filename-sort="08-29-25.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="R2VuZXRpY3M=" data-listing-date-sort="1756425600000" data-listing-file-modified-sort="1758497868814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="920" data-listing-title-sort="Overview Of Sequencing" data-listing-filename-sort="08-29-25.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <span class="listing-date">2025-08-29</span>
@@ -266,7 +269,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="2" data-categories="TWlzYw==" data-listing-date-sort="1756425600000" data-listing-file-modified-sort="1757622877175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301" data-listing-title-sort="Mol/Micro Biology is Merely an Abstraction" data-listing-filename-sort="08-29-25(2).qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-categories="TWlzYw==" data-listing-date-sort="1756425600000" data-listing-file-modified-sort="1758497868813" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301" data-listing-title-sort="Mol/Micro Biology is Merely an Abstraction" data-listing-filename-sort="08-29-25(2).qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <span class="listing-date">2025-08-29</span>
@@ -335,13 +338,14 @@ Reading Time
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,14 +29,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-496fe84c207e48339a4f0fe0f76bf4ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-19c6f25d9c793ca7e0d0ad6a6391bd12.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -65,6 +66,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jin Saeki Ko</span>
     </a>
@@ -142,8 +145,8 @@ ul.task-list li input[type="checkbox"] {
 
 <p>I’ve had this thought for a while but have never bothered writing it down. I was reminded of it while I was writing about sequencing. I found myself making wishy-washy explanations, characteristic of a biologist, when it came to the mechanisms at the molecular level.</p>
 <p>I can only explain these pieces of technology from the perspective of an amateur biologist, and would, instead, if possible, explain these technologies from the perspective of a chemist or physicist. But I am merely a biologist. It is my firm belief that after a certain point, biology is merely an abstraction of chemistry and physics, and a thorough understanding of these disciplines (which I do not possess) is required for a complete understanding. That is, my knowledge of these technologies will start breaking down after questions pertaining to the chemistry and physics of these technologies are brought forth. I would argue that one must be a decent physicist and chemist before even attempting to call themselves a good biologist.</p>
-<p>The beauty of biology is only appreciated when you understand mechanism in totality.</p>
-<p>If a biologist desires to go beyond conventional uses of a tool available to them, an understanding of how things work is crucial, and not just how to use them. But the understanding of <em>how things work</em> only arrives along with the knowledge of these superior disciplines that have generated the field we now call biology.</p>
+<p>The beauty of biology is only appreciated once you understand mechanism in totality.</p>
+<p>If a biologist desires to go beyond conventional applications of a tool available to them, an understanding of how things work is crucial, and not just how to use them. But the understanding of <em>how things work</em> only arrives along with the knowledge of these superior disciplines that have generated the field we now call biology.</p>
 <p>Since the amount of knowledge required to complete these novel experiments is far beyond the scope of a single biologist, one would expect to find biologists eager to collaborate with chemists and physicists alike. This is not uncommon, but far less common than I expect it to be, which I find very odd.</p>
 <p>I apologize for the abrupt ending but I’ll stop there since further discussion will turn into a lengthy rant.</p>
 
@@ -201,13 +204,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
