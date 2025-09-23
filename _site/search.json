@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Hi, my name is Jin. I’m an undergraduate studying Microbiology at California Polytechnic State University, San Luis Obispo.\nI’m largely interested in pathogenesis and mutualistic host-microbe relationships, but I also do some computer science (nominally) in the lab. Learn more in the research section.\nThe blog section is simply a place where I learn about whatever I want.\nI enjoy reading and writing in my freetime, though I’m fully aware that no one will ever read what I write. You can check the Substack if you’d like.\nIn any case, this website should primarily serve as my central hub for thinking, a way to learn via soliloquy. Since this is on the internet, I’m also obligated to post accurate information which should aid my learning.\nYou can contact me via email here: jko23@calpoly.edu."
+    "text": "Hi, my name is Jin. I’m an undergraduate studying Microbiology at California Polytechnic State University, San Luis Obispo.\nI’m largely interested in pathogenesis, mutualistic host-microbe relationships, and anything medicine related, but I also do some computer science (nominally) in the lab. Learn more in the research section.\nThe blog section is simply a place where I learn about whatever I want.\nI enjoy reading and writing in my freetime, though I’m fully aware that no one will ever read what I write. You can check the Substack if you’d like.\nIn any case, this website should primarily serve as my central hub for thinking, a way to learn via soliloquy. Since this is on the internet, I’m also obligated to post accurate information which should aid my learning.\nYou can contact me via email here: jko23@calpoly.edu."
   },
   {
     "objectID": "research.html",
@@ -109,7 +109,7 @@
     "href": "research/9-17-2025.html",
     "title": "∆waaF and Colanic Acid as a Surfactant",
     "section": "",
-    "text": "Over the summer, I got my hands on Escherchia coli ∆waaF. The researchers at UT Austin were kind enough to consider a collaboration. This strain overproduces colanic acid, which I wanted to take advantage of. I want to test whether external supplemementation can rescue a certain non-swarming pheontype. The following information will frequently reference their publication, so I will list it here (Hwang et al. 2025). In the subsequent passages, I will attempt to digest their paper in a way I can understand and apply in the lab."
+    "text": "Over the summer, I got my hands on Escherchia coli ∆waaF. The researchers at UT Austin were kind enough to consider a collaboration. This strain overproduces colanic acid, which I wanted to take advantage of. I want to test whether external supplemementation can rescue a certain non-swarming strain. The following information will frequently reference their publication, so I will list it here (Hwang et al. 2025). In the subsequent passages, I will attempt to digest their paper in a way I can understand and apply in the lab."
   },
   {
     "objectID": "research/9-17-2025.html#purification",
