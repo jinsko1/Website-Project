@@ -135,3 +135,15 @@ code, pre {
   overflow-y: auto;
   z-index: 1000;
 }
+
+@media (min-width: 701px) {
+  .navbar-brand .navbar-title::after {
+    content: " 許佐伯進";   
+    font: inherit;
+    font-weight: 400; 
+    margin-left: 0.5rem;
+    color: currentColor;
+    opacity: 0.15;
+    white-space: nowrap;
+  }
+}

@@ -37,6 +37,11 @@
     right: auto !important;
     max-height: none !important;
   }
+  /* Hide the desktop-only tagline on phones */
+  .navbar-brand .navbar-title::after {
+    content: none !important;
+}
+
 }
 
 /* Make the hamburger visible on phones in light & dark */
