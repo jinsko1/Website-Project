@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jinsko.com/blog/08-29-25(2).html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/blog_post.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/index.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/quotes.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/research/8-17-2025.html</loc>
-    <lastmod>2025-09-23T01:00:21.334Z</lastmod>
-  </url>
-  <url>
     <loc>https://jinsko.com/research/9-17-2025.html</loc>
-    <lastmod>2025-09-23T01:00:21.334Z</lastmod>
+    <lastmod>2025-09-25T05:52:57.919Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/diabetic-ketoacidosis.html</loc>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/08-29-25(2).html</loc>
+    <lastmod>2025-09-25T05:52:57.917Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research.html</loc>
-    <lastmod>2025-09-23T01:00:21.334Z</lastmod>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/books.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/quotes.html</loc>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/index.html</loc>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
+    <lastmod>2025-09-25T05:52:57.917Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog/08-29-25.html</loc>
-    <lastmod>2025-09-23T01:00:21.333Z</lastmod>
+    <lastmod>2025-09-25T05:52:57.917Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/blog_post.html</loc>
+    <lastmod>2025-09-25T05:52:57.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/8-17-2025.html</loc>
+    <lastmod>2025-09-25T05:52:57.919Z</lastmod>
   </url>
 </urlset>
