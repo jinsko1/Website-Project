@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Biology, medicine, and maybe some computer science.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nReading Time\n\n\n\n\n\n\n\n\n2025-08-21\n\n\nHow this Website was Made\n\n\n2 min\n\n\n\n\n\n\n2025-08-29\n\n\nOverview Of Sequencing\n\n\n5 min\n\n\n\n\n\n\n2025-08-29\n\n\nMol/Micro Biology is Merely an Abstraction\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Biology, medicine, and maybe some computer science.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nReading Time\n\n\n\n\n\n\n\n\n2025-08-21\n\n\nHow this Website was Made\n\n\n2 min\n\n\n\n\n\n\n2025-08-29\n\n\nOverview Of Sequencing\n\n\n5 min\n\n\n\n\n\n\n2025-08-29\n\n\nMol/Micro Biology is Merely an Abstraction\n\n\n2 min\n\n\n\n\n\n\n2025-09-24\n\n\nDiabetic Ketoacidosis and Non-Ketotic Coma\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -131,5 +131,33 @@
     "title": "∆waaF and Colanic Acid as a Surfactant",
     "section": "Supplementation",
     "text": "Supplementation\nHwang 2025 uses beads (3mm) to distribute CA extracts across the plate. Eiken agar was made as usual, but the researchers dried the plates under the laminar flow hood for 1 hour rather than 1 day, which is what we occasionally do."
+  },
+  {
+    "objectID": "blog/diabetic-ketoacidosis.html",
+    "href": "blog/diabetic-ketoacidosis.html",
+    "title": "Diabetic Ketoacidosis and Non-Ketotic Coma",
+    "section": "",
+    "text": "Robbins pathology (Kumar et al. 2021) and GH medical physiology (Hall, Hall, and Guyton 2011)"
+  },
+  {
+    "objectID": "blog/diabetic-ketoacidosis.html#the-classic-triad",
+    "href": "blog/diabetic-ketoacidosis.html#the-classic-triad",
+    "title": "Diabetic Ketoacidosis and Non-Ketotic Coma",
+    "section": "The Classic Triad",
+    "text": "The Classic Triad\nThe classic triad is defined within the context of diabetes mellitus as: polyuria, polydipsia, polyphagia.\nThese manisfestations of the condition can be explained starting with hyperglycemia."
+  },
+  {
+    "objectID": "blog/diabetic-ketoacidosis.html#t1dm",
+    "href": "blog/diabetic-ketoacidosis.html#t1dm",
+    "title": "Diabetic Ketoacidosis and Non-Ketotic Coma",
+    "section": "T1DM",
+    "text": "T1DM\nDeficiency of insulin leads to activation of lipase in adipose stores, releasing free fatty acids (FFAs). The liver then oxidizes FFAs, turning them into ketones, which can be used for energy in the absence of glucose. This is called ketogenesis. If the rate of ketogenesis exceeds the rate of consumption by peripheral tissues, ketones accumulate in the blood (ketonemia), leading to metabolic acidosis.\nMetabolic acidosis is often accompanied by an increase in respiratory rate to blow off CO₂, which helps raise blood pH. It’s interesting how insulin deficiency can ultimately lead to something that may seem completely unrelated at first."
+  },
+  {
+    "objectID": "blog/diabetic-ketoacidosis.html#t2dm",
+    "href": "blog/diabetic-ketoacidosis.html#t2dm",
+    "title": "Diabetic Ketoacidosis and Non-Ketotic Coma",
+    "section": "T2DM",
+    "text": "T2DM\nKetoacidosis doesn’t occur very frequently in T2DM, since these patients still have enough insulin to inhibit ketogenesis—and hence acidosis. Sustained osmotic diuresis in the absence of metabolic acidosis can cause hyperosmolar nonketotic coma. Because symptoms like rapid respiration don’t appear, it’s hard to recognize the severity of this condition until the late stages of dehydration, especially if the patient is already impaired and fails to hydrate. The hyperosmolarity eventually draws water out of brain cells, potentially causing coma."
   }
 ]

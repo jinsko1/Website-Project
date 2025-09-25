@@ -1,0 +1,54 @@
+---
+title: "Diabetic Ketoacidosis and Non-Ketotic Coma"
+date: "2025-09-24"
+categories: 
+    - "Medicine"
+bibliography: ../references.bib
+---
+
+Robbins pathology [@kumarRobbinsCotranPathologic2021] and GH medical physiology [@hallGuytonHallTextbook2011]
+
+# Introduction
+Type 1 diabetes mellitus (T1DM) is an autoimmune disease characterized by the destruction of beta cells, leaving patients lacking insulin. Immune effector cells react to self-antigens present on the surface of beta cells. There are a variety of reasons why the effector cells target endogenous antigens (T-cell selection, HLA alleles, etc.), but that discussion would digress from the topic.
+
+Type 2 diabetes mellitus (T2DM), on the other hand, is characterized by the decreased ability of peripheral tissues to respond to insulin (aka insulin resistance).
+
+In summary, while T1DM is caused by the inability to produce insulin, T2DM is caused by decreased sensitivity to insulin. Both cause hyperglycemia.
+
+# The Classic Triad
+Insulin is a fairly important anabolic hormone, so we'd expect to see various consequences in its absence or with decreased sensitivity. The classic triad is defined within the context of diabetes mellitus as: polyuria, polydipsia, polyphagia.
+
+These manifestations of the condition can be explained starting with glycogenolysis, which is shared between the two types. Since the lack of insulin/insensitivity causes a decrease in glucose assimilation, storage of glycogen within the liver and muscle ceases and glycogenolysis happens instead. Glycogenolysis raises blood glucose, which eventually exceeds the renal threshold for glucose reabsorption from the filtrate to the blood. With excess glucose remaining in the filtrate (glycosuria), osmotic diuresis ensues. The diuresis then goes on to manifest itself as _polyuria_. The osmotic diuresis and hyperosmotic blood lead to overall water loss. This triggers osmoreceptors in the brain, hence _polydipsia_. Since glucose is also unavailable to peripheral tissues, the body resorts to catabolism of proteins and fats. This leads to an increase in appetite, _polyphagia_.
+
+```{mermaid}
+sequenceDiagram
+    participant A as Lack of insulin/insensitivity
+    participant B as Liver & muscle
+    participant C as Blood glucose
+    participant D as Kidney
+    participant E as Brain osmoreceptors
+    participant F as Peripheral tissues
+
+    A->>B: ↓ glucose assimilation
+    B->>B: glycogen storage ceases
+    B->>B: glycogenolysis
+    B->>C: raises glucose
+    C->>D: exceeds renal threshold
+    D->>D: glycosuria
+    D->>D: osmotic diuresis
+    D->>D: polyurea
+    D->>E: water loss + hyperosmotic blood
+    E->>E: polydipsia
+    A->>F: glucose unavailable
+    F->>F: protein/fat catabolism
+    F->>F: increased appetite (polyphagia)
+```
+
+# The Metabolic Consequences
+## T1DM
+Deficiency of insulin leads to activation of lipase in adipose stores, releasing free fatty acids (FFAs). The liver then oxidizes FFAs, turning them into ketones, which can be used for energy in the absence of glucose. This is called ketogenesis. If the rate of ketogenesis exceeds the rate of consumption by peripheral tissues, ketones accumulate in the blood (ketonemia), leading to metabolic acidosis.
+
+Metabolic acidosis is often accompanied by an increase in respiratory rate to blow off CO₂, which helps raise blood pH. It’s interesting how insulin deficiency can ultimately lead to something that may seem completely unrelated at first.
+
+## T2DM
+Ketoacidosis doesn’t occur very frequently in T2DM, since these patients still have enough insulin to inhibit ketogenesis—and hence acidosis. Sustained osmotic diuresis in the absence of metabolic acidosis can cause hyperosmolar nonketotic coma. Because symptoms like rapid respiration don’t appear, it’s hard to recognize the severity of this condition until the late stages of dehydration, especially if the patient is already impaired and fails to hydrate. The hyperosmolarity eventually draws water out of brain cells, potentially causing coma.
