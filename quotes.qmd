@@ -2,8 +2,11 @@
 title: Quotes
 ---
 
-### George Orwell
-> In the face of pain there are no heroes.
+
+### F. Scott Fitzgerald
+> There are only the pursued, the pursuing, the busy and the tired.
+
+> Let us learn to show our friendship for a man when he is alive and not after he is dead.
 
 ### Haruki Murakami
 > Still, being able to feel pain was good, he thought. It's when you can't even feel pain anymore that you're in real trouble.
@@ -12,6 +15,14 @@ title: Quotes
 
 > If I had remained at home, I would have spent my life waiting for you to get in touch. And a life spent waiting would mean I couldn't think of anything other than you. Of course, I wouldn't mind. Since you were what I wanted in this world, more than anything.
 
+### George Orwell
+> In the face of pain there are no heroes.
+
+### Ann Patchett
+> He was in love, and never had he felt such kindness towards another person. Never had he received such kindness. Maybe the private life wasn't forever. Maybe everyone got it for a little while and then spend the rest of their lives remembering.
+
+> Only a few of us are going to be willing to break our own hearts by trading in the living beauty of imagination for the stark disappointment of words.
+
 ### J. D. Salinger
 > Many, many men have been just as troubled morally and spiritually as you are right now. Happily, some of them kept records of their troubles. You'll learn from them—if you want to. Just as someday, if you have something to offer, someone will learn something from you. It's a beautiful reciprocal arrangement. And it isn't education. It's history. It's poetry. I'm not trying to tell you that only educated and scholarly men are able to contribute something valuable to the world. It's not so. But I do say that educated and scholarly men, if they're brilliant and creative to begin with—which, unfortunately, is rarely the case—tend to leave infinitely more valuable records behind them than men do who are merely brilliant and creative. They tend to express themselves more clearly, and they usually have a passion for following their thoughts through to the end.
 
@@ -19,10 +30,8 @@ title: Quotes
 > "That isn't anything really!"\
 > "It is so something really! Certainly it is! Why the hell isn't it? People never think anything is anything really. I'm getting goddam sick of it."
 
-### Ann Patchett
-> He was in love, and never had he felt such kindness towards another person. Never had he received such kindness. Maybe the private life wasn't forever. Maybe everyone got it for a little while and then spend the rest of their lives remembering.
-
-> Only a few of us are going to be willing to break our own hearts by trading in the living beauty of imagination for the stark disappointment of words.
-
 ### 時雨沢 恵一
 > 結局他人の痛みなんて分かってしまえば、まともに生きていけなかったんだ。
+
+### 大友克洋
+> 思い出は逃げ込む場所じゃない。
