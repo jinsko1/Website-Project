@@ -21,8 +21,6 @@ website:
         href: https://jinsaekiko.substack.com/
         target: "_blank"  
         icon: box-arrow-up-right 
-      - icon: rss
-        href: index.xml
   page-navigation: true
   search: false
 
