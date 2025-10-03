@@ -6,7 +6,7 @@ project:
 website:
   title: "Jin Saeki Ko"
   site-url: "https://jinsko.com"
-  description: "A personal website for my research and writing."
+  description: "A website for thinking."
   navbar:
     left:
       - href: index.qmd
@@ -21,6 +21,8 @@ website:
         href: https://jinsaekiko.substack.com/
         target: "_blank"  
         icon: box-arrow-up-right 
+      - icon: rss
+        href: index.xml
   page-navigation: true
   search: false
 

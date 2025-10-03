@@ -15,5 +15,21 @@
       "/research/9-17-2025.html",
       "/research/stationary-phase.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog.html",
+      "/books.html",
+      "/blog/diabetic-ketoacidosis.html",
+      "/blog/blog_post.html",
+      "/research/stationary-phase.html",
+      "/blog/08-29-25(2).html",
+      "/blog/08-29-25.html",
+      "/quotes.html",
+      "/research.html",
+      "/research/8-17-2025.html",
+      "/research/9-17-2025.html"
+    ]
   }
 ]

@@ -42,7 +42,7 @@ We know how iron impacts growth, but we have not yet understood its impacts on m
 
 The deletion of the Fur (ferric uptake repressor) expressed an excess of iron intracellularly [@mchughGlobalIrondependentGene2003]. Fur was proven to be a master regulator of iron dependent uptake systems and the synthesis of conjugated proteins with iron as its prosthetic group. Under iron repleted conditions, fur binds to iron, attaching itself to the furbox upstream of iron-related genes, restricting the amount of iron imported into the cell and allowing production of conjugated proteins. Conversely, under iron depleted conditions, fur falls off the furbox, allowing the uptake of iron and decreasing the production of conjugated proteins.
 
-Motility happens to be one of the genes that is affected by the Fur repression. There is evidence that the Fe 2-Fur complex also represses genes (cyoA, flbB, fumC, gpmA, metH, nohB, purR, and sodA) involved in various noniron functions (respiration, **flagella chemotaxis**, the TCA cycle) [@mchughGlobalIrondependentGene2003].
+Motility happens to be one of the genes that is affected by the Fur repression. There is evidence that the Fe2+-Fur complex also represses genes (cyoA, flbB, fumC, gpmA, metH, nohB, purR, and sodA) involved in various noniron functions (respiration, **flagella chemotaxis**, the TCA cycle) [@mchughGlobalIrondependentGene2003].
 
 ### Why not explore other nutrients?
 
