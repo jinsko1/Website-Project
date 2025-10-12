@@ -23,6 +23,8 @@ website:
         icon: box-arrow-up-right 
   page-navigation: true
   search: false
+  google-analytics: "G-C15D2JVJTJ"
+
 
 # In your _quarto.yml file
 
