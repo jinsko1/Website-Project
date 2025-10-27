@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-08-29">
+<meta name="dcterms.date" content="2025-10-27">
 
-<title>Overview Of Sequencing – Jin Saeki Ko</title>
+<title>Issues with Biofilm Formation – Jin Saeki Ko</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -123,11 +143,11 @@ gtag('config', 'G-C15D2JVJTJ', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#st-gen-sequencing" id="toc-st-gen-sequencing" class="nav-link active" data-scroll-target="#st-gen-sequencing">1st Gen Sequencing</a></li>
-  <li><a href="#ngs" id="toc-ngs" class="nav-link" data-scroll-target="#ngs">NGS</a>
+  <li><a href="#the-canonical-biofilm-assay-protocol" id="toc-the-canonical-biofilm-assay-protocol" class="nav-link active" data-scroll-target="#the-canonical-biofilm-assay-protocol">The Canonical Biofilm Assay Protocol</a></li>
+  <li><a href="#potential-errors-in-protocol" id="toc-potential-errors-in-protocol" class="nav-link" data-scroll-target="#potential-errors-in-protocol">Potential Errors in Protocol</a>
   <ul class="collapse">
-  <li><a href="#smrt-sequencing" id="toc-smrt-sequencing" class="nav-link" data-scroll-target="#smrt-sequencing">SMRT Sequencing</a></li>
-  <li><a href="#nanopore-sequencing" id="toc-nanopore-sequencing" class="nav-link" data-scroll-target="#nanopore-sequencing">Nanopore Sequencing</a></li>
+  <li><a href="#washing-and-rinsing" id="toc-washing-and-rinsing" class="nav-link" data-scroll-target="#washing-and-rinsing">Washing and Rinsing</a></li>
+  <li><a href="#well-plate" id="toc-well-plate" class="nav-link" data-scroll-target="#well-plate">96-well-plate</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -137,9 +157,9 @@ gtag('config', 'G-C15D2JVJTJ', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Overview Of Sequencing</h1>
+<h1 class="title">Issues with Biofilm Formation</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Biology</div>
+    <div class="quarto-category">Lit Review</div>
   </div>
   </div>
 
@@ -151,7 +171,7 @@ gtag('config', 'G-C15D2JVJTJ', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 29, 2025</p>
+      <p class="date">October 27, 2025</p>
     </div>
   </div>
   
@@ -163,39 +183,42 @@ gtag('config', 'G-C15D2JVJTJ', { 'anonymize_ip': true});
 </header>
 
 
-<p>I was reading <em>An Introduction to Genetic Engineering—4th</em> by Nicholl and wanted to write about the applications of the Klenow fragment but instead got distracted by a different subject altogether.</p>
-<section id="st-gen-sequencing" class="level2">
-<h2 class="anchored" data-anchor-id="st-gen-sequencing">1st Gen Sequencing</h2>
-<p>Dideoxy gene sequencing uses what is called “primed synthesis” for sequencing. Primed synthesis works as follows: primers anneal onto a denatured strand of DNA, yielding ssDNA and creating a free 3’-OH group. A DNA polymerase then binds to the oligonucleotide primer, copying the remainder of the template strand. Understanding this mechanism is important for understanding the later stages of sequencing.</p>
-<p>To sequence a specific section of the genome, the DNA sequence in question is cloned via PCR. This ensures the proper strength of the signal on the autoradiograph later on. The DNA duplex is then denatured, and primers are annealed. The Klenow fragment then synthesizes the copy of the template strand. The Klenow fragment is used instead of DNA polymerase I because the fragment lacks the 5’→3’ endonuclease function. This ensures the primer is not digested when the polymerase is introduced to the sample.</p>
-<p>Within the test tubes, along with the dNTPs used to elongate the daughter strand, one type of ddNTP is included in low concentrations, hence the name “dideoxy” sequencing. The ddNTPs are missing the 3’-OH group, disallowing elongation of the strand as phosphodiester bonds aren’t allowed to form. The concentrations of ddNTPs are kept low to ensure that termination of the daughter strand does not happen too often. This is done four times in four different test tubes to create fragments that terminate at corresponding nucleotides.</p>
-<p>As a result, nested fragments are formed. These are fragments of DNA that differ in length due to the random incorporation of ddNTPs. You can run these fragments along a four-channel agarose gel (each channel corresponds to a test tube with a specific ddNTP), usually with urea and high temperature to ensure denaturing conditions. You don’t want secondary structures to interfere with the distance traveled by the fragments.</p>
-<p>You can then take the gel and expose it onto a film to create the autoradiograph. Reading this is pretty simple: just read the film from the bottom up. Keep your eyes peeled for minuscule differences between the base pairs across the four channels. First-generation sequencing is pretty accurate and is still used today; it is the gold standard of sequencing due to its accuracy.</p>
+<p>In the lab, Kelsey and I have been running into issues with the biofilm assay. Regardless of the incubation period, the E. coli strains that are supposed to form biofilms aren’t doing so. After a couple of failed attempts, we also tried growing Pseudomonas, which is known for robust biofilm formation, but this trial also resulted in no observable biofilm. By testing these two strains, we could assess whether the problem lies with the E. coli strains we were using or whether it stems from a systemic error in our protocol.</p>
+<p>Given the fact that Pseudomonas also failed to form observable biofilms, we concluded that the error most likely originates in the protocol. Since I’ve never done this before, in the subsequent passages I attempt to explicate and justify the steps in the biofilm procedure and where we might have erred.</p>
+<section id="the-canonical-biofilm-assay-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="the-canonical-biofilm-assay-protocol">The Canonical Biofilm Assay Protocol</h2>
+<p>The following procedure comes out of the Microtiter Dish Biofilm Formation Assay <span class="citation" data-cites="otooleMicrotiterDishBiofilm2011">(<a href="#ref-otooleMicrotiterDishBiofilm2011" role="doc-biblioref">O’Toole 2011</a>)</span>. Most of the passage below comes out of the paper verbatim. I’m just pasting it here for convenience.</p>
+<blockquote class="blockquote">
+<p>Dilute the overnight culture 1:100 into fresh medium. Add 100 μL of the dilution per well in a 96 well dish; 4-8 replicate wells for each treatment. Incubate 4-24 hrs at 37°C.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>After incubation, dump out cells by turning the plate over and shaking out the liquid. Gently submerge the plate in a small tub of water. Add 125 μL of a 0.1% solution of crystal violet to each well. Incubate the microtiter plate at room temperature for 10-15 min. Rinse the plate 3-4 times with water by submerging in a tub of water as outlined above, shake out and blot vigorously on a stack of paper towels to rid the plate of all excess cells and dye. Turn the microtiter plate upside down and dry for a few hours or overnight.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Add 125 μL of 30% acetic acid in water to each well of the microtiter plate to solubilize the CV. Incubate the microtiter plate at room temperature for 10-15 min. Transfer 125 μL of the solubilized CV to a new flat bottomed microtiter dish. Quantify absorbance in a plate reader at 550 nm using 30% acetic acid in water as the blank.</p>
+</blockquote>
 </section>
-<section id="ngs" class="level2">
-<h2 class="anchored" data-anchor-id="ngs">NGS</h2>
-<p>NGS stands for next-generation sequencing.</p>
-<p>After dideoxy sequencing was developed, large-scale sequencing consisted of large machines in increasingly larger buildings. This was obviously not very cost-effective, and scientists needed a different approach to sequencing.</p>
-<p>While second-generation sequencing requires the amplification of identical fragments via PCR, third-gen sequencing does not, eliminating any errors that may arise at this stage. For both generations, you can use two types of gene libraries: <em>Fragment libraries</em>, which are produced via sonication of the genome, or <em>amplicon libraries</em>, which are produced via PCR of a certain subsection of the genome. Naturally, since you are targeting the entire genome, there is less coverage (less likelihood of sequencing a certain base pair) with fragment libraries. Fragment libraries are more probability-based than amplicon libraries since fragment libraries cover a larger area. To fix this, you could increase the depth of the read, but that’s more work. Under normal circumstances, one achieves what they need from an amplicon library that tells them something about a specific gene of interest or a subsection of the genome. The ends of the fragments are usually edited so that detection of the fragments becomes possible.</p>
-<p>Third-gen sequencing is more interesting to me, so I’ll talk about that and skip second-gen, though I feel a bit bad (not really). This type of sequencing has absolutely no semblance to 1st-gen (Dideoxy sequencing).</p>
-<section id="smrt-sequencing" class="level3">
-<h3 class="anchored" data-anchor-id="smrt-sequencing">SMRT Sequencing</h3>
-<p>SMRT stands for Single-Molecule Real-Time sequencing.</p>
-<p>The contraption used for sequencing consists of a DNA polymerase attached to the bottom of zero-mode waveguides (very small wells), approximately 100 nm in diameter. A strand of ssDNA is then passed into the well, along with dNTP-fl (fluorophore-labeled dNTPs). From the bottom of the well, an excitatory wavelength is shot out, so when the ssDNA incorporates the dNTP-fl as its daughter strand, a wavelength of light is emitted specific to the nucleotide, allowing for sequencing. It helps to have the zero-mode waveguide so small to dampen any background noise.</p>
-<p>Note that if you are passing a linear sequence of DNA through the ZMW, the accuracy tends to be pretty low. Instead, adaptors are added to the ends of the DNA to make the fragment of DNA circular. This allows for repetition of reads, increasing the depth of sequencing. You could technically just throw a linear sequence in, but accuracy goes down real fast; something like 99.9% to 87%.</p>
+<section id="potential-errors-in-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="potential-errors-in-protocol">Potential Errors in Protocol</h2>
+<p>I’m not sure why we use 24-well plates rather than 96-well plates. I’m also not sure why we aspirate the supernatant instead of dumping the plate as described above (I’ll ask during lab meeting). I’m likewise unsure why we use ethanol instead of acetic acid to solubilize the bound crystal violet. In any case, here are potential errors that may have occurred based on the procedure above:</p>
+<section id="washing-and-rinsing" class="level3">
+<h3 class="anchored" data-anchor-id="washing-and-rinsing">Washing and Rinsing</h3>
+<p>In the current procedure, we aspirate the supernatant rather than dumping it. Weaker biofilms may be prone to being sheared off during aspiration. Dumping the plate also standardizes how much supernatant is removed, whereas aspiration may introduce more technical variability.</p>
 </section>
-<section id="nanopore-sequencing" class="level3">
-<h3 class="anchored" data-anchor-id="nanopore-sequencing">Nanopore Sequencing</h3>
-<p>This is the most modern type of third-gen sequencing. The smallest version of this device can be held in your palm and be plugged into a computer. This particular piece of technology consists of a membrane with embedded nanopores, usually constructed of proteins. A voltage is applied across this polymer membrane, and a current is created in the nanopore. When an ssDNA strand passes through this nanopore, small disturbances in the current are detected. These disturbances can be discerned from each other due to the different sizes of the nitrogenous bases. A sequence can then be generated with the disturbances plotted on a graph.</p>
-<p>An adaptor sequence is added onto the strand to improve entry into the nanopore. There’s usually a motor protein of some sort passing the ssDNA into the pore, something like helicase.</p>
-<hr>
-<p>Screw Sanger for casually receiving two Nobels. I hate geniuses.</p>
+<section id="well-plate" class="level3">
+<h3 class="anchored" data-anchor-id="well-plate">96-well-plate</h3>
+<p>Using the 96 well plate might yield better results. With a smaller well, I’d figure attachment becomes easier and hence, accidental shearing of the biofilms becomes less likely. I’ll ask about this.</p>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-otooleMicrotiterDishBiofilm2011" class="csl-entry" role="listitem">
+O’Toole, George A. 2011. <span>“Microtiter <span>Dish Biofilm Formation Assay</span>.”</span> <em>Journal of Visualized Experiments</em>, no. 47 (January): 2437. <a href="https://doi.org/10.3791/2437">https://doi.org/10.3791/2437</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
