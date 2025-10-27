@@ -2,7 +2,7 @@
 title: "How this Website was Made"
 date: "2025-08-21" 
 categories: 
-    - "Quarto"
+    - "CS"
 ---
 
 I used Quarto, which was recommended to me by a friend for its simplicity and ease of management. I could have used any number of other tools to build the website for greater customization, but I don’t sweat the details; the uncouth aesthetics of a website don’t bring me much displeasure. I’m also lazy, which I suppose is the real reason.

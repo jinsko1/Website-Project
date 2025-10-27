@@ -2,7 +2,7 @@
 title: "Overview Of Sequencing"
 date: "2025-08-29" 
 categories: 
-    - "Genetics"
+    - "Biology"
 ---
 
 I was reading _An Introduction to Genetic Engineering—4th_ by Nicholl and wanted to write about the applications of the Klenow fragment but instead got distracted by a different subject altogether.
