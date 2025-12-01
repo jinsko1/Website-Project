@@ -1,8 +1,6 @@
 ---
 title: "∆waaF and Colanic Acid as a Surfactant"
 date: "2025-09-21" 
-categories: 
-    - "Lit Review"
 bibliography: ../references.bib
 ---
 

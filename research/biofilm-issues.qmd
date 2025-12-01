@@ -1,8 +1,6 @@
 ---
 title: "Issues with Biofilm Formation"
 date: "2025-10-27" 
-categories: 
-    - "Lit Review"
 bibliography: ../references.bib
 ---
 

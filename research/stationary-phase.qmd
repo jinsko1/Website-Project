@@ -1,8 +1,6 @@
 ---
 title: "LB, ∆fur, and Stationary Phase"
-date: "2025-10-03" 
-categories: 
-    - "Lit Review"
+date: "2025-10-03"
 bibliography: ../references.bib
 ---
 
