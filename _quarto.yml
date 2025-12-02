@@ -17,7 +17,7 @@ website:
         text: Blog
       - href: books.qmd
         text: Books
-      - text: Substack
+      - text: Writings
         href: https://jinsaekiko.substack.com/
         target: "_blank"  
         icon: box-arrow-up-right 
