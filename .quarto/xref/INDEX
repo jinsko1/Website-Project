@@ -46,5 +46,8 @@
   },
   "research/asm2025.qmd": {
     "asm2025.html": "cc00f27c"
+  },
+  "blog/AD_paper.qmd": {
+    "AD_paper.html": "7b5b7e5f"
   }
 }
