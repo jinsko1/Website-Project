@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/blog_post.html",
-      "/blog/08-29-25.html",
-      "/blog/08-29-25(2).html",
-      "/blog/diabetic-ketoacidosis.html"
-    ]
-  },
-  {
     "listing": "/research.html",
     "items": [
       "/research/8-17-2025.html",
@@ -16,6 +7,16 @@
       "/research/stationary-phase.html",
       "/research/biofilm-issues.html",
       "/research/asm2025.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/blog_post.html",
+      "/blog/08-29-25.html",
+      "/blog/08-29-25(2).html",
+      "/blog/diabetic-ketoacidosis.html",
+      "/blog/AD_paper.html"
     ]
   }
 ]
