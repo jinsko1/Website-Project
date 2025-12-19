@@ -38,6 +38,3 @@ Note that if you are passing a linear sequence of DNA through the ZMW, the accur
 This is the most modern type of third-gen sequencing.  The smallest version of this device can be held in your palm and be plugged into a computer. This particular piece of technology consists of a membrane with embedded nanopores, usually constructed of proteins. A voltage is applied across this polymer membrane, and a current is created in the nanopore. When an ssDNA strand passes through this nanopore, small disturbances in the current are detected. These disturbances can be discerned from each other due to the different sizes of the nitrogenous bases. A sequence can then be generated with the disturbances plotted on a graph.
 
 An adaptor sequence is added onto the strand to improve entry into the nanopore. There's usually a motor protein of some sort passing the ssDNA into the pore, something like helicase.
-
----
-Screw Sanger for casually receiving two Nobels. I hate geniuses.
