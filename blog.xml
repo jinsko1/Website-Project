@@ -10,7 +10,46 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A website for thinking.</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 19 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Interbacterial Antagonism via Secretion Systems and its Applications</title>
+  <link>https://jinsko.com/blog/sec_systems.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Most antagonism doesn’t need contact. Bacteria just secrete stuff into the environment—for instance, specific bacteriocins and broad antibiotics. These diffuse and hit any nearby cells that don’t have the right resistance or immunity. This is a great example of long-range killing, with no direct contact needed <span class="citation" data-cites="willeyPrescottsMicrobiology2020">(Willey et al. 2020)</span>.</p>
+<p><strong>Type V secretion system:</strong> the cell has a huge outer-membrane protein, CdiA, exported by CdiB. The N-terminal part of CdiA binds a specific receptor on the target cell. The C-terminal part (CdiA-CT) is the toxin domain that actually goes into the target and does the damage (DNase, RNase, translation block, etc.). The producing cell makes a small immunity protein, CdiI, that binds its own CdiA-CT and blocks it. So, if you have the matching <em>cdiI</em> gene, you’re safe; if not, you get killed <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
+<p><strong>Type VI secretion system:</strong> basically a phage-like tube and sheath built into the envelope. The sheath contracts and pushes a harpoon into the neighboring cell envelope. Attached to that are effectors that cut peptidoglycan, damage membranes, or attack nucleic acids. Each effector has a cognate immunity protein in the attacker (periplasm or cytosol, depending on where the toxin acts), so the self is protected whilst neighbors without matching immunity are not <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
+<p><strong>Type IV secretion system:</strong> this is the conjugation / DNA-transfer machine used in plasmid transfer. In an antagonism context, the donor uses the same channel at the contact site to move toxic proteins or DNA directly into the recipient. Who gets targeted depends on which cells the T4SS can dock to, and what payload is being delivered. Again, killing only happens at close contact because the transfer channel has to form between the two cells <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
+<p><strong>Type VII secretion system (Gram-positives, T7SSb):</strong> a cluster of membrane proteins (Ess/Yuk, etc.) forms the export machinery. It secretes small toxins and larger toxins. These larger toxins act on nearby Gram-positive cells (membrane, cell wall, other essential targets). The toxin genes usually sit right next to a small immunity gene; if you carry both, you’re protected; if you’re a close relative missing that cassette, you’re at risk <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
+<p>At this point, it’s only natural to ask why there are multiple secretion systems. There’s the evolutionary answer: different lineages started from different “starting parts” (phage tails, conjugation systems, autotransporters) and solved the same problem in parallel. But cell envelope structure matters too: Gram-negatives with an outer membrane can support a T6SS; Gram-positives use T7SS instead. On top of that, the ecology is different: sometimes you want a very specific receptor-based hit (Type V), sometimes a more general protein-injection system (T6, T7), sometimes you care more about moving DNA than just poisoning (T4). Each system has its own range, targets, and style of immunity, so bacteria end up with a set of tools that cover different situations. That is, these aren’t superfluous mechanisms of antagonism <span class="citation" data-cites="willeyPrescottsMicrobiology2020">(Willey et al. 2020)</span>.</p>
+<p>Interestingly, there’s a paper that shows a proof-of-concept on the implementation of secretion systems. Yim and Wang show how one can repurpose these weapons and actually use them on specified bacterial communities <span class="citation" data-cites="yimExploitingInterbacterialAntagonism2021">(Yim and Wang 2021)</span>. The actual paper referenced within Yim and Wang showed an engineered T6SS that uses nanobody binders (small, engineered antibody fragments) to focus killing of specific strains, among other reinventions <span class="citation" data-cites="tingTargetedDepletionBacteria2020">(Ting et al. 2020)</span>. One might find this confusing since T6SS does not require specific antibodies for killing under normal circumstances, as explained. The antibody on the attacker binds to the antigen on the target so they stay glued together long enough for the T6SS to fire into the target, instead of whoever happens to be nearby. The killing assays of E. coli were on the order of 570-fold and 220-fold with antibody targeting, versus only ~6-fold and ~3-fold when they used a control strain without antibody targeting.</p>
+<p>At this point, it seems like a good idea to implement this within clinical trials to fight infection, but before that, there are several important considerations to make (these are merely inferences).</p>
+<p>If the antigen being targeted were even partially expressed by commensals, one would run the risk of killing these beneficial species off by proxy. Also, dropping an engineered species into a host chock-full of bacteria is not the greatest idea, considering the risk of hypervirulence via mechanisms like HGT.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-kleinContactDependentInterbacterialAntagonism2020" class="csl-entry">
+Klein, Timothy A., Shehryar Ahmad, and John C. Whitney. 2020. <span>“Contact-<span>Dependent Interbacterial Antagonism Mediated</span> by <span>Protein Secretion Machines</span>.”</span> <em>Trends in Microbiology</em> 28 (5): 387–400. <a href="https://doi.org/10.1016/j.tim.2020.01.003">https://doi.org/10.1016/j.tim.2020.01.003</a>.
+</div>
+<div id="ref-tingTargetedDepletionBacteria2020" class="csl-entry">
+Ting, See-Yeun, Esteban Martínez-García, Shuo Huang, Savannah K. Bertolli, Katherine A. Kelly, Kevin J. Cutler, Elizabeth D. Su, et al. 2020. <span>“Targeted <span>Depletion</span> of <span>Bacteria</span> from <span>Mixed Populations</span> by <span>Programmable Adhesion</span> with <span>Antagonistic Competitor Cells</span>.”</span> <em>Cell Host &amp; Microbe</em> 28 (2): 313–321.e6. <a href="https://doi.org/10.1016/j.chom.2020.05.006">https://doi.org/10.1016/j.chom.2020.05.006</a>.
+</div>
+<div id="ref-willeyPrescottsMicrobiology2020" class="csl-entry">
+Willey, Joanne M., Lansing M. Prescott, Kathleen M. Sandman, and Dorothy H. Wood. 2020. <em>Prescott’s Microbiology</em>. Eleventh edition. New York, NY: McGraw-Hill Education.
+</div>
+<div id="ref-yimExploitingInterbacterialAntagonism2021" class="csl-entry">
+Yim, Sung Sun, and Harris H. Wang. 2021. <span>“Exploiting Interbacterial Antagonism for Microbiome Engineering.”</span> <em>Current Opinion in Biomedical Engineering</em> 19 (September): 100307. <a href="https://doi.org/10.1016/j.cobme.2021.100307">https://doi.org/10.1016/j.cobme.2021.100307</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>Biology</category>
+  <guid>https://jinsko.com/blog/sec_systems.html</guid>
+  <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Lecanemab in Early Alzheimer’s Disease</title>
   <link>https://jinsko.com/blog/AD_paper.html</link>
