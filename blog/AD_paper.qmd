@@ -6,7 +6,9 @@ categories:
 bibliography: ../references.bib
 ---
 
-The paper is a bit old, but it's interesting I learn from reading and writing about it so here it is: the lecanemab paper reads, at first glance, like the trial we’ve been waiting for [@dyckLecanemabEarlyAlzheimers2023].
+The paper is a bit old, but it's interesting; I learn from reading and writing about it so here's my attempt.
+
+The lecanemab paper reads, at first glance, like the trial we’ve been waiting for [@dyckLecanemabEarlyAlzheimers2023].
 
 This is a big phase 3 trial in NEJM where an anti-amyloid antibody finally does what the field has been promising for quite some time. It strips amyloid out of the brain and the treatment group declines more slowly than placebo over eighteen months. It's statistically clean, biomarkers all pointing in the _right_ direction, figures that slope apart in the way grant proposals like to appeal.
 
