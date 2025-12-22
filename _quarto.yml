@@ -34,7 +34,7 @@ format:
     theme: lightly
     toc-title: "Table of Contents"
     css: [styles.css, mobile.css]
-    toc: true
+    toc: false
     toc-depth: 3
     toc-expand: true
 
