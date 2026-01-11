@@ -17,14 +17,8 @@ website:
         text: Blog
       - href: books.qmd
         text: Books
-      - text: Writings
-        href: https://jinsaekiko.substack.com/
-        target: "_blank"  
-        icon: box-arrow-up-right 
   page-navigation: true
   search: false
-  google-analytics: "G-C15D2JVJTJ"
-
 
 # In your _quarto.yml file
 
