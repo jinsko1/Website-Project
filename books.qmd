@@ -45,8 +45,3 @@ The Catcher in the Rye, *J. D. Salinger*
 Kusamakura, *Natsume Sōseki*
 
 The Death of Ivan Ilyich, *Leo Tolstoy*
-
----
-
-[Quotes](quotes.qmd) from various sources, including digital media.
-
