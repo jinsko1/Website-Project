@@ -10,7 +10,7 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A website for thinking.</description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Fri, 19 Dec 2025 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 21 Dec 2025 08:00:00 GMT</lastBuildDate>
 <item>
   <title>SPICES Model of Medical Education</title>
   <link>https://jinsko.com/blog/spices.html</link>
@@ -19,13 +19,13 @@
 
 
 
-<p>I enjoy reading about medicine. I figured I should read about how medicine should be learnt. What follows is an argument for the more liberal forms of the SPICES model of medical education <span class="citation" data-cites="hardenEducationalStrategiesCurriculum1984">(Harden, Sowden, and Dunn 1984)</span>. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and in that sense still relevant.</p>
-<p>The SPICES model is a way of describing a curriculum by placing it on six continua. The acronym stands for student-centred versus teacher-centred learning, problem-based versus information-gathering learning, integrated versus discipline-based teaching, community-based versus hospital-based education, electives versus a standard programme, and systematic versus apprenticeship or opportunistic training. The point is not that every school must live at one extreme, but that schools should be honest about where they sit and whether that position makes sense.</p>
+<p>I enjoy reading about medicine. I figured I should read about how medicine should be learnt. What follows is an argument for the more liberal forms of the SPICES model of medical education <span class="citation" data-cites="hardenEducationalStrategiesCurriculum1984">(Harden, Sowden, and Dunn 1984)</span>. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and therefore still relevant.</p>
+<p>The SPICES model is a way of describing a curriculum by placing it on six continua. The acronym stands for student-centered versus teacher-centered learning, problem-based versus information-gathering learning, integrated versus discipline-based teaching, community-based versus hospital-based education, electives versus a standard programme, and systematic versus apprenticeship or opportunistic training. The point is not that every school must live at one extreme, but that schools should be honest about where they sit and whether that position makes sense.</p>
 <section id="student-centered-vs-teacher-centered-learning" class="level3">
 <h3 class="anchored" data-anchor-id="student-centered-vs-teacher-centered-learning">Student-centered vs Teacher-centered Learning</h3>
-<p>Student-centered learning makes more sense to me. In its simplest form, it means the student has real responsibility over what gets learned and how, rather than acting as a passive receiver of whatever the instructor decides to deliver. It shifts the emphasis from teaching as performance to learning as an activity. I may not always wish to be taught, but I do wish to learn; the paper referenced a line like this attributed to Winston, and it captures the difference well. What matters in education is what the students learn, not what the teacher teaches. If you actually believe that, then you should prefer a model that makes the learner do the work of learning.</p>
-<p>The arguments for the student-centred approach are not complicated. It makes learning active rather than passive, and it trains the habit that matters most in medicine: the ability to identify what you don’t know and then go out of your way to fix it. It also allows the student to learn in a way that can actually be efficient for them rather than being forced into a one-size-fits-all method that cannot be guaranteed valuable on the instructor side. Besides, learning on your own is simply more fun. You get to do it your own way, and you get to chase coherence instead of pretending that compliance is understanding.</p>
-<p>The objections to student-centred learning tend to be weak. One objection is that many teachers have only experienced a teacher-centred approach. My objection is that this is not a valid argument against the principles of student-centred learning. It’s an argument that the familiar approach is convenient, not that it is better. Education should never be treated with such obstinance. Another objection is that students may be apprehensive because their previous experience was teacher-centred. My objection is harsher: if you’ve never gone out of your way to learn on your own and you feel threatened by the idea, in your lack of curiosity, you don’t deserve to be educated. Deal with it. Physicians have a moral obligation to learn for their patients without being spoon-fed—keeping up with literature, relearning what time has eroded, and updating what evidence overturns. If you can’t do that, don’t become a physician. Student-centred learning emphasizes exactly this form of active learning, and that is why I argue for it very liberally.</p>
+<p>Student-centered learning makes more sense to me. In its simplest form, it means the student has real responsibility over what gets learned and how, rather than acting as a passive receiver of whatever the instructor decides to deliver. It shifts the emphasis from teaching as performance to learning as an activity. I may not always wish to be taught, but I do wish to learn; the paper referenced a line like this attributed to Churchill, and it captures the difference well. What matters in education is what the students learn, not what the teacher teaches. If you actually believe that, then you should prefer a model that makes the learner do the work of learning.</p>
+<p>The arguments for the student-centered approach are not complicated. It makes learning active rather than passive, and it trains the habit that matters most in medicine: the ability to identify what you don’t know and then go out of your way to fix it. It also allows the student to learn in a way that can actually be efficient for them rather than being forced into a one-size-fits-all method that cannot be guaranteed valuable on the instructor side. Besides, learning on your own is simply more fun. You get to do it your own way, and you get to chase coherence instead of pretending that compliance is understanding.</p>
+<p>The objections to student-centered learning tend to be weak. One objection is that many teachers have only experienced a teacher-centered approach. My objection is that this is not a valid argument against the principles of student-centered learning. It’s an argument that the familiar approach is convenient, not that it is better. Education should never be treated with such obstinance. Another objection is that students may be apprehensive because their previous experience was teacher-centered. My objection is harsher: physicians have a moral obligation to learn for their patients without being spoon-fed—keeping up with literature, relearning what time has eroded, and updating what evidence overturns. If you feel incapable of this, don’t become a physician. Student-centered learning emphasizes exactly this form of active learning, and that is why I argue for it very liberally.</p>
 </section>
 <section id="problem-based-learning-vs-information-gathering-model" class="level3">
 <h3 class="anchored" data-anchor-id="problem-based-learning-vs-information-gathering-model">Problem-based Learning vs Information-gathering Model</h3>
@@ -62,7 +62,7 @@ Harden, R. M., Susette Sowden, and W. R. Dunn. 1984. <span>“Educational Strate
 </div></section></div> ]]></description>
   <category>Medicine</category>
   <guid>https://jinsko.com/blog/spices.html</guid>
-  <pubDate>Fri, 19 Dec 2025 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 21 Dec 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Interbacterial Antagonism via Secretion Systems and its Applications</title>
@@ -102,70 +102,6 @@ Yim, Sung Sun, and Harris H. Wang. 2021. <span>“Exploiting Interbacterial Anta
   <category>Biology</category>
   <guid>https://jinsko.com/blog/sec_systems.html</guid>
   <pubDate>Fri, 19 Dec 2025 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Lecanemab in Early Alzheimer’s Disease</title>
-  <link>https://jinsko.com/blog/AD_paper.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>The paper is a bit old, but it’s interesting; I learn from reading and writing about it so here’s my attempt.</p>
-<p>The lecanemab paper reads, at first glance, like the trial we’ve been waiting for <span class="citation" data-cites="dyckLecanemabEarlyAlzheimers2023">(Dyck et al. 2023)</span>.</p>
-<p>This is a big phase 3 trial in NEJM where an anti-amyloid antibody finally does what the field has been promising for quite some time. It strips amyloid out of the brain and the treatment group declines more slowly than placebo over eighteen months. It’s statistically clean, biomarkers all pointing in the <em>right</em> direction, figures that slope apart in the way grant proposals like to appeal.</p>
-<p>Technically you are removing material; structurally it might be too late.</p>
-<p>The core biology is pretty familiar. Amyloid-β is shaved off the amyloid precursor protein, misfolds, and aggregates into extracellular plaques. Tau, inside the neuron, becomes hyperphosphorylated and tangles up the microtubules that were supposed to carry cargo; synapses thin out; networks lose coherence <span class="citation" data-cites="kumarRobbinsCotranPathologic2021">(Kumar et al. 2021)</span>. In parallel, the vasculature of an aging brain quietly turns hostile: small-vessel disease, and crucially, CAA not in the parenchyma this time, but packed into the walls of tiny arteries and arterioles.</p>
-<p>Lecanemab is a monoclonal antibody against soluble amyloid protofibrils, given as an intravenous infusion every two weeks. In this trial, about 1,800 people with “early” Alzheimer’s—mild cognitive impairment or mild dementia, all amyloid-positive on PET or CSF—were randomized to drug or placebo and followed for eighteen months. The primary outcome was change in the Clinical Dementia Rating Sum of Boxes (CDR-SB), a clinician-rated 0–18 scale that tries to compress memory, orientation, judgment, community affairs, hobbies, and personal care into a single trajectory.</p>
-<p>On that metric, the placebo group worsened by about 1.66 points. The lecanemab group worsened by about 1.21. The difference—roughly 0.45 CDR-SB points (95% confidence interval, −0.67 to −0.23; P&lt;0.001)—is what becomes the “27% slowing of decline”. Amyloid PET scans show the drug is doing what it says: plaque signal falls dramatically compared with placebo. Fluid biomarkers like phosphorylated tau drift in the right direction. At the level of graphs and p-values, the paper is satisfyingly coherent.</p>
-<p>But you have to translate these results back into an actual elderly human being.</p>
-<p>Real patients are not the stylized creatures of trial diagrams. They come with AFib and a history of deep vein thrombosis and coronary stents and that one “small stroke” no one talks about at family dinners. They are already on warfarin or a direct oral anticoagulant to keep clots from forming in AFib; or on aspirin and clopidogrel to keep a metal stent in the left anterior descending from occluding; or both. These drugs flatten the normal peaks of coagulation so that clots are slower to form, bleeds are harder to stop, and any damage, even slight, to a vessel wall has more room to become a crisis.</p>
-<p>The new class of anti-amyloid antibodies all carry the side effect, ARIA. ARIA-E is vasogenic edema or effusion, pockets of swelling or fluid that show in white on the MRI. ARIA-H is microhemorrhages that leave scars. In this trial, roughly a quarter of patients had infusion reactions, and around twelve to thirteen percent developed ARIA-E; ARIA-H also increased in the active arm. Most of these findings were asymptomatic and discovered on scheduled scans, but not all. Some patients had headache, confusion, or seizures; post-marketing reports have documented rare but real fatal hemorrhages. The FDA label now comes with a boxed warning spelling out the risks, especially in people on anticoagulants.</p>
-<p>None of this is surprising. Anti-amyloid antibodies strip amyloid off vessel walls as well as off plaques. If those vessels are already stiff, hypertensive, and studded with amyloid from decades of cerebral amyloid angiopathy, “cleaning” them can mean destabilizing them. The wall leaks a little: ARIA-E. The wall cracks a little: ARIA-H. Add systemic anticoagulation or aggressive antiplatelet therapy to that fragility and the margin between “tiny microbleed that never matters” and “lobar hemorrhage that changes the course of your life” gets uncomfortably thin.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-
-    A[Elderly patient&lt;br/&gt;Vascular fragility] --&gt; B[Anticoagulants&lt;br/&gt;/ Antiplatelets]
-    A --&gt; C[Lecanemab]
-
-    C --&gt; D[Amyloid removal]
-    D --&gt; H[Modest slowing&lt;br/&gt;of decline]
-
-    D --&gt; E[ARIA-E / ARIA-H]
-    B --&gt; E
-    E --&gt; F[Edema / Microbleeds / ICH]
-    F --&gt; G[Hospitalization&lt;br/&gt;Functional decline]
-
-    H -. small benefit vs risk .- G
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p>The trial tries to manage this with MRIs: baseline imaging to exclude anyone with too many microbleeds and follow-up scans at defined time points. This schedule alone is a selection pressure: to even begin, you need a body that tolerates lying still in a noisy tube at these points in time. Once you move from the idealized trial environment to a real clinic that already can’t get outpatients into MRI within a month, the whole premise is undermined.</p>
-<p>Meanwhile the patient is supposed to show up every two weeks, indefinitely, for an intravenous infusion. For someone in their forties, this is boring. For someone in their eighties who walks with a frame and gets disoriented on unfamiliar floors, every visit is an opportunity for a fall, a urinary infection, a bout of hospital delirium that sets them back more than any fraction of a CDR-SB point can capture (remember that this is not a perfect metric).</p>
-<p>There is also the quieter question of what “0.45 points” buys you, existentially.</p>
-<p>The paper, reads like a proof of concept for a pathophysiological story, not a compelling offer for the average person who actually has this disease. It tells us that amyloid matters, that if you remove a lot of it early enough you can nudge the clinical trajectory in the right direction. It also tells us, indirectly, that by the time the diagnosis is even on the table, the brain is already woven through with other forms of damage that an antibody cannot touch.</p>
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-dyckLecanemabEarlyAlzheimers2023" class="csl-entry">
-Dyck, Christopher H. van, Chad J. Swanson, Paul Aisen, Randall J. Bateman, Christopher Chen, Michelle Gee, Michio Kanekiyo, et al. 2023. <span>“Lecanemab in <span>Early Alzheimer</span>’s <span>Disease</span>.”</span> <em>New England Journal of Medicine</em> 388 (1): 9–21. <a href="https://doi.org/10.1056/NEJMoa2212948">https://doi.org/10.1056/NEJMoa2212948</a>.
-</div>
-<div id="ref-kumarRobbinsCotranPathologic2021" class="csl-entry">
-Kumar, Vinay, Abul K. Abbas, Jon C. Aster, Jerrold R. Turner, James Alfred Perkins, Stanley L. Robbins, and Ramzi S. Cotran, eds. 2021. <em>Robbins &amp; <span>Cotran</span> Pathologic Basis of Disease</em>. Tenth edition. Philadelphia, PA: Elsevier.
-</div>
-</div></section></div> ]]></description>
-  <category>Medicine</category>
-  <guid>https://jinsko.com/blog/AD_paper.html</guid>
-  <pubDate>Thu, 11 Dec 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Diabetic Ketoacidosis and Non-Ketotic Coma</title>
@@ -291,28 +227,6 @@ Kumar, Vinay, Abul K. Abbas, Jon C. Aster, Jerrold R. Turner, James Alfred Perki
   <pubDate>Fri, 29 Aug 2025 07:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Mol/Micro Biology is Merely an Abstraction</title>
-  <link>https://jinsko.com/blog/08-29-25(2).html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I’ve had this thought for a while but have never bothered writing it down. I was reminded of it while I was writing about sequencing. I found myself making wishy-washy explanations, characteristic of a biologist, when it came to the mechanisms at the molecular level.</p>
-<p>I can only explain these pieces of technology from the perspective of an amateur biologist, and would, instead, if possible, explain these technologies from the perspective of a chemist or physicist. But I am merely a biologist. It is my firm belief that after a certain point, biology is merely an abstraction of chemistry and physics, and a thorough understanding of these disciplines (which I do not possess) is required for a complete understanding. That is, my knowledge of these technologies will start breaking down after questions pertaining to the chemistry and physics of these technologies are brought forth. I would argue that one must be a decent physicist and chemist before even attempting to call themselves a good biologist.</p>
-<p>The beauty of biology is only appreciated once you understand mechanism in totality.</p>
-<p>If a biologist desires to go beyond conventional applications of a tool available to them, an understanding of how things work is crucial, and not just how to use them. But the understanding of <em>how things work</em> only arrives along with the knowledge of these superior disciplines that have generated the field we now call biology.</p>
-<p>Since the amount of knowledge required to complete these novel experiments is far beyond the scope of a single biologist, one would expect to find biologists eager to collaborate with chemists and physicists alike. This is not uncommon, but far less common than I expect it to be, which I find very odd.</p>
-<p>I apologize for the abrupt ending but I’ll stop there since further discussion will turn into a lengthy rant.</p>
-
-
-
- ]]></description>
-  <category>Misc</category>
-  <guid>https://jinsko.com/blog/08-29-25(2).html</guid>
-  <pubDate>Fri, 29 Aug 2025 07:00:00 GMT</pubDate>
-</item>
-<item>
   <title>How this Website was Made</title>
   <link>https://jinsko.com/blog/blog_post.html</link>
   <description><![CDATA[ 
@@ -333,6 +247,33 @@ Kumar, Vinay, Abul K. Abbas, Jon C. Aster, Jerrold R. Turner, James Alfred Perki
   <category>CS</category>
   <guid>https://jinsko.com/blog/blog_post.html</guid>
   <pubDate>Thu, 21 Aug 2025 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Entertainment and Loneliness</title>
+  <link>https://jinsko.com/blog/Entertainment and Loneliness.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In the past, negative things were in excess: disease and its kin. As time progresses, I realize we’re moving toward a society with an excess of positive things: convenience and stimulation. That is, most fortunate individuals living in the modern world are born with a different set of burdens than before. I admit that these burdens are engendered by privilege, but they are choices that decide the course of our short lives; hence, I use the word “burden.” We—the fortunate—are born into this world with far more choices to make, with possibilities stretching into infinity, possibilities that wouldn’t have existed even a few years ago. These so-called burdens involve navigating a world where society is plagued by an obesity of information, entertainment, stimulation, and the like.</p>
+<p>I realize there are a plethora of articles, essays, and papers concerning the consequences of the increasingly convenient world, but I’ll try to steer away from these trite topics in this essay. This essay, as the title suggests, will be my exposition on the scarcity of silence, the nature of modern entertainment, and its implications on intimacy. At this point, I must confess that as someone experiencing this world in real time, I have no right to point fingers or criticize others who make the mistakes I describe, since most of these thoughts are experiential—and, I realize, this is quite revealing of my indulgent nature, as you will come to find. Regardless, in organizing my thoughts on the matter, I should find comfort in a society of epistemic chaos. I begin this essay with my thoughts on the nature of modern entertainment.</p>
+<p>Entertainment in most modern forms exerts itself upon you, rather than the other way around. For example, with most forms of digital entertainment, one does not need to think so much in order to derive enjoyment. In this way, we find the media doing most of the work of contributing to our enjoyment; it requires less cognitive investment. On the other hand, with forms of media like books—or really, reading in general—we must exert ourselves to derive any kind of enjoyment, making these forms of media much more taxing. The former requires a mere nominal amount of thought, while the latter encourages it.</p>
+<p>The disparity in the amount of exertion involved between these forms makes the more difficult forms (books and such) quite unappealing. Why would one ever spend the time or effort these activities require when the nearest screen is inches away—literally at the fingertips? Entertainment has become far too entertaining, with corporations successfully condensing information into as little time as possible, appealing to the most indulgent, selfish parts of ourselves; beautiful faces, vivid images, stupid slapstick humor, and catchy music all garner attention in the most crude yet tragically successful ways. In a true egotistic manner, I’d like to think that I’m above these things, but really, these are things I am unfortunately interested in.</p>
+<p>This condensation or simplification of information is evident in almost all imaginable facets of modern stimulation. Pop music (my guilty pleasure), as a genre, for instance, employs catchy but predictable chord progressions and incorporates music videos (of no particular artistic value). Lyrics make less and less sense, focusing on the empty aesthetics and melodically attractive aspects rather than the underlying artistic hues that grant the art form its true value. As I say, this is evident not just in the music industry, but also as time progresses, I’m observing the regression of such measures in all sectors of entertainment.</p>
+<p>TV is too easy: condense a twenty-four-minute episode into six by speeding it up fourfold. Scrolling is too cheap: kill thirty minutes by fixing one’s eyes on a screen inches away from one’s face and occasionally move one’s thumb ever so slightly.</p>
+<p>This ridiculously convenient form of escape yields itself to the unwilling mind, yet also leads to forgetting the joys and the fruits of profound duration. And it is precisely because of these cheap forms of entertainment that individuals gradually lose the power to resist these temptations—temptations that started with “I want” but slowly evolved into the malignant “I need,” contributing to a positive feedback loop.</p>
+<p>The constant desire for stimulation, I believe, has resulted in the scarcity of silence. In solitude, there is no question about it, but I feel far too many people also find silence in the company of others unbearable, even in situations and relationships not attributable to social awkwardness. This is, fortunately, something I do not understand; I enjoy the quiet far too much. It’s such a shame that people say meaningless, trivial things for the sake of making noise, or conforming, or whatever the reason may be.</p>
+<p>But I digress. Entertainment, I believe, is not an inherently depraved thing. In the right forms, I feel it is capable of communicating what it feels like to be in someone’s mind, to convey emotion, and to derive belonging in a very meaningful way. Books—and fiction in particular—grant one the ability to experience another human’s reality in ways that generate perforations in what demarcates our own mind from the rest of the world. With this, our perceptions of what we consider the self become a little more malleable and forgiving. I’m not sure if that makes sense, but I’m afraid it’s the best I can do for now.</p>
+<p>I confess my love for books because I desire that intimacy: the feeling of being inside someone else, something I can only find in good literature (I’m careful to say “I,” as I’m not sure others feel this way). <em>If only I could slice open my chest and stitch together the tubes of our warm blood—share the things that course inside of us.</em></p>
+<p>But in this perpetually accelerating world, I find the possibility of this ever so slim. On the screen, people become dispensable, cheap artifacts of a mere facade. People don’t care as much as before (I really hope they did then) and it’s only apprehension that seizes me as I’m swallowed into the temporal rivers of inevitable dissolution.</p>
+
+
+
+ ]]></description>
+  <category>Misc</category>
+  <guid>https://jinsko.com/blog/Entertainment and Loneliness.html</guid>
+  <pubDate>Thu, 16 Jan 2025 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
