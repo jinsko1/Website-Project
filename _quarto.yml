@@ -17,6 +17,9 @@ website:
         text: Blog
       - href: books.qmd
         text: Books
+      - href: https://writing.jinsko.com/
+        text: Writing
+        target: _blank
   page-navigation: true
   search: false
 
