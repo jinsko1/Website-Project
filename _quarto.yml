@@ -6,7 +6,6 @@ project:
 website:
   title: "Jin Saeki Ko"
   site-url: "https://jinsko.com"
-  description: "A website for thinking."
   navbar:
     left:
       - href: index.qmd
@@ -17,6 +16,8 @@ website:
         text: Blog
       - href: books.qmd
         text: Books
+      - href: "https://writing.jinsko.com/"
+        text: "Writing"
   page-navigation: true
   search: false
 
