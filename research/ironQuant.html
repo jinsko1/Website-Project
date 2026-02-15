@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-02-14">
 
-<title>Research – Jin Saeki Ko</title>
+<title>Iron Quantification using Atomic Absorption Spectroscopy – Jin Saeki Ko</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +21,43 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9195fa1a9c736cb8c2994c5df3058328.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9195fa1a9c736cb8c2994c5df3058328.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -54,78 +73,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../mobile.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jin Saeki Ko</span>
     </a>
   </div>
@@ -135,19 +96,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./books.html"> 
+    <a class="nav-link" href="../books.html"> 
 <span class="menu-text">Books</span></a>
   </li>  
   <li class="nav-item">
@@ -165,14 +126,13 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Iron Quantification using Atomic Absorption Spectroscopy</h1>
 </div>
 
 
@@ -180,6 +140,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 14, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -189,142 +155,70 @@ window.Quarto = {
 </header>
 
 
-<p>Literature review and explanations of my own research, for my own understanding.</p>
+<p>Since we’re working under the assumption that we have isogenic mutants with varying intracellular iron concentrations, it would only make sense to verify this assumption by quantifying intracellular iron of each strain. I’m planning on working with Dr.&nbsp;Lehr from the Chemistry department to do just this using AAS. This will be a crucial step in our project, as it will allow us to correlate the phenotypic differences we observe with the actual intracellular iron levels, thereby strengthening our conclusions about the role of iron in the observed phenotypes.</p>
+<p>I must be honest: I know nothing about AAS. So here’s my trial at understanding the method and how it can be applied to our project.</p>
+<hr>
+<p>Basically, Atomic Absorption Spectroscopy (AAS) is an analytical technique used to measure the concentration of specific elements in a sample. It works by measuring the absorption of light (usually in the ultraviolet or visible spectrum) by free atoms in the gaseous state. The amount of light absorbed is proportional to the concentration of the element in the sample. In our case, we would be measuring the absorption of light by iron atoms to determine the intracellular iron concentration in our bacterial strains. The specific mechanism of AAS is pretty interesting.</p>
+<p>Atomization is when the analyte is first converted into free atoms. Two common forms of atomization are considered: flame atomization and electrothermal atomization <span class="citation" data-cites="harveyAnalyticalChemistry21">(<a href="#ref-harveyAnalyticalChemistry21" role="doc-biblioref">Harvey, n.d.</a>)</span>.</p>
+<section id="flame-atomization" class="level1">
+<h1>Flame Atomization</h1>
+<p>It seems like there’s a careful balance to be struck when it comes to atomization. The sample must be heated to a temperature high enough to ensure that the analyte is completely atomized efficiently, but not so high that it causes oxidation or other chemical reactions that could interfere with the measurement. In our case, we would need to optimize the atomization conditions to ensure that we are accurately measuring the iron content without introducing any artifacts.</p>
+<p>The flame can be demarcated into three zones: the primary combustion zone, the interzonal region, and the secondary combustion zone. The primary combustion zone is where radiation is emitted (not useful for absorption). The interzonal region is where the temperature is more stable and rich is free atoms. This is where we want to make measurements. The secondary combustion zone is where the remaining fuel and oxidant react, but it is generally not ideal for atomization due to potential interference from combustion products. Lower temperature also allows for molecular species, rather than free atoms <span class="citation" data-cites="harveyAnalyticalChemistry21">(<a href="#ref-harveyAnalyticalChemistry21" role="doc-biblioref">Harvey, n.d.</a>)</span>.</p>
+<p><img src="images/flame.jpeg" class="img-fluid" data-fig-cap="Flame Atomization Zones"></p>
+<p>Apparently, the atomization efficiency of flame atomization is quite poor for one interesting reason that caught my attention: the sample is oftentimes diluted by the combustion gases that form via the flame. I suppose this is one inherent downside of flame atomization.</p>
+</section>
+<section id="electrothermal-atomization" class="level1">
+<h1>Electrothermal Atomization</h1>
+<p>The sample in electrothermal atomization is basically placed within a graphite tube optically open at both ends and heated via resistive heating to a temperature high enough to atomize the sample. This method is more efficient than flame atomization because it allows for a longer retention time of the analyte within the optical path, as it is housed within a tube, which can lead to improved sensitivity and lower detection limits. But, as it turns out, this method is less precise relative to flame atomization for various reasons <span class="citation" data-cites="harveyAnalyticalChemistry21">(<a href="#ref-harveyAnalyticalChemistry21" role="doc-biblioref">Harvey, n.d.</a>)</span>.</p>
+<p><img src="images/electrothermal.png" class="img-fluid" data-fig-cap="Electrothermal Atomization"></p>
+<p>When choosing between these two methods, we would mainly consider the sensitivity requirements of our measurements. If we need to detect very low concentrations of iron, electrothermal atomization might be the better choice due to its higher sensitivity. However, if we are working with higher concentrations and require better precision, flame atomization would be more suitable.</p>
+</section>
+<section id="cathode-lamps" class="level1">
+<h1>Cathode Lamps</h1>
+<p>In AAS, cathode lamps are used as the light source to provide the specific wavelengths of light that correspond to the element being analyzed. For iron quantification, we would use an iron cathode lamp that emits light at the characteristic wavelengths absorbed by iron atoms. That is, depending on the identity of the analyte, one would change the element comprising the cathode to match the emission spectrum to the absorption spectrum of the analyte.</p>
+<p><img src="images/cathode.png" class="img-fluid" data-fig-cap="Cathode Lamp"></p>
+</section>
+<section id="absorbance-calculations" class="level1">
+<h1>Absorbance Calculations</h1>
+<p>Absorbance is calculated using the formula A = log<sub>10</sub>(I<sub>0</sub>/I), where I<sub>0</sub> is the intensity of the incident light and I is the intensity of the transmitted light. In other words, I<sub>0</sub> is the lamp intensity reaching the detector with no analyte absorption (blank), and I is lamp intensity reaching the detector after passing through the atom cloud (sample). The absorbance is directly proportional to the concentration of the analyte in the sample, as in Beer’s Law <span class="citation" data-cites="millsQuantitiesUnitsSymbols1993">(<a href="#ref-millsQuantitiesUnitsSymbols1993" role="doc-biblioref">Mills and International Union of Pure and Applied Chemistry 1993</a>)</span>.</p>
+<p>We oftentimes have several wavelengths from the cathode tube that fall within the acceptable sensitivity rage of the instrument. Each of these wavelengths have a different P<sub>0</sub>. This matters because we want the greatest relative P<sub>0</sub> in order to reduce uncertainty in our measurements. The greater the P<sub>0</sub>, the more accurate our absorbance measurements will be, which in turn will lead to more reliable quantification of intracellular iron levels in our bacterial strains. Hence, selection of the greatest P<sub>0</sub> wavelength under the given conditions is imperative.</p>
+</section>
+<section id="monochromators" class="level1">
+<h1>Monochromators</h1>
+<p>Monochromators are consist of two basic components: the prism and the slit. The prism (diffraction grating in the image) is used to disperse the light into its component wavelengths, while the slit is used to select a specific wavelength of light to pass to the detector. In AAS, the monochromator is used to isolate the specific wavelength of light that corresponds to the element being analyzed. This is where we get to choose which wavelength to use for the measurements.</p>
+<p><img src="images/Monochromator.png" class="img-fluid" data-fig-cap="Monochromator Components"></p>
+<p>The slits also allow us to eliminate background interferences from the inert gases filling the cathode or the graphite for instance. I suppose this is partly what the blank is for.</p>
+</section>
+<section id="interferences" class="level1">
+<h1>Interferences</h1>
+<p>Though this seldom happens, when the wavelength that we have chosen to analyze overlaps with a interfering species’ absorption line, our measurements become confounded. This is known as spectral interference. In such cases, we would need to either choose a different wavelength for analysis or use a background correction method to account for the interference. Just an interesting corner-case to be aware of. There seem to be various methods of background correction.</p>
+</section>
+<section id="application-to-our-project" class="level1">
+<h1>Application to Our Project</h1>
+<p>There are papers that have basically done the thing we’re attempting to do. Nonetheless, we need empirical evidence for our specific strains and conditions.</p>
+<p>One of the strains we work with is the ∆fur mutant. We expect this mutant to have a higher concentration of Fe relative to the wild type. There’s a paper from 1999 that does the exact same thing <span class="citation" data-cites="abdul-tehraniFerritinMutantsEscherichia1999">(<a href="#ref-abdul-tehraniFerritinMutantsEscherichia1999" role="doc-biblioref">Abdul-Tehrani et al. 1999</a>)</span>.</p>
+<blockquote class="blockquote">
+<p>An atomic absorption spectrometer (Perkin-Elmer M2100) was also used to assay the iron contents of growth media (directly) and bacteria (after extraction with 30% nitric acid at 80°C for 6 h).</p>
+</blockquote>
+<p>The main figure of interest is presented below:</p>
+<p><img src="images/furIron.png" class="img-fluid" data-fig-cap="Iron Content in ∆fur Mutant vs. Wild Type"></p>
+<p>The most important part of the figure is panel E. The x-axis represents the mutant (no label is WT) with W3110 and MC4100 the background strains they decided to use. The y-axis represents the intracellular iron content by % dry-weight. As we can see in the figure, in both strains, the <em>∆fur</em> has a significantly lower Fe dry-weight % relative to the WT. Hopefully, we will see the opposite trend in the strains that we test…</p>
 
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-abdul-tehraniFerritinMutantsEscherichia1999" class="csl-entry" role="listitem">
+Abdul-Tehrani, Hossein, Aaron J. Hudson, Yung-Sheng Chang, Andrew R. Timms, Chris Hawkins, John M. Williams, Pauline M. Harrison, John R. Guest, and Simon C. Andrews. 1999. <span>“Ferritin <span>Mutants</span> of <span><em>Escherichia</em></span><span> <em>Coli</em></span> <span>Are Iron Deficient</span> and <span>Growth Impaired</span>, and <span><em>Fur</em></span> <span>Mutants</span> Are <span>Iron Deficient</span>.”</span> <em>Journal of Bacteriology</em> 181 (5): 1415–28. <a href="https://doi.org/10.1128/JB.181.5.1415-1428.1999">https://doi.org/10.1128/JB.181.5.1415-1428.1999</a>.
 </div>
-<table class="quarto-listing-table table table-hover">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-Reading Time
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1755388800000" data-listing-file-modified-sort="1771115368225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="908" data-listing-title-sort="The Yep Lab: Iron and the Motility of CFT073" data-listing-filename-sort="8-17-2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-08-17</span>
-</td>
-<td>
-<a href="./research/8-17-2025.html" class="title listing-title">The Yep Lab: Iron and the Motility of CFT073</a>
-</td>
-<td>
-<span class="listing-reading-time">5 min</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1771115368226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523" data-listing-title-sort="∆waaF and Colanic Acid as a Surfactant" data-listing-filename-sort="9-17-2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-09-21</span>
-</td>
-<td>
-<a href="./research/9-17-2025.html" class="title listing-title">∆waaF and Colanic Acid as a Surfactant</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1759449600000" data-listing-file-modified-sort="1771115368235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-title-sort="LB, ∆fur, and Stationary Phase" data-listing-filename-sort="stationary-phase.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-03</span>
-</td>
-<td>
-<a href="./research/stationary-phase.html" class="title listing-title">LB, ∆fur, and Stationary Phase</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1771115368226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="508" data-listing-title-sort="Issues with Biofilm Formation" data-listing-filename-sort="biofilm-issues.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-27</span>
-</td>
-<td>
-<a href="./research/biofilm-issues.html" class="title listing-title">Issues with Biofilm Formation</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-date-sort="1762732800000" data-listing-file-modified-sort="1771115368226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="587" data-listing-title-sort="ASM 2025" data-listing-filename-sort="asm2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-11-10</span>
-</td>
-<td>
-<a href="./research/asm2025.html" class="title listing-title">ASM 2025</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-date-sort="1771027200000" data-listing-file-modified-sort="1771115368235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1194" data-listing-title-sort="Iron Quantification using Atomic Absorption Spectroscopy" data-listing-filename-sort="ironQuant.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-02-14</span>
-</td>
-<td>
-<a href="./research/ironQuant.html" class="title listing-title">Iron Quantification using Atomic Absorption Spectroscopy</a>
-</td>
-<td>
-<span class="listing-reading-time">6 min</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<div id="ref-harveyAnalyticalChemistry21" class="csl-entry" role="listitem">
+Harvey, David. n.d. <span>“Analytical <span>Chemistry</span> 2.1.”</span>
+</div>
+<div id="ref-millsQuantitiesUnitsSymbols1993" class="csl-entry" role="listitem">
+Mills, Ian, and International Union of Pure and Applied Chemistry, eds. 1993. <em>Quantities, Units, and Symbols in Physical Chemistry</em>. 2nd ed. Oxford ; Boston : Boca Raton, Fla: Blackwell Scientific Publications ; CRC Press [distributor].
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
