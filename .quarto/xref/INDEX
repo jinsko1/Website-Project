@@ -61,5 +61,11 @@
   },
   "research/ironQuant.qmd": {
     "ironQuant.html": "e3fc7a91"
+  },
+  "blog/sham.qmd": {
+    "sham.html": "6b170916"
+  },
+  "blog/rss.qmd": {
+    "rss.html": "3a5a6e32"
   }
 }

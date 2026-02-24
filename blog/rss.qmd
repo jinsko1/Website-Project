@@ -1,0 +1,33 @@
+---
+title: "RSS Feeds"
+date: "2026-2-23" 
+categories: 
+    - "Medicine"
+bibliography: ../references.bib
+---
+
+I've only recently—over the past couple months—started heavily using RSS feeds. Up until this point, I didn't realize how convenient it was, despite it being RSS for Really Simple Syndication. It's incredibly nice to simply open my phone and have it collate a multitude of sources into one place; in fact, I find myself checking my feed quite often.
+
+So far I've subscribed to a couple journals and some blogs. Here's a partial list:
+
+- [CDC MMWR](https://www.cdc.gov/mmwr/index.html)
+- Phase 3 and 4 clinical trials from:
+    - BMJ
+    - NEJM
+    - The Lancet
+- Blogs from:
+    - [Sensible Medicine](https://www.sensible-med.com/)
+    - [The Vajenda](https://vajenda.substack.com/)
+    - [The Anesthesia Consultant](https://theanesthesiaconsultant.com/)
+    - [Precious Bodily Fluids](https://pbfluids.com/)
+    - [Stop and Think](https://johnmandrola.substack.com/)
+    - [Vinay Prasad's Observations and Thoughts](https://www.drvinayprasad.com/)
+    - [The Skeptical Cardiologist](https://theskepticalcardiologist.substack.com/)
+
+There's also a great resource from the NIH that walks you through how to set up filtered RSS feeds for pubmed: [NIH RSS Feeds](https://www.nlm.nih.gov/pubs/techbull/ja20/ja20_pubmed_updated.html). This is how I got the feeds for phase 3 and above.
+
+You can use an RSS feed locally, but I decided to run an RSS server using [FreshRSS](https://freshrss.org/) and package it with [Docker](https://www.docker.com/) (I wanted a server so that I could sync across devices). This runs on my PC at home. I then used [Tailscale](https://tailscale.com/) to access it from my other devices. It works beautifully.
+
+I admit that I don't understand half the things that these feeds are talking about—especially the clinical trials—but this provides for a good opportunity to look things up. Its also just a nice feeling to be able to talk about a paper and know that I can pull it up to immediately reference it.
+
+I highly reccomend it for anyone who wants to stay up to date with their field of interest. The convenience of having everything in one place is unmatched.

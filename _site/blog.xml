@@ -10,7 +10,48 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Sun, 21 Dec 2025 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Feb 2026 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>RSS Feeds</title>
+  <link>https://jinsko.com/blog/rss.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’ve only recently—over the past couple months—started heavily using RSS feeds. Up until this point, I didn’t realize how convenient it was, despite it being RSS for Really Simple Syndication. It’s incredibly nice to simply open my phone and have it collate a multitude of sources into one place; in fact, I find myself checking my feed quite often.</p>
+<p>So far I’ve subscribed to a couple journals and some blogs. Here’s a partial list:</p>
+<ul>
+<li><a href="https://www.cdc.gov/mmwr/index.html">CDC MMWR</a></li>
+<li>Phase 3 and 4 clinical trials from:
+<ul>
+<li>BMJ</li>
+<li>NEJM</li>
+<li>The Lancet</li>
+</ul></li>
+<li>Blogs from:
+<ul>
+<li><a href="https://www.sensible-med.com/">Sensible Medicine</a></li>
+<li><a href="https://vajenda.substack.com/">The Vajenda</a></li>
+<li><a href="https://theanesthesiaconsultant.com/">The Anesthesia Consultant</a></li>
+<li><a href="https://pbfluids.com/">Precious Bodily Fluids</a></li>
+<li><a href="https://johnmandrola.substack.com/">Stop and Think</a></li>
+<li><a href="https://www.drvinayprasad.com/">Vinay Prasad’s Observations and Thoughts</a></li>
+<li><a href="https://theskepticalcardiologist.substack.com/">The Skeptical Cardiologist</a></li>
+</ul></li>
+</ul>
+<p>There’s also a great resource from the NIH that walks you through how to set up filtered RSS feeds for pubmed: <a href="https://www.nlm.nih.gov/pubs/techbull/ja20/ja20_pubmed_updated.html">NIH RSS Feeds</a>. This is how I got the feeds for phase 3 and above.</p>
+<p>You can use an RSS feed locally, but I decided to run an RSS server using <a href="https://freshrss.org/">FreshRSS</a> and package it with <a href="https://www.docker.com/">Docker</a> (I wanted a server so that I could sync across devices). This runs on my PC at home. I then used <a href="https://tailscale.com/">Tailscale</a> to access it from my other devices. It works beautifully.</p>
+<p>I admit that I don’t understand half the things that these feeds are talking about—especially the clinical trials—but this provides for a good opportunity to look things up. Its also just a nice feeling to be able to talk about a paper and know that I can pull it up to immediately reference it.</p>
+<p>I highly reccomend it for anyone who wants to stay up to date with their field of interest. The convenience of having everything in one place is unmatched.</p>
+
+
+
+ ]]></description>
+  <category>Medicine</category>
+  <guid>https://jinsko.com/blog/rss.html</guid>
+  <pubDate>Mon, 23 Feb 2026 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>SPICES Model of Medical Education</title>
   <link>https://jinsko.com/blog/spices.html</link>
@@ -191,7 +232,7 @@ Kumar, Vinay, Abul K. Abbas, Jon C. Aster, Jerrold R. Turner, James Alfred Perki
 
 
 
-<p>I was reading <em>An Introduction to Genetic Engineering—4th</em> by Nicholl and wanted to write about the applications of the Klenow fragment but instead got distracted by a different subject altogether.</p>
+<p>Sequencing is cool. I wanted to write about it.</p>
 <section id="st-gen-sequencing" class="level2">
 <h2 class="anchored" data-anchor-id="st-gen-sequencing">1st Gen Sequencing</h2>
 <p>Dideoxy gene sequencing uses what is called “primed synthesis” for sequencing. Primed synthesis works as follows: primers anneal onto a denatured strand of DNA, yielding ssDNA and creating a free 3’-OH group. A DNA polymerase then binds to the oligonucleotide primer, copying the remainder of the template strand. Understanding this mechanism is important for understanding the later stages of sequencing.</p>
