@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/blog_post.html",
+      "/blog/08-29-25.html",
+      "/blog/diabetic-ketoacidosis.html",
+      "/blog/sec_systems.html",
+      "/blog/spices.html",
+      "/blog/rss.html",
+      "/blog/sham.html"
+    ]
+  },
+  {
     "listing": "/research.html",
     "items": [
       "/research/8-17-2025.html",
@@ -8,17 +20,6 @@
       "/research/biofilm-issues.html",
       "/research/asm2025.html",
       "/research/ironQuant.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/blog_post.html",
-      "/blog/08-29-25.html",
-      "/blog/diabetic-ketoacidosis.html",
-      "/blog/sec_systems.html",
-      "/blog/spices.html",
-      "/blog/rss.html"
     ]
   }
 ]

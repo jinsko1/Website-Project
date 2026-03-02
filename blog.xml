@@ -10,7 +10,54 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Mon, 23 Feb 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 02 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Ethical Considerations: Sham Surgeries</title>
+  <link>https://jinsko.com/blog/sham.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Sham surgeries are procedures that mimic real surgeries but do not include the critical therapeutic component. They are often used in clinical trials to serve as one of the controls, allowing researchers to assess efficacy of surgical interventions. These surgeries imply that patients undergo anesthesia and incisions, but the actual surgical procedure is not performed. This obviously raises very interesting questions about the ethical implications of such practices.</p>
+<p>I’m still an undergrad and most definitely not a medical practitioner (yet), so I have no right to make claims on the technical aspects of medicine. But I can certainly reason about the ethical implications of such practices, given that I read enough about it. Besides, one should never judge an argument based on the authority of the person making it (though this is very tempting), but rather on the strength of the argument itself.</p>
+<section id="utilitarian-arguments-in-favor-of-sham-surgeries-my-objections-to-abbasi-and-cifus-paper" class="level1">
+<h1>Utilitarian Arguments in Favor of Sham Surgeries: My Objections to Abbasi and Cifu’s Paper</h1>
+<p>Most of the arguments in favor of sham surgeries employ utilitarian reasoning, which is the idea that the best action is the one that maximizes overall happiness or well-being of a population in question. In this case, the argument is that sham surgeries provide more of a benefit to society than they do harm to the individual patients who undergo them. This is what <span class="citation" data-cites="abbasiWhyPatientsBenefit2024">(Abbasi and Cifu 2024)</span> argues. As a evidence-based thinker, I like most of the things Dr.&nbsp;Cifu says, but this is an interesting paper to say the least…</p>
+<p>First of all, though the concept of utilitarianism is intuitive and quite clean, it is not without major flaws. It does not take long for one to realize that it can be used to justify all sorts of unethical actions, and there are all sorts of philosophical arguments against it. For example, it can be used to justify sacrificing the rights of a minority group if it benefits the majority. It can also be used to justify actions that are morally wrong, such as torture, if it is believed that it will lead to a greater overall good. Such and such… Very flawed, but very popular because of its simplicity and intuitive appeal. Thus, the paper starts off on the wrong foot.</p>
+<p>The paper then goes on to state the following:</p>
+<blockquote class="blockquote">
+<p>While the sham procedure does not provide any therapeutic benefit, it can benefit a patient by protecting them from undergoing the complete intervention being studied, which may be much more harmful than the sham.</p>
+</blockquote>
+<p>From what I understand, their argument seems to be akin to the following: <em>let me sock you in the face because it’s much better than the stabbing you</em>. I could very well misinterpreting the passage, but if this is what they are trying to say, then I have a very hard time understanding how they can justify such a claim. It seems to me that they are trying to justify causing harm to an individual by claiming that it is better than causing even more harm. I just don’t understand their argument.</p>
+<p>The paper defines utility as the “net benefit to a patient”, using Quality-Adjusted Life Year as their metric. This is a very flawed metric; it does not take into account the subjective experience of the patient. It also does not account for the fact that different patients may have different values and preferences. For instance, some patients may value their quality of life more than their length of life, and vice versa. I really don’t know how you could possibly quantify such a human experience with a single metric. It seems to me that they are trying to reduce a complex human experience to a single number—which is just not possible—in order for the utilitarian argument to work.</p>
+<p>Using this metric, they do a bunch of calculations to show that sham surgeries can provide a net benefit to patients. As I say, utilitarianism is a very flawed ethical framework, and I have no reason to believe that their calculations are at all meaningful. Even if their calculations were accurate, it would not necessarily mean that sham surgeries are ethically justifiable. It would just mean that they provide a net benefit according to their flawed metric.</p>
+<p><strong>Sham surgeries definitely make for better science, but I don’t see how they can be ethically justified, especially when employed for riskier procedures. I understand that they can provide a net benefit to society, but I don’t see how they can be justified at the expense of the individual patient.</strong></p>
+<p>From what I’ve read, all the arguments favoring sham surgeries use this kind of faulty logic.</p>
+</section>
+<section id="arguments-opposing-sham-surgeries" class="level1">
+<h1>Arguments Opposing Sham Surgeries</h1>
+<p>Setting aside all the practicalities of trials emplying sham procedures (blinding, etc); with less invasive procedures, I could see this working, but with more invasive procedures, it becomes much more problematic. The risks of harm to the patient increase significantly, and the ethical justification becomes much harder to defend. The principle of “primum non nocere” (do no harm) is a cornerstone of medical ethics, and sham surgeries can easily violate this principle when they involve significant risk or discomfort to the patient.</p>
+<p>As I say, with riskier prodecures like sham neurosurgeries in Parkinson’s disease <span class="citation" data-cites="dekkersShamNeurosurgeryPatients2001">(Dekkers and Boer 2001)</span>, even with consent, if I was a provider, I feel I have the moral obligation to explicitly ask: can I drill a hole in your head with no direct therapeutic prospects?</p>
+<p>Who the hell is going to say: <em>Yeah, of course! Be my guest!</em> People are generally agreeable but not to that extent (I hope).</p>
+<p>To do good science, I’d like to strike some sort of deal between these two considerations: costs of the individual and greater good the population, but as we have seen, this is a very difficult balance to strike. I don’t have a clear answer to this question, but I do know that we need to be very careful when considering the ethical implications of sham surgeries.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-abbasiWhyPatientsBenefit2024" class="csl-entry">
+Abbasi, Ali B., and Adam S. Cifu. 2024. <span>“Why Some <span>Patients Benefit</span> from <span>Participating</span> in a <span>Sham Surgery Trial</span>.”</span> <em>Annals of Surgery</em> 279 (4): 577–82. <a href="https://doi.org/10.1097/SLA.0000000000006141">https://doi.org/10.1097/SLA.0000000000006141</a>.
+</div>
+<div id="ref-dekkersShamNeurosurgeryPatients2001" class="csl-entry">
+Dekkers, Wim, and Gerard Boer. 2001. <span>“Sham Neurosurgery in Patients with <span>Parkinson</span>’s Disease: Is It Morally Acceptable?”</span> <em>Journal of Medical Ethics</em> 27 (3): 151–56. <a href="https://doi.org/10.1136/jme.27.3.151">https://doi.org/10.1136/jme.27.3.151</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>Medicine</category>
+  <guid>https://jinsko.com/blog/sham.html</guid>
+  <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>RSS Feeds</title>
   <link>https://jinsko.com/blog/rss.html</link>
