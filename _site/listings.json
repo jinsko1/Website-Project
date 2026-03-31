@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/mcat.html",
       "/blog/sham.html",
       "/blog/rss.html",
       "/blog/spices.html",
@@ -14,6 +15,7 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/newbiofilm.html",
       "/research/ironQuant.html",
       "/research/asm2025.html",
       "/research/biofilm-issues.html",

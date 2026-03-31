@@ -1,0 +1,10 @@
+---
+title: "Revisions to the Biofilm Assay"
+date: "2026-03-30"
+
+bibliography: ../references.bib
+draft: true
+---
+
+Since we were having issues with the biofilm formation, as expounded upon in a previous post, the Dr. Yep decided to make some revisions to the protocol.
+

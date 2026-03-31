@@ -10,7 +10,46 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Mon, 02 Mar 2026 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 30 Mar 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>MCAT: A Personal Reflection</title>
+  <link>https://jinsko.com/blog/mcat.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s a useless exam. There are a million other ways that I would’ve liked to spend my time, but nevertheless, it’s a necessary part of the process. I don’t have much to say about it; I just wanted to write a little bit about my experience, given that I finished taking the exam.</p>
+<p>Overall, it’s a tedious exam; there’s nothing particularly difficult about it. That is, the questions do not require much thinking, often relying on memorization alone, which, I must say, is not a great metric for intelligence. The exam is around seven hours long, but it goes by much quicker when you’re actually taking it.</p>
+<p>The minimum score is 472, and the maximum is 528. The average score is around 500, so you can see that the distribution is pretty tight. It’s not a great scale for distinguishing between candidates, so, as you can tell, the exam is useless. It’s merely a box to check off.</p>
+<p>In the subsequent sections, I’ll give brief comments on the resources I used to prepare for the exam. Note that 99% of what I studied was not necessary for the exam; just go over the general concepts and move on.</p>
+<section id="textbooks" class="level3">
+<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
+<p>No need to read closely; just skim. Understand the general concepts, but don’t worry about memorizing details. I used Kaplan’s books, but I don’t think it matters which ones you use. For the P/S section, I used the Khan Academy 300-page doc, but I’m aware of the shorter version. The latter should suffice. Don’t bother with the Khan Academy videos; they take too much time. As you read, unsuspend the corresponding Anki cards via tags.</p>
+</section>
+<section id="anki" class="level3">
+<h3 class="anchored" data-anchor-id="anki">Anki</h3>
+<p>Try to do it every day; I didn’t. I ultimately was able to finish all the cards, but I had to do a lot of cramming at the end. I used MileDown’s Anki deck. Try to spend as little time as you can on the cards; average around 5 seconds per card max, ideally less.</p>
+</section>
+<section id="uworld" class="level3">
+<h3 class="anchored" data-anchor-id="uworld">UWorld</h3>
+<p>I used the question bank, but most of it isn’t necessary; I’d say do half of the problem sets and shift things around depending on your weakest subjects. Don’t even bother with CARS (unless you’re illiterate). The questions are pretty tough (only for chem and bio), unlike the actual exam, and test mostly trivial details, relying almost entirely on memorization. The process is dreary, but it helps you get used to the format of the questions. Expect to consistently score around 70% on practice exams from the question bank. The highest I’ve ever scored was 90%.</p>
+</section>
+<section id="aamc-practice-exams" class="level3">
+<h3 class="anchored" data-anchor-id="aamc-practice-exams">AAMC Practice Exams</h3>
+<p>I did one or two practice exams; I can’t seem to remember which ones were free and which were paid. I only did the free ones. Leave this for later in your studying.</p>
+<p>After 3 months of actual studying, I finished the material and was able to get enough practice from the question bank. I ended up scoring a 520, but again, it says nothing about my intelligence or potential as a physician. I just happened to be good at memorizing things, which is what the exam tests. It’s not worth the time and effort, but it is what it is. I’m glad it’s over.</p>
+<p>Screw the exam, and I’m never looking at any of the material ever again.</p>
+<p><img src="https://jinsko.com/blog/images/MCAT.png" class="img-fluid" data-fig-cap="MCAT Score Breakdown"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Medicine</category>
+  <guid>https://jinsko.com/blog/mcat.html</guid>
+  <pubDate>Mon, 30 Mar 2026 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Ethical Considerations: Sham Surgeries</title>
   <link>https://jinsko.com/blog/sham.html</link>
@@ -19,26 +58,29 @@
 
 
 
-<p>Sham surgeries are procedures that mimic real surgeries but do not include the critical therapeutic component. They are often used in clinical trials to serve as one of the controls, allowing researchers to assess efficacy of surgical interventions. These surgeries imply that patients undergo anesthesia and incisions, but the actual surgical procedure is not performed. This obviously raises very interesting questions about to the ethical implications of such practices.</p>
-<p>In this post, I wanted to assess both sides of the argument regarding the ethical considerations of sham surgeries. It’s a very interesting topic with evidence-based fundemantalists often on one side and those who view things in a more experiential, pragmatic way on the other. Generally, I consider myself siding with the evidence-based side, but I as you will see, there are some compelling arguments on the other side.</p>
-<p>I’m still an undergrad and most definitely not a medical practitioner (yet), so I have no right to make claims on the techincal aspects of medicine. But I can certainly reason about the ethical implications of such practices, given that I read enough about it. Besides, one should never judge an arguement based on the authority of the person making it (though this is very tempting), but rather on the strength of the argument itself.</p>
+<p>Sham surgeries are procedures that mimic real surgeries but do not include the critical therapeutic component. They are often used in clinical trials to serve as one of the controls, allowing researchers to assess efficacy of surgical interventions. These surgeries imply that patients undergo anesthesia and incisions, but the actual surgical procedure is not performed. This obviously raises very interesting questions about the ethical implications of such practices.</p>
+<p>I’m still an undergrad and most definitely not a medical practitioner (yet), so I have no right to make claims on the technical aspects of medicine. But I can certainly reason about the ethical implications of such practices, given that I read enough about it. Besides, one should never judge an argument based on the authority of the person making it (though this is very tempting), but rather on the strength of the argument itself.</p>
 <section id="utilitarian-arguments-in-favor-of-sham-surgeries-my-objections-to-abbasi-and-cifus-paper" class="level1">
 <h1>Utilitarian Arguments in Favor of Sham Surgeries: My Objections to Abbasi and Cifu’s Paper</h1>
-<p>Most of the arguments in favor of sham surgeries employ utilitarian reasoning, which is the idea that the best action is the one that maximizes overall happiness or well-being of a population in question. In this case, the argument is that sham surgeries provide more of a benefit to society than they do harm to the individual patients who undergo them. This is what <span class="citation" data-cites="abbasiWhyPatientsBenefit2024">(Abbasi and Cifu 2024)</span> argues. Though I like most of the things Dr.&nbsp;Cifu says, interesting paper to say the least…</p>
-<p>First of all, though the concept of utilitarianism is intuitive and quite clean, it is not without major flaws. It does not take long for one to realize that it can be used to justify all sorts of unethical actions, and there are all sorts of phisolophical arguments against it. For example, it can be used to justify sacrificing the rights of a minority group if it benefits the majority. It can also be used to justify actions that are morally wrong, such as torture, if it is believed that it will lead to a greater overall good. Such and such… Very flawed, but very popular because of its simplicity and intuitive appeal. Thus, the paper starts off on the wrong foot.</p>
+<p>Most of the arguments in favor of sham surgeries employ utilitarian reasoning, which is the idea that the best action is the one that maximizes overall happiness or well-being of a population in question. In this case, the argument is that sham surgeries provide more of a benefit to society than they do harm to the individual patients who undergo them. This is what <span class="citation" data-cites="abbasiWhyPatientsBenefit2024">(Abbasi and Cifu 2024)</span> argues. As a evidence-based thinker, I like most of the things Dr.&nbsp;Cifu says, but this is an interesting paper to say the least…</p>
+<p>First of all, though the concept of utilitarianism is intuitive and quite clean, it is not without major flaws. It does not take long for one to realize that it can be used to justify all sorts of unethical actions, and there are all sorts of philosophical arguments against it. For example, it can be used to justify sacrificing the rights of a minority group if it benefits the majority. It can also be used to justify actions that are morally wrong, such as torture, if it is believed that it will lead to a greater overall good. Such and such… Very flawed, but very popular because of its simplicity and intuitive appeal. Thus, the paper starts off on the wrong foot.</p>
 <p>The paper then goes on to state the following:</p>
 <blockquote class="blockquote">
 <p>While the sham procedure does not provide any therapeutic benefit, it can benefit a patient by protecting them from undergoing the complete intervention being studied, which may be much more harmful than the sham.</p>
 </blockquote>
-<p>From what I understand, their arguments seems to be akin to the following: <em>let me sock you in the face because it’s much better than the stabbing you</em>. I could very well misinterpreting the passage, but if this is what they are trying to say, then I have a very hard time understanding how they can justify such a claim. It seems to me that they are trying to justify causing harm to an individual by claiming that it is better than causing even more harm. I just don’t understand their argument.</p>
-<p>The paper defines utility as the “net benefit to a patient”, using Quality-Adjusted Life Year as their metric. This is a very flawed metric; it does not take into account the subjective experience of the patient. It also does not account for fact that different patients may have different values and preferences. For instance, some patients may value their quality of life more than their length of life, and vice versa. I really don’t know how you could possibly quantify such a human experience with a single metric. It seems to me that they are trying to reduce a complex human experience to a single number—which is just not possible—in order for the utilitarian argument to work.</p>
+<p>From what I understand, their argument seems to be akin to the following: <em>let me sock you in the face because it’s much better than the stabbing you</em>. I could very well misinterpreting the passage, but if this is what they are trying to say, then I have a very hard time understanding how they can justify such a claim. It seems to me that they are trying to justify causing harm to an individual by claiming that it is better than causing even more harm. I just don’t understand their argument.</p>
+<p>The paper defines utility as the “net benefit to a patient”, using Quality-Adjusted Life Year as their metric. This is a very flawed metric; it does not take into account the subjective experience of the patient. It also does not account for the fact that different patients may have different values and preferences. For instance, some patients may value their quality of life more than their length of life, and vice versa. I really don’t know how you could possibly quantify such a human experience with a single metric. It seems to me that they are trying to reduce a complex human experience to a single number—which is just not possible—in order for the utilitarian argument to work.</p>
 <p>Using this metric, they do a bunch of calculations to show that sham surgeries can provide a net benefit to patients. As I say, utilitarianism is a very flawed ethical framework, and I have no reason to believe that their calculations are at all meaningful. Even if their calculations were accurate, it would not necessarily mean that sham surgeries are ethically justifiable. It would just mean that they provide a net benefit according to their flawed metric.</p>
 <p><strong>Sham surgeries definitely make for better science, but I don’t see how they can be ethically justified, especially when employed for riskier procedures. I understand that they can provide a net benefit to society, but I don’t see how they can be justified at the expense of the individual patient.</strong></p>
-<p>From what I’ve read, all the arugments favoring sham surgeries use this kind of faulty logic.</p>
+<p>From what I’ve read, all the arguments favoring sham surgeries use this kind of faulty logic.</p>
 </section>
 <section id="arguments-opposing-sham-surgeries" class="level1">
 <h1>Arguments Opposing Sham Surgeries</h1>
-<p>With less invasive procedures, I could see this working, but</p>
+<p>Setting aside all the practicalities of trials emplying sham procedures (blinding, etc); with less invasive procedures, I could see this working, but with more invasive procedures, it becomes much more problematic. The risks of harm to the patient increase significantly, and the ethical justification becomes much harder to defend. The principle of “primum non nocere” (do no harm) is a cornerstone of medical ethics, and sham surgeries can easily violate this principle when they involve significant risk or discomfort to the patient.</p>
+<p>As I say, with riskier prodecures like sham neurosurgeries in Parkinson’s disease <span class="citation" data-cites="dekkersShamNeurosurgeryPatients2001">(Dekkers and Boer 2001)</span>, even with consent, if I was a provider, I feel I have the moral obligation to explicitly ask: can I drill a hole in your head with no direct therapeutic prospects?</p>
+<p>No one is going to say: <em>Yeah, of course! Be my guest!</em> People are generally agreeable but not to that extent (I hope).</p>
+<p>Yet I realize that the absence of sham controls would only result in the perpetuation of ineffective treatments, which is also a harm to patients. It’s a difficult question to answer and I find myself within this quagmire where one must do unethical things for an ethical cause. I’m afraid there might not be a better way to conduct sound clinical trials.</p>
+<p>To do good science, I’d like to see some sort of agreement between these two considerations: costs of the individual and greater good the population, but as we have seen, this is a very difficult balance to strike. I don’t have a clear answer to this question, but I do know that we need to be very careful when considering the ethical implications of sham surgeries.</p>
 
 
 
@@ -47,6 +89,9 @@
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-abbasiWhyPatientsBenefit2024" class="csl-entry">
 Abbasi, Ali B., and Adam S. Cifu. 2024. <span>“Why Some <span>Patients Benefit</span> from <span>Participating</span> in a <span>Sham Surgery Trial</span>.”</span> <em>Annals of Surgery</em> 279 (4): 577–82. <a href="https://doi.org/10.1097/SLA.0000000000006141">https://doi.org/10.1097/SLA.0000000000006141</a>.
+</div>
+<div id="ref-dekkersShamNeurosurgeryPatients2001" class="csl-entry">
+Dekkers, Wim, and Gerard Boer. 2001. <span>“Sham Neurosurgery in Patients with <span>Parkinson</span>’s Disease: Is It Morally Acceptable?”</span> <em>Journal of Medical Ethics</em> 27 (3): 151–56. <a href="https://doi.org/10.1136/jme.27.3.151">https://doi.org/10.1136/jme.27.3.151</a>.
 </div>
 </div></section></div> ]]></description>
   <category>Medicine</category>
