@@ -9,8 +9,47 @@
 <link>https://jinsko.com/blog.html</link>
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Mon, 02 Mar 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Mon, 30 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>MCAT: A Personal Reflection</title>
+  <link>https://jinsko.com/blog/mcat.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>It’s a useless exam. There are a million other ways that I would’ve liked to spend my time, but nevertheless, it’s a necessary part of the process. I don’t have much to say about it; I just wanted to write a little bit about my experience, given that I finished taking the exam.</p>
+<p>Overall, it’s a tedious exam; there’s nothing particularly difficult about it. That is, the questions do not require much thinking, often relying on memorization alone, which, I must say, is not a great metric for intelligence. The exam is around seven hours long, but it goes by much quicker when you’re actually taking it.</p>
+<p>The minimum score is 472, and the maximum is 528. The average score is around 500, so you can see that the distribution is pretty tight. It’s not a great scale for distinguishing between candidates, so, as you can tell, the exam is useless. It’s merely a box to check off.</p>
+<p>In the subsequent sections, I’ll give brief comments on the resources I used to prepare for the exam. Note that 99% of what I studied was not necessary for the exam; just go over the general concepts and move on.</p>
+<section id="textbooks" class="level3">
+<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
+<p>No need to read closely; just skim. Understand the general concepts, but don’t worry about memorizing details. I used Kaplan’s books, but I don’t think it matters which ones you use. For the P/S section, I used the Khan Academy 300-page doc, but I’m aware of the shorter version. The latter should suffice. Don’t bother with the Khan Academy videos; they take too much time. As you read, unsuspend the corresponding Anki cards via tags.</p>
+</section>
+<section id="anki" class="level3">
+<h3 class="anchored" data-anchor-id="anki">Anki</h3>
+<p>Try to do it every day; I didn’t. I ultimately was able to finish all the cards, but I had to do a lot of cramming at the end. I used MileDown’s Anki deck. Try to spend as little time as you can on the cards; average around 5 seconds per card max, ideally less.</p>
+</section>
+<section id="uworld" class="level3">
+<h3 class="anchored" data-anchor-id="uworld">UWorld</h3>
+<p>I used the question bank, but most of it isn’t necessary; I’d say do half of the problem sets and shift things around depending on your weakest subjects. Don’t even bother with CARS (unless you’re illiterate). The questions are pretty tough (only for chem and bio), unlike the actual exam, and test mostly trivial details, relying almost entirely on memorization. The process is dreary, but it helps you get used to the format of the questions. Expect to consistently score around 70% on practice exams from the question bank. The highest I’ve ever scored was 90%.</p>
+</section>
+<section id="aamc-practice-exams" class="level3">
+<h3 class="anchored" data-anchor-id="aamc-practice-exams">AAMC Practice Exams</h3>
+<p>I did one or two practice exams; I can’t seem to remember which ones were free and which were paid. I only did the free ones. Leave this for later in your studying.</p>
+<p>After 3 months of actual studying, I finished the material and was able to get enough practice from the question bank. I ended up scoring a 520, but again, it says nothing about my intelligence or potential as a physician. I just happened to be good at memorizing things, which is what the exam tests. It’s not worth the time and effort, but it is what it is. I’m glad it’s over.</p>
+<p>Screw the exam, and I’m never looking at any of the material ever again.</p>
+<p><img src="https://jinsko.com/blog/images/MCAT.png" class="img-fluid" data-fig-cap="MCAT Score Breakdown"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Medicine</category>
+  <guid>https://jinsko.com/blog/mcat.html</guid>
+  <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Ethical Considerations: Sham Surgeries</title>
   <link>https://jinsko.com/blog/sham.html</link>
@@ -47,7 +86,7 @@
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-abbasiWhyPatientsBenefit2024" class="csl-entry">
 Abbasi, Ali B., and Adam S. Cifu. 2024. <span>“Why Some <span>Patients Benefit</span> from <span>Participating</span> in a <span>Sham Surgery Trial</span>.”</span> <em>Annals of Surgery</em> 279 (4): 577–82. <a href="https://doi.org/10.1097/SLA.0000000000006141">https://doi.org/10.1097/SLA.0000000000006141</a>.
 </div>
@@ -108,7 +147,7 @@ Dekkers, Wim, and Gerard Boer. 2001. <span>“Sham Neurosurgery in Patients with
 
 
 
-<p>I enjoy reading about medicine. I figured I should read about how medicine should be learnt. What follows is an argument for the more liberal forms of the SPICES model of medical education <span class="citation" data-cites="hardenEducationalStrategiesCurriculum1984">(Harden, Sowden, and Dunn 1984)</span>. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and therefore still relevant.</p>
+<p>I enjoy reading about medicine. I figured I should read about how medicine should be learnt. What follows is an argument for the more liberal forms of the SPICES model of medical education <span class="citation" data-cites="hardenEducationalStrategiesCurriculum1984">(Harden et al. 1984)</span>. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and therefore still relevant.</p>
 <p>The SPICES model is a way of describing a curriculum by placing it on six continua. The acronym stands for student-centered versus teacher-centered learning, problem-based versus information-gathering learning, integrated versus discipline-based teaching, community-based versus hospital-based education, electives versus a standard programme, and systematic versus apprenticeship or opportunistic training. The point is not that every school must live at one extreme, but that schools should be honest about where they sit and whether that position makes sense.</p>
 <section id="student-centered-vs-teacher-centered-learning" class="level3">
 <h3 class="anchored" data-anchor-id="student-centered-vs-teacher-centered-learning">Student-centered vs Teacher-centered Learning</h3>
@@ -144,7 +183,7 @@ Dekkers, Wim, and Gerard Boer. 2001. <span>“Sham Neurosurgery in Patients with
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-hardenEducationalStrategiesCurriculum1984" class="csl-entry">
 Harden, R. M., Susette Sowden, and W. R. Dunn. 1984. <span>“Educational Strategies in Curriculum Development: The <span>SPICES</span> Model.”</span> <em>Medical Education</em> 18 (4): 284–97. <a href="https://doi.org/10.1111/j.1365-2923.1984.tb01024.x">https://doi.org/10.1111/j.1365-2923.1984.tb01024.x</a>.
 </div>
@@ -162,10 +201,10 @@ Harden, R. M., Susette Sowden, and W. R. Dunn. 1984. <span>“Educational Strate
 
 
 <p>Most antagonism doesn’t need contact. Bacteria just secrete stuff into the environment—for instance, specific bacteriocins and broad antibiotics. These diffuse and hit any nearby cells that don’t have the right resistance or immunity. This is a great example of long-range killing, with no direct contact needed <span class="citation" data-cites="willeyPrescottsMicrobiology2020">(Willey et al. 2020)</span>.</p>
-<p><strong>Type V secretion system:</strong> the cell has a huge outer-membrane protein, CdiA, exported by CdiB. The N-terminal part of CdiA binds a specific receptor on the target cell. The C-terminal part (CdiA-CT) is the toxin domain that actually goes into the target and does the damage (DNase, RNase, translation block, etc.). The producing cell makes a small immunity protein, CdiI, that binds its own CdiA-CT and blocks it. So, if you have the matching <em>cdiI</em> gene, you’re safe; if not, you get killed <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
-<p><strong>Type VI secretion system:</strong> basically a phage-like tube and sheath built into the envelope. The sheath contracts and pushes a harpoon into the neighboring cell envelope. Attached to that are effectors that cut peptidoglycan, damage membranes, or attack nucleic acids. Each effector has a cognate immunity protein in the attacker (periplasm or cytosol, depending on where the toxin acts), so the self is protected whilst neighbors without matching immunity are not <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
-<p><strong>Type IV secretion system:</strong> this is the conjugation / DNA-transfer machine used in plasmid transfer. In an antagonism context, the donor uses the same channel at the contact site to move toxic proteins or DNA directly into the recipient. Who gets targeted depends on which cells the T4SS can dock to, and what payload is being delivered. Again, killing only happens at close contact because the transfer channel has to form between the two cells <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
-<p><strong>Type VII secretion system (Gram-positives, T7SSb):</strong> a cluster of membrane proteins (Ess/Yuk, etc.) forms the export machinery. It secretes small toxins and larger toxins. These larger toxins act on nearby Gram-positive cells (membrane, cell wall, other essential targets). The toxin genes usually sit right next to a small immunity gene; if you carry both, you’re protected; if you’re a close relative missing that cassette, you’re at risk <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein, Ahmad, and Whitney 2020)</span>.</p>
+<p><strong>Type V secretion system:</strong> the cell has a huge outer-membrane protein, CdiA, exported by CdiB. The N-terminal part of CdiA binds a specific receptor on the target cell. The C-terminal part (CdiA-CT) is the toxin domain that actually goes into the target and does the damage (DNase, RNase, translation block, etc.). The producing cell makes a small immunity protein, CdiI, that binds its own CdiA-CT and blocks it. So, if you have the matching <em>cdiI</em> gene, you’re safe; if not, you get killed <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein et al. 2020)</span>.</p>
+<p><strong>Type VI secretion system:</strong> basically a phage-like tube and sheath built into the envelope. The sheath contracts and pushes a harpoon into the neighboring cell envelope. Attached to that are effectors that cut peptidoglycan, damage membranes, or attack nucleic acids. Each effector has a cognate immunity protein in the attacker (periplasm or cytosol, depending on where the toxin acts), so the self is protected whilst neighbors without matching immunity are not <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein et al. 2020)</span>.</p>
+<p><strong>Type IV secretion system:</strong> this is the conjugation / DNA-transfer machine used in plasmid transfer. In an antagonism context, the donor uses the same channel at the contact site to move toxic proteins or DNA directly into the recipient. Who gets targeted depends on which cells the T4SS can dock to, and what payload is being delivered. Again, killing only happens at close contact because the transfer channel has to form between the two cells <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein et al. 2020)</span>.</p>
+<p><strong>Type VII secretion system (Gram-positives, T7SSb):</strong> a cluster of membrane proteins (Ess/Yuk, etc.) forms the export machinery. It secretes small toxins and larger toxins. These larger toxins act on nearby Gram-positive cells (membrane, cell wall, other essential targets). The toxin genes usually sit right next to a small immunity gene; if you carry both, you’re protected; if you’re a close relative missing that cassette, you’re at risk <span class="citation" data-cites="kleinContactDependentInterbacterialAntagonism2020">(Klein et al. 2020)</span>.</p>
 <p>At this point, it’s only natural to ask why there are multiple secretion systems. There’s the evolutionary answer: different lineages started from different “starting parts” (phage tails, conjugation systems, autotransporters) and solved the same problem in parallel. But cell envelope structure matters too: Gram-negatives with an outer membrane can support a T6SS; Gram-positives use T7SS instead. On top of that, the ecology is different: sometimes you want a very specific receptor-based hit (Type V), sometimes a more general protein-injection system (T6, T7), sometimes you care more about moving DNA than just poisoning (T4). Each system has its own range, targets, and style of immunity, so bacteria end up with a set of tools that cover different situations. That is, these aren’t superfluous mechanisms of antagonism <span class="citation" data-cites="willeyPrescottsMicrobiology2020">(Willey et al. 2020)</span>.</p>
 <p>Interestingly, there’s a paper that shows a proof-of-concept on the implementation of secretion systems. Yim and Wang show how one can repurpose these weapons and actually use them on specified bacterial communities <span class="citation" data-cites="yimExploitingInterbacterialAntagonism2021">(Yim and Wang 2021)</span>. The actual paper referenced within Yim and Wang showed an engineered T6SS that uses nanobody binders (small, engineered antibody fragments) to focus killing of specific strains, among other reinventions <span class="citation" data-cites="tingTargetedDepletionBacteria2020">(Ting et al. 2020)</span>. One might find this confusing since T6SS does not require specific antibodies for killing under normal circumstances, as explained. The antibody on the attacker binds to the antigen on the target so they stay glued together long enough for the T6SS to fire into the target, instead of whoever happens to be nearby. The killing assays of E. coli were on the order of 570-fold and 220-fold with antibody targeting, versus only ~6-fold and ~3-fold when they used a control strain without antibody targeting.</p>
 <p>At this point, it seems like a good idea to implement this within clinical trials to fight infection, but before that, there are several important considerations to make (these are merely inferences).</p>
@@ -174,15 +213,15 @@ Harden, R. M., Susette Sowden, and W. R. Dunn. 1984. <span>“Educational Strate
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-kleinContactDependentInterbacterialAntagonism2020" class="csl-entry">
 Klein, Timothy A., Shehryar Ahmad, and John C. Whitney. 2020. <span>“Contact-<span>Dependent Interbacterial Antagonism Mediated</span> by <span>Protein Secretion Machines</span>.”</span> <em>Trends in Microbiology</em> 28 (5): 387–400. <a href="https://doi.org/10.1016/j.tim.2020.01.003">https://doi.org/10.1016/j.tim.2020.01.003</a>.
 </div>
 <div id="ref-tingTargetedDepletionBacteria2020" class="csl-entry">
-Ting, See-Yeun, Esteban Martínez-García, Shuo Huang, Savannah K. Bertolli, Katherine A. Kelly, Kevin J. Cutler, Elizabeth D. Su, et al. 2020. <span>“Targeted <span>Depletion</span> of <span>Bacteria</span> from <span>Mixed Populations</span> by <span>Programmable Adhesion</span> with <span>Antagonistic Competitor Cells</span>.”</span> <em>Cell Host &amp; Microbe</em> 28 (2): 313–321.e6. <a href="https://doi.org/10.1016/j.chom.2020.05.006">https://doi.org/10.1016/j.chom.2020.05.006</a>.
+Ting, See-Yeun, Esteban Martínez-García, Shuo Huang, et al. 2020. <span>“Targeted <span>Depletion</span> of <span>Bacteria</span> from <span>Mixed Populations</span> by <span>Programmable Adhesion</span> with <span>Antagonistic Competitor Cells</span>.”</span> <em>Cell Host &amp; Microbe</em> 28 (2): 313–321.e6. <a href="https://doi.org/10.1016/j.chom.2020.05.006">https://doi.org/10.1016/j.chom.2020.05.006</a>.
 </div>
 <div id="ref-willeyPrescottsMicrobiology2020" class="csl-entry">
-Willey, Joanne M., Lansing M. Prescott, Kathleen M. Sandman, and Dorothy H. Wood. 2020. <em>Prescott’s Microbiology</em>. Eleventh edition. New York, NY: McGraw-Hill Education.
+Willey, Joanne M., Lansing M. Prescott, Kathleen M. Sandman, and Dorothy H. Wood. 2020. <em>Prescott’s Microbiology</em>. Eleventh edition. McGraw-Hill Education.
 </div>
 <div id="ref-yimExploitingInterbacterialAntagonism2021" class="csl-entry">
 Yim, Sung Sun, and Harris H. Wang. 2021. <span>“Exploiting Interbacterial Antagonism for Microbiome Engineering.”</span> <em>Current Opinion in Biomedical Engineering</em> 19 (September): 100307. <a href="https://doi.org/10.1016/j.cobme.2021.100307">https://doi.org/10.1016/j.cobme.2021.100307</a>.
@@ -260,12 +299,12 @@ Yim, Sung Sun, and Harris H. Wang. 2021. <span>“Exploiting Interbacterial Anta
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-hallGuytonHallTextbook2011" class="csl-entry">
-Hall, John E., and Arthur C. Guyton. 2011. <em>Guyton and <span>Hall</span> Textbook of Medical Physiology</em>. 12. ed. Philadelphia, Pa: Saunders, Elsevier.
+Hall, John E., and Arthur C. Guyton. 2011. <em>Guyton and <span>Hall</span> Textbook of Medical Physiology</em>. 12. ed. Saunders, Elsevier.
 </div>
 <div id="ref-kumarRobbinsCotranPathologic2021" class="csl-entry">
-Kumar, Vinay, Abul K. Abbas, Jon C. Aster, Jerrold R. Turner, James Alfred Perkins, Stanley L. Robbins, and Ramzi S. Cotran, eds. 2021. <em>Robbins &amp; <span>Cotran</span> Pathologic Basis of Disease</em>. Tenth edition. Philadelphia, PA: Elsevier.
+Kumar, Vinay, Abul K. Abbas, Jon C. Aster, et al., eds. 2021. <em>Robbins &amp; <span>Cotran</span> Pathologic Basis of Disease</em>. Tenth edition. Elsevier.
 </div>
 </div></section></div> ]]></description>
   <category>Medicine</category>
