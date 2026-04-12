@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-12">
 
-<title>Quotes – Jin Saeki Ko</title>
+<title>Calculations for AAS – Jin Saeki Ko</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,22 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -55,9 +75,38 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="mobile.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../mobile.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -67,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jin Saeki Ko</span>
     </a>
   </div>
@@ -77,19 +126,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./books.html"> 
+    <a class="nav-link" href="../books.html"> 
 <span class="menu-text">Books</span></a>
   </li>  
 </ul>
@@ -109,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quotes</h1>
+<h1 class="title">Calculations for AAS</h1>
 </div>
 
 
@@ -117,6 +166,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 12, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -126,130 +181,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="fredrik-backman" class="level3">
-<h3 class="anchored" data-anchor-id="fredrik-backman">Fredrik Backman</h3>
-<blockquote class="blockquote">
-<p>Ove had never been asked how he lived before he met her. But if anyone had asked him, he would have answered that he didn’t.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>She just smiled, said that she loved books more than anything, and started telling him excitedly what each of the ones in her lap was about. And Ove realised that he wanted to hear her talking about the things she loved for the rest of his life.</p>
-</blockquote>
+<p>The reported amount of of iron in WT <em>E. coli</em> is around 10^5 to 10^6 atoms per cell <span class="citation" data-cites="williamsDpsFunctionsKey2023">(<a href="#ref-williamsDpsFunctionsKey2023" role="doc-biblioref">Williams and Chatterji 2023</a>)</span>.</p>
+<section id="converting-atoms-per-cell-to-micrograms-per-gram-of-cells" class="level2">
+<h2 class="anchored" data-anchor-id="converting-atoms-per-cell-to-micrograms-per-gram-of-cells">Converting atoms per cell to micrograms per gram of cells</h2>
+<p>Using</p>
+<p><span class="math display">\[
+10^5 \,\text{atoms Fe/cell}
+\]</span></p>
+<p>the iron mass per cell is</p>
+<p><span class="math display">\[
+m_{\mathrm{Fe,cell}} = 10^5 \times \frac{55.845}{6.022\times10^{23}} \,\mathrm{g}
+\]</span></p>
+<p><span class="math display">\[
+m_{\mathrm{Fe,cell}} \approx 9.27\times10^{-18} \,\mathrm{g}
+\]</span></p>
+<p>If the wet mass of an <em>E. coli</em> cell is</p>
+<p><span class="math display">\[
+m_{\mathrm{cell}} \approx 0.95 \,\mathrm{pg} = 0.95\times10^{-12} \,\mathrm{g}
+\]</span></p>
+<p>then the iron content per gram of wet cells is</p>
+<p><span class="math display">\[
+\frac{9.27\times10^{-18}}{0.95\times10^{-12}}
+= 9.76\times10^{-6} \,\mathrm{g/g}
+\]</span></p>
+<p>which is</p>
+<p><span class="math display">\[
+9.76\times10^{-6} \,\mathrm{g/g}
+\times 10^6 \,\mu\mathrm{g}/\mathrm{g}
+= 9.8 \,\mu\mathrm{g}/\mathrm{g}
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+\boxed{10^5 \,\text{atoms Fe/cell} \approx 9.8 \,\mu\mathrm{g\ of\ Fe}/\mathrm{g \ wet \ cells}}
+\]</span></p>
 </section>
-<section id="james-baldwin" class="level3">
-<h3 class="anchored" data-anchor-id="james-baldwin">James Baldwin</h3>
-<blockquote class="blockquote">
-<p>Love has never been a popular movement. And no one’s ever wanted, really, to be free. The world is held together, really it is held together, by the love and the passion of a very few people. Otherwise, of course, you can despair. Walk down the street of any city, any afternoon, and look around you. What you’ve got to remember is what you’re looking at is also you. Everyone you’re looking at is also you. You could be that person. You could be that monster, you could be that cop. And you have to decide, in yourself, not to be.</p>
-</blockquote>
-</section>
-<section id="anton-chekhov" class="level3">
-<h3 class="anchored" data-anchor-id="anton-chekhov">Anton Chekhov</h3>
-<blockquote class="blockquote">
-<p>I realized that when you love someone, your reasoning about that love should be based on what is supreme, on what is more important than happiness or unhappiness, sin or virtue, in the way that they are usually understood, otherwise it is not worth reasoning at all.</p>
-</blockquote>
-</section>
-<section id="osamu-dazai" class="level3">
-<h3 class="anchored" data-anchor-id="osamu-dazai">Osamu Dazai</h3>
-<blockquote class="blockquote">
-<p>To wait. In our lives we know joy, anger, sorrow, and a hundred other emotions, but these emotions all together occupy a bare one per cent of our time. The remaining ninety-nine per cent is just living in waiting. I wait in momentary expectation, feeling as though my breasts are being crushed, for the sound in the corridor of the footsteps of happiness. Empty. Oh, life is too painful, the reality that confirms the universal belief that it is best not to be born.</p>
-</blockquote>
-</section>
-<section id="f.-scott-fitzgerald" class="level3">
-<h3 class="anchored" data-anchor-id="f.-scott-fitzgerald">F. Scott Fitzgerald</h3>
-<blockquote class="blockquote">
-<p>There are only the pursued, the pursuing, the busy and the tired.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Let us learn to show our friendship for a man when he is alive and not after he is dead.</p>
-</blockquote>
-</section>
-<section id="bell-hooks" class="level3">
-<h3 class="anchored" data-anchor-id="bell-hooks">bell hooks</h3>
-<blockquote class="blockquote">
-<p>Love is a combination of care, commitment, knowledge, responsibility, respect and trust.</p>
-</blockquote>
-</section>
-<section id="kazuo-ishiguro" class="level3">
-<h3 class="anchored" data-anchor-id="kazuo-ishiguro">Kazuo Ishiguro</h3>
-<blockquote class="blockquote">
-<p>There was surely nothing to indicate at the time that such evidently small incidents would render whole dreams forever irredeemable.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Yet are you so certain, good mistress, you wish to be free of this mist? Is it not better some things remain hidden from our minds?</p>
-</blockquote>
-</section>
-<section id="sarah-kane" class="level3">
-<h3 class="anchored" data-anchor-id="sarah-kane">Sarah Kane</h3>
-<blockquote class="blockquote">
-<p>There’s not a drug on earth can make life meaningful.</p>
-</blockquote>
-</section>
-<section id="haruki-murakami" class="level3">
-<h3 class="anchored" data-anchor-id="haruki-murakami">Haruki Murakami</h3>
-<blockquote class="blockquote">
-<p>Still, being able to feel pain was good, he thought. It’s when you can’t even feel pain anymore that you’re in real trouble.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>It is not that the meaning cannot be explained. But there are certain meanings that are lost forever the moment they are explained in words.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>If I had remained at home, I would have spent my life waiting for you to get in touch. And a life spent waiting would mean I couldn’t think of anything other than you. Of course, I wouldn’t mind. Since you were what I wanted in this world, more than anything.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>We each have a special something we can get only at a special time of our life. Like a small flame. A careful, fortunate few cherish that flame, nurture it, hold it as a torch to light their way. But once that flame goes out, it’s gone forever.</p>
-</blockquote>
-</section>
-<section id="george-orwell" class="level3">
-<h3 class="anchored" data-anchor-id="george-orwell">George Orwell</h3>
-<blockquote class="blockquote">
-<p>In the face of pain there are no heroes.</p>
-</blockquote>
-</section>
-<section id="ann-patchett" class="level3">
-<h3 class="anchored" data-anchor-id="ann-patchett">Ann Patchett</h3>
-<blockquote class="blockquote">
-<p>He was in love, and never had he felt such kindness towards another person. Never had he received such kindness. Maybe the private life wasn’t forever. Maybe everyone got it for a little while and then spend the rest of their lives remembering.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Only a few of us are going to be willing to break our own hearts by trading in the living beauty of imagination for the stark disappointment of words.</p>
-</blockquote>
-</section>
-<section id="richard-russo" class="level3">
-<h3 class="anchored" data-anchor-id="richard-russo">Richard Russo</h3>
-<blockquote class="blockquote">
-<p>What you can’t afford to lose is precisely what the world robs you of.</p>
-</blockquote>
-</section>
-<section id="antoine-de-saint-exupéry" class="level3">
-<h3 class="anchored" data-anchor-id="antoine-de-saint-exupéry">Antoine de Saint-Exupéry</h3>
-<blockquote class="blockquote">
-<p>It is such a secret place, the land of tears.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>To me, you are still nothing more than a little boy who is just like a hundred thousand other little boys. And I have no need of you. And you, on your part, have no need of me. To you I am nothing more than a fox like a hundred thousand other foxes. But if you tame me, then we shall need each other. To me, you will be unique in all the world. To you, I shall be unique in all the world.</p>
-</blockquote>
-</section>
-<section id="j.-d.-salinger" class="level3">
-<h3 class="anchored" data-anchor-id="j.-d.-salinger">J. D. Salinger</h3>
-<blockquote class="blockquote">
-<p>Many, many men have been just as troubled morally and spiritually as you are right now. Happily, some of them kept records of their troubles. You’ll learn from them—if you want to. Just as someday, if you have something to offer, someone will learn something from you. It’s a beautiful reciprocal arrangement. And it isn’t education. It’s history. It’s poetry. I’m not trying to tell you that only educated and scholarly men are able to contribute something valuable to the world. It’s not so. But I do say that educated and scholarly men, if they’re brilliant and creative to begin with—which, unfortunately, is rarely the case—tend to leave infinitely more valuable records behind them than men do who are merely brilliant and creative. They tend to express themselves more clearly, and they usually have a passion for following their thoughts through to the end.</p>
-</blockquote>
-</section>
-<section id="時雨沢-恵一" class="level3">
-<h3 class="anchored" data-anchor-id="時雨沢-恵一">時雨沢 恵一</h3>
-<blockquote class="blockquote">
-<p>結局他人の痛みなんて分かってしまえば、まともに生きていけなかったんだ。</p>
-</blockquote>
-</section>
-<section id="大友克洋" class="level3">
-<h3 class="anchored" data-anchor-id="大友克洋">大友克洋</h3>
-<blockquote class="blockquote">
-<p>思い出は逃げ込む場所じゃない。</p>
-</blockquote>
+<section id="maximum-final-volume-allowed-for-all-harvested-e.-coli-cells" class="level2">
+<h2 class="anchored" data-anchor-id="maximum-final-volume-allowed-for-all-harvested-e.-coli-cells">Maximum final volume allowed for all harvested <em>E. coli</em> cells</h2>
+<p>Detection threshold:</p>
+<p><span class="math display">\[
+5 \,\mu\mathrm{g\ Fe}/\mathrm{mL}
+\]</span></p>
+<p>I’m using the low-end estimate for wet <em>E. coli</em> iron content,</p>
+<p><span class="math display">\[
+c_{\mathrm{Fe}} \approx 10 \,\mu\mathrm{g\ Fe}/\mathrm{g\ of\ cells}
+\]</span></p>
+<p>I harvested</p>
+<p><span class="math display">\[
+m_{\mathrm{cells}} = 3 \,\mathrm{g}
+\]</span></p>
+<p>So the minimum expected total Fe in your full sample is</p>
+<p><span class="math display">\[
+m_{\mathrm{Fe}} = 3 \times 10 = 30 \,\mu\mathrm{g}
+\]</span></p>
+<p>If the final volume is (V) mL, then the Fe concentration will be</p>
+<p><span class="math display">\[
+C_{\mathrm{Fe}} = \frac{30}{V} \,\mu\mathrm{g}/\mathrm{mL}
+\]</span></p>
+<p>To stay above the detection threshold,</p>
+<p><span class="math display">\[
+\frac{30}{V} \geq 5
+\]</span></p>
+<p>Therefore, using the low-end estimate, the <strong>largest final volume</strong> I can dilute my full 3 g cell sample into while still staying above the detection limit is:</p>
+<p><span class="math display">\[
+\boxed{6 \,\mathrm{mL}}
+\]</span></p>
+<hr>
+<p>Minimum detection threshold for the AASpectrometer is 5ppm = 5 mg/L. Yielded 3 grams in most recent trial with tonB, the strain with the least amount of iron content (supposedly). Need to know how much iron is in each cell (probably better to underestimate since its ton B), in order to determine how much cell is needed to reach the 5 mg/L threshold. From there, need to determine how much volume to put the cells in to keep it above threshold.</p>
+<p>Side note: I recently reread an article from a <a href="../research/ironQuant.html">previous post</a> that showed ~2 fold increase in iron content from log to stationary phase. This is shown in the figure below, panel A. WT is W3110. White bar is the log phase and the black bar is the stationary phase. The increase in iron content is substantial, around 2 fold, but no significance is reported. I’m currently harvesting the cells at stationary phase, 2x, but I cannot assume this trend applies across all the tested strains. Just something to keep in mind.</p>
+<p><img src="images/furIron.png" class="img-fluid" data-fig-cap="Iron content from log to stationary phase in WT"></p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-williamsDpsFunctionsKey2023" class="csl-entry" role="listitem">
+Williams, Sunanda Margrett, and Dipankar Chatterji. 2023. <span>“Dps <span>Functions</span> as a <span>Key Player</span> in <span>Bacterial Iron Homeostasis</span>.”</span> <em>ACS Omega</em> 8 (38): 34299–309. <a href="https://doi.org/10.1021/acsomega.3c03277">https://doi.org/10.1021/acsomega.3c03277</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

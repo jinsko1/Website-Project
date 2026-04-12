@@ -1,83 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jinsko.com/research.html</loc>
-    <lastmod>2026-04-08T04:47:27.598Z</lastmod>
-  </url>
-  <url>
     <loc>https://jinsko.com/index.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/research/8-17-2025.html</loc>
-    <lastmod>2026-04-08T04:47:27.598Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/research/biofilm-issues.html</loc>
-    <lastmod>2026-04-08T04:47:27.599Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/research/ironQuant.html</loc>
-    <lastmod>2026-04-08T04:47:27.606Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/books.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/blog_post.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/08-29-25.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/sham.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog/diabetic-ketoacidosis.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/quotes.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/rss.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/spices.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.447Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog/sec_systems.html</loc>
-    <lastmod>2026-04-08T04:47:27.597Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
   </url>
   <url>
-    <loc>https://jinsko.com/blog/mcat.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
+    <loc>https://jinsko.com/blog/blog_post.html</loc>
+    <lastmod>2026-04-12T22:06:27.447Z</lastmod>
   </url>
   <url>
-    <loc>https://jinsko.com/research/9-17-2025.html</loc>
-    <lastmod>2026-04-08T04:47:27.599Z</lastmod>
+    <loc>https://jinsko.com/blog/sham.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/quotes.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/asm2025.html</loc>
-    <lastmod>2026-04-08T04:47:27.599Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.450Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/newbiofilm.html</loc>
-    <lastmod>2026-04-08T04:47:27.606Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/ironQuant.html</loc>
+    <lastmod>2026-04-12T22:06:27.458Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/stationary-phase.html</loc>
-    <lastmod>2026-04-08T04:47:27.607Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/books.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/9-17-2025.html</loc>
+    <lastmod>2026-04-12T22:06:27.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/8-17-2025.html</loc>
+    <lastmod>2026-04-12T22:06:27.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/biofilm-issues.html</loc>
+    <lastmod>2026-04-12T22:06:27.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research/calculations.html</loc>
+    <lastmod>2026-04-12T22:06:27.450Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog.html</loc>
-    <lastmod>2026-04-08T04:47:27.596Z</lastmod>
+    <lastmod>2026-04-12T22:06:27.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/research.html</loc>
+    <lastmod>2026-04-12T22:06:27.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/08-29-25.html</loc>
+    <lastmod>2026-04-12T22:06:27.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/mcat.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/rss.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/spices.html</loc>
+    <lastmod>2026-04-12T22:06:27.448Z</lastmod>
   </url>
 </urlset>

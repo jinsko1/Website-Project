@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/research.html",
-    "items": [
-      "/research/newbiofilm.html",
-      "/research/ironQuant.html",
-      "/research/asm2025.html",
-      "/research/biofilm-issues.html",
-      "/research/stationary-phase.html",
-      "/research/9-17-2025.html",
-      "/research/8-17-2025.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/blog/mcat.html",
@@ -22,6 +10,19 @@
       "/blog/diabetic-ketoacidosis.html",
       "/blog/08-29-25.html",
       "/blog/blog_post.html"
+    ]
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/research/calculations.html",
+      "/research/newbiofilm.html",
+      "/research/ironQuant.html",
+      "/research/asm2025.html",
+      "/research/biofilm-issues.html",
+      "/research/stationary-phase.html",
+      "/research/9-17-2025.html",
+      "/research/8-17-2025.html"
     ]
   }
 ]
