@@ -15,6 +15,8 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/calculations.html",
+      "/research/newbiofilm.html",
       "/research/ironQuant.html",
       "/research/asm2025.html",
       "/research/biofilm-issues.html",
