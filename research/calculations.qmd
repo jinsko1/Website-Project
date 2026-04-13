@@ -71,7 +71,7 @@ $$
 m_{\mathrm{cells}} = 3 \,\mathrm{g}
 $$
 
-So the minimum expected total Fe in your full sample is
+So the minimum expected total Fe in my full sample is
 
 $$
 m_{\mathrm{Fe}} = 3 \times 10 = 30 \,\mu\mathrm{g}
