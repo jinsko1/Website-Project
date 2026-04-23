@@ -14,8 +14,6 @@ website:
         text: Research
       - href: blog.qmd
         text: Blog
-      - href: books.qmd
-        text: Books
   page-navigation: true
   search: false
 
