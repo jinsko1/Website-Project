@@ -79,5 +79,8 @@
   },
   "research/colony_counter.qmd": {
     "colony_counter.html": "5b9f060a"
+  },
+  "blog/jamaseries.qmd": {
+    "jamaseries.html": "fb034c2c"
   }
 }

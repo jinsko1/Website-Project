@@ -10,7 +10,33 @@
 <atom:link href="https://jinsko.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Mon, 30 Mar 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 27 May 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>JAMA on how to read clinical trials</title>
+  <link>https://jinsko.com/blog/jamaseries.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>There’s a series from JAMA that goes over how to read clinical trials. The series is written by individuals who are widely recognized in the field of evidence-based medicine. The entire series is a valuable resource for navigating literature in general, but there’s a total of six relevant parts to the series, specifically on how to read clinical trials:</p>
+<p>I: <a href="https://jamanetwork.com/journals/jama/article-abstract/409068">how to get started</a><br>
+II-A: <a href="https://jamanetwork.com/journals/jama/article-abstract/409494">validity of therapy/prevention studies</a><br>
+II-B: <a href="https://jamanetwork.com/journals/jama/fullarticle/361625">results and whether they help your patients</a><br>
+XIV: <a href="https://jamanetwork.com/journals/jama/fullarticle/187253">applicability of clinical trial results to your patient</a><br>
+XIX-A: <a href="https://jamanetwork.com/journals/jama/fullarticle/191311">surrogate endpoints</a><br>
+XIX-B: <a href="https://jamanetwork.com/journals/jama/fullarticle/191982">drug class effect</a><br>
+</p>
+<p>I’m skipping some parts because they’re rather long and other parts aren’t as relevant to clinical trials.</p>
+<p><img src="https://jinsko.com/blog/images/clinicaltrial.png" class="img-fluid" data-fig-cap="Guide to reading clinical trials from JAMA"></p>
+
+
+
+ ]]></description>
+  <category>Medicine</category>
+  <guid>https://jinsko.com/blog/jamaseries.html</guid>
+  <pubDate>Wed, 27 May 2026 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>MCAT: A Personal Reflection</title>
   <link>https://jinsko.com/blog/mcat.html</link>
