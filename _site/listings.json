@@ -3,7 +3,6 @@
     "listing": "/blog.html",
     "items": [
       "/blog/jamaseries.html",
-      "/blog/mcat.html",
       "/blog/sham.html",
       "/blog/rss.html",
       "/blog/spices.html",
@@ -16,6 +15,7 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/aas1.html",
       "/research/colony_counter.html",
       "/research/calculations.html",
       "/research/newbiofilm.html",
