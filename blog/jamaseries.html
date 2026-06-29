@@ -24,7 +24,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -39,7 +58,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b9c91b1e117c879de662b9ae260051b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1e273511d09b17b40736144097ac5380.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -56,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../mobile.css">
@@ -133,19 +181,88 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>There’s a series from JAMA that goes over how to read clinical trials. The series is written by individuals who are widely recognized in the field of evidence-based medicine. The entire series is a valuable resource for navigating literature in general, but there’s a total of six relevant parts to the series, specifically on how to read clinical trials:</p>
-<p>I: <a href="https://jamanetwork.com/journals/jama/article-abstract/409068">how to get started</a><br>
-II-A: <a href="https://jamanetwork.com/journals/jama/article-abstract/409494">validity of therapy/prevention studies</a><br>
-II-B: <a href="https://jamanetwork.com/journals/jama/fullarticle/361625">results and whether they help your patients</a><br>
-XIV: <a href="https://jamanetwork.com/journals/jama/fullarticle/187253">applicability of clinical trial results to your patient</a><br>
+<p>I: <a href="https://jamanetwork.com/journals/jama/article-abstract/409068">how to get started</a> <span class="citation" data-cites="oxmanUsersGuidesMedicala">(<a href="#ref-oxmanUsersGuidesMedicala" role="doc-biblioref">Oxman and Sackett, n.d.</a>)</span><br>
+II-A: <a href="https://jamanetwork.com/journals/jama/article-abstract/409494">validity of therapy/prevention studies</a> <span class="citation" data-cites="sackettUsersGuidesMedical">(<a href="#ref-sackettUsersGuidesMedical" role="doc-biblioref">Sackett and Cook, n.d.-a</a>)</span><br>
+II-B: <a href="https://jamanetwork.com/journals/jama/fullarticle/361625">results and whether they help your patients</a> <span class="citation" data-cites="sackettUsersGuidesMedicala">(<a href="#ref-sackettUsersGuidesMedicala" role="doc-biblioref">Sackett and Cook, n.d.-b</a>)</span><br>
 XIX-A: <a href="https://jamanetwork.com/journals/jama/fullarticle/191311">surrogate endpoints</a><br>
 XIX-B: <a href="https://jamanetwork.com/journals/jama/fullarticle/191982">drug class effect</a><br>
 </p>
-<p>I’m skipping some parts because they’re rather long and other parts aren’t as relevant to clinical trials.</p>
+<p>I’m skipping a few parts because they’re rather long and irrelevant to clinical trials. I’m not interested. Part 1 is not worth talking about since it merely orients you to the series, save the table below which is a pithy summary of the series.</p>
 <p><img src="images/clinicaltrial.png" class="img-fluid" data-fig-cap="Guide to reading clinical trials from JAMA"></p>
+<section id="part-ii-a-are-the-results-of-the-study-valid" class="level1">
+<h1>Part II-A: Are the Results of the Study Valid?</h1>
+<p>Make sure the trial in question is a randomized controlled trial (RCT). This is the gold standard for clinical trials and helps minimize bias.</p>
+<blockquote class="blockquote">
+<p>The beauty of randomization is that it assures, if sample size is sufficiently large, that both known and unknown determinants of outcome are evenly distributed between treatment and control groups.</p>
+</blockquote>
+<p>A well-designed trial should also include a complete follow-up of patients to account for bias. Patients who dissapear may have different outcomes than those who remain in the study, which can skew results.</p>
+<blockquote class="blockquote">
+<p>Readers can decide for themselves when the loss to follow-up is excessive by assuming, in positive trials, that all patients lost from the treatment group did badly, and all lost from the control group did well, and then recalculating the outcomes under these assumptions.</p>
+</blockquote>
+<p>Upon further reading the article, a strange point was made:</p>
+<blockquote class="blockquote">
+<p>As in routine practice, patients in randomized trials sometimes forget to take their medicine or even refuse their treatment altogether. Readers might, on first blush, agree that such patients who never actually received their assigned treatment should be excluded from analyses for efficacy. Not so.</p>
+</blockquote>
+<p>As the authors state, I found this quite strange. If you want to evaluate the efficacy of a therapy, the noncompliant patient seems like noise, since they did not take the treatment. However, the authors argue that excluding noncompliant patients can bias results, as it may not reflect real-world scenarios in which patients often do not adhere to treatment. The principle is to retain prognostic factors, known and unknown.</p>
+<p>Good studies should also be double-blinded. Very simple. This helps minimize bias in reporting and assessing outcomes. Of course, this comes with its nuances; recently there was a trial in the literature describing vagus nerve stimulation for the reduction of inflammation in rheumatoid arthritis, purportedly double-blinded <span class="citation" data-cites="tesserVagusNervemediatedNeuroimmune2026">(<a href="#ref-tesserVagusNervemediatedNeuroimmune2026" role="doc-biblioref">Tesser et al. 2026</a>)</span>. Now this was a device implanted that sent electrical impulses to the vagus nerve. The problem is that the device may produce perceptible sensations, which could unblind patients and investigators. So even though the study was technically double-blinded, it may not have been truly blinded.</p>
+</section>
+<section id="part-ii-b-what-are-the-results-and-how-can-they-help-my-patients" class="level1">
+<h1>Part II-B: What are the Results and How Can They Help My Patients?</h1>
+<p>The previous article was devoted solely to whether the results of a trial were valid. II-B is devoted to whether the valid results help a patient.</p>
+<section id="representing-treatment-effect" class="level2">
+<h2 class="anchored" data-anchor-id="representing-treatment-effect">Representing Treatment Effect</h2>
+<p>Couple ways of representing the treatment effect that the article lists:</p>
+<p><strong>Abolute risk reduction (ARR)</strong> is the difference in event rates between the control and treatment groups. <span class="math display">\[
+ARR = control\_event\_rate - experimental\_event\_rate
+\]</span></p>
+<p>For example, if 10% of patients in the control group have an event and 5% in the treatment group have an event, the ARR is 5%. <span class="math display">\[
+ARR = 0.10 - 0.05 = 0.05
+\]</span></p>
+<p><strong>Relative risk (RR)</strong> is self explanatory. It is the ratio of the event rate in the treatment group to the event rate in the control group. <span class="math display">\[
+RR = \frac{EER}{CER}
+\]</span></p>
+<p><strong>Relative risk reduction (RRR)</strong> is merely the complement of the relative risk: <span class="math display">\[
+RRR = 1 - RR
+\]</span></p>
+<p>Many trials usually use RRR to report treatment effect.</p>
+</section>
+<section id="precision-of-the-treatment-effect" class="level2">
+<h2 class="anchored" data-anchor-id="precision-of-the-treatment-effect">Precision of the Treatment Effect</h2>
+<p>Confidence intervals (CIs) are discussed. If the CI is wide, the treatment effect is imprecise. No use in relying on a treatment effect that is not precise. For example, if the RRR is 25%, derived from a difference of just 5 patient deaths (which is quite a small difference) with a relatively small sample size, the CI may be wide and the treatment effect imprecise. By the same token, with a larger sample size, the CI narrows and the effect more precise.</p>
+<p>But of course, in a positive trial, whether the lower bound of the CI is clinically meaningful is a decision that must be made by the physician.</p>
+<p>However, in an negative trial—one in which the experimental treatment was not proven to be superior to the control—the upper bound of the CI is important. If the upper bound is clinically meaningful, then the trial failed to exclude an important treatment effect, one which may have been beneficial to patients.</p>
+</section>
+<section id="does-the-treatment-effect-apply-to-my-patient" class="level2">
+<h2 class="anchored" data-anchor-id="does-the-treatment-effect-apply-to-my-patient">Does the Treatment Effect Apply to My Patient?</h2>
+<p>If the patient qualifies for the trial, then the treatment effect likely applies. If not, clinical judgment is required.</p>
+<p>The article then also talks about surrogate endpoints and drug class effects but I want to leave that for a later post. It is a subject that interests me greatly and hence deserves its own space. As such, even though the post includes both articles, I will not discuss it here.</p>
+</section>
+<section id="number-neeed-to-treat-nnt" class="level2">
+<h2 class="anchored" data-anchor-id="number-neeed-to-treat-nnt">Number Neeed to Treat (NNT)</h2>
+<p>NNT is a metric used to understand the practical implications of a treatment effect: the number of patients that need to be treated with a specific therapy for one patient to benefit compared to a control.</p>
+<p>We consider NNT on top of the treatment effect and its precision because its impact on the patient and practice may still remain unclear.</p>
+<p>If we need to treat 400 patients to prevent one death, then the NNT is 400. If we need to treat 10 patients to prevent one death, then the NNT is 10. The lower the NNT, the more effective the treatment.</p>
+<p>Of course, even if the NNT is high, the treatment may still be worth it if the treatment is cheap and safe. Conversely, if the NNT is low but the treatment is expensive or has significant side effects, then it may not be worth it.</p>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-oxmanUsersGuidesMedicala" class="csl-entry" role="listitem">
+Oxman, Andrew D, and David L Sackett. n.d. <em>Users’ <span>Guides</span> to the <span>Medical Literature</span>: <span>How</span> to <span>Get Started</span></em>.
+</div>
+<div id="ref-sackettUsersGuidesMedical" class="csl-entry" role="listitem">
+Sackett, David L, and Deborah J Cook. n.d.-a. <em>Users’ <span>Guides</span> to the <span>Medical Literature</span>: <span>How</span> to <span>Use</span> an <span>Article About Therapy</span> or <span>Prevention Part A</span></em>.
+</div>
+<div id="ref-sackettUsersGuidesMedicala" class="csl-entry" role="listitem">
+Sackett, David L, and Deborah J Cook. n.d.-b. <em>Users’ <span>Guides</span> to the <span>Medical Literature</span>: <span>How</span> to <span>Use</span> an <span>Article About Therapy</span> or <span>Prevention Part B</span></em>.
+</div>
+<div id="ref-tesserVagusNervemediatedNeuroimmune2026" class="csl-entry" role="listitem">
+Tesser, John R. P., Angela R. Crowley, Emily Jane Box, et al. 2026. <span>“Vagus Nerve-Mediated Neuroimmune Modulation for Rheumatoid Arthritis: A Pivotal Randomized Controlled Trial.”</span> <em>Nature Medicine</em> 32 (1): 369–78. <a href="https://doi.org/10.1038/s41591-025-04114-7">https://doi.org/10.1038/s41591-025-04114-7</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

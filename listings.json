@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/jamaseries.html",
-      "/blog/sham.html",
-      "/blog/rss.html",
-      "/blog/spices.html",
-      "/blog/sec_systems.html",
-      "/blog/diabetic-ketoacidosis.html",
-      "/blog/08-29-25.html",
-      "/blog/blog_post.html"
-    ]
-  },
-  {
     "listing": "/research.html",
     "items": [
       "/research/aas1.html",
@@ -25,6 +12,19 @@
       "/research/stationary-phase.html",
       "/research/9-17-2025.html",
       "/research/8-17-2025.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/jamaseries.html",
+      "/blog/sham.html",
+      "/blog/rss.html",
+      "/blog/spices.html",
+      "/blog/sec_systems.html",
+      "/blog/diabetic-ketoacidosis.html",
+      "/blog/08-29-25.html",
+      "/blog/blog_post.html"
     ]
   }
 ]
