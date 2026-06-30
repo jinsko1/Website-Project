@@ -1,0 +1,37 @@
+{{- $globalMermaid := site.Params.mermaid -}}
+{{- $enabled := false -}}
+
+{{- if $globalMermaid -}}
+  {{- if eq (printf "%T" $globalMermaid) "bool" -}}
+    {{- $enabled = $globalMermaid -}}
+  {{- else -}}
+    {{- $enabled = $globalMermaid.enabled | default false -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and $enabled (in .Content "mermaid") -}}
+  <style>
+    svg[id^="mermaid-"] {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+    function currentMermaidTheme() {
+      return document.documentElement.classList.contains("dark") ? "dark" : "default";
+    }
+
+    document.querySelectorAll("pre.mermaid code").forEach((code) => {
+      const pre = code.parentElement;
+      pre.textContent = code.textContent;
+    });
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: currentMermaidTheme(),
+      securityLevel: "loose",
+    });
+  </script>
+{{- end -}}

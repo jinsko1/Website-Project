@@ -1,0 +1,55 @@
+{{ define "main" }}
+  <div class="mx-auto px-4 py-6">
+    <header class="mb-8">
+      <h1 class="text-foreground mb-4 text-3xl font-bold">
+        {{ .Title }}
+      </h1>
+
+      {{ if .Content }}
+        <div class="prose prose-neutral dark:prose-invert max-w-none">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </header>
+
+    {{ $pages := .Paginator.Pages }}
+    {{ if $pages }}
+      <div class="space-y-6">
+        {{ range $pages }}
+          {{ $summary := "" }}
+          {{ if .Params.summary }}
+            {{ $summary = .Params.summary | plainify | truncate 180 }}
+          {{ else if .Params.description }}
+            {{ $summary = .Params.description | plainify | truncate 180 }}
+          {{ else if .Summary }}
+            {{ $summary = .Summary | plainify | replaceRE `Generated from content/ by scripts/build_hugo_content.py\\. Do not edit directly\\.` `` | truncate 180 }}
+          {{ end }}
+
+          <article class="border-border hover:bg-muted/30 rounded-lg border p-6 transition-colors">
+            <h2 class="text-foreground mb-2 text-xl font-semibold">
+              <a href="{{ .RelPermalink }}" class="hover:text-primary transition-colors">
+                {{ .Title }}
+              </a>
+            </h2>
+
+            {{ if .Date }}
+              <div class="text-muted-foreground mb-3 text-sm">
+                <time datetime="{{ .Date.Format `2006-01-02` }}">
+                  {{ partial "helpers/date.html" (dict "date" .Date "variant" "long") }}
+                </time>
+              </div>
+            {{ end }}
+
+            {{ if $summary }}
+              <p class="text-muted-foreground text-sm leading-relaxed">
+                {{ $summary }}
+              </p>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+
+      {{ partial "navigation/pagination.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

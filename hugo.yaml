@@ -1,0 +1,176 @@
+baseURL: "https://jinsko.com/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "Jin Saeki Ko"
+theme: "hugo-narrow"
+contentDir: ".hugo-content"
+enableEmoji: true
+
+mainSections: ["blog", "research"]
+
+permalinks:
+  blog: "/blog/:slug/"
+  research: "/research/:slug/"
+  pages: "/:slug/"
+
+pagination:
+  pagerSize: 10
+  path: "page"
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      extras:
+        delete:
+          enable: true
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+      strikethrough: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: false
+    style: github
+    tabWidth: 2
+
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+outputFormats:
+  WebAppManifest:
+    mediaType: "application/manifest+json"
+    baseName: "site"
+    isPlainText: true
+
+params:
+  description: "Microbiology, research notes, medicine, books, and essays."
+  keywords: ["Microbiology", "Medicine", "Research", "Blog"]
+  defaultAuthor: "Jin Saeki Ko"
+  language: "en"
+  shortName: "Jin Saeki Ko"
+  images:
+    - "/images/og-default.avif"
+  favicon:
+    svg: "/favicon.svg?v=2"
+  author:
+    name: "Jin Saeki Ko"
+    title: "Microbiology undergraduate"
+    description: "Notes on microbiology, medicine, research, and whatever I am learning."
+    avatar: ""
+    social: []
+  header:
+    sticky: true
+    logo:
+      image: ""
+      link: "/"
+    showThemeSwitch: false
+    showDarkModeSwitch: true
+    showLanguageSwitch: false
+  dock: "scroll"
+  contentWidth: "56rem"
+  toc:
+    enabled: true
+    position: "center"
+  colorScheme: "minimal"
+  home:
+    recentPostsCount: 6
+    contentOrder:
+      - "author-section"
+      - "recent-posts"
+  post:
+    showRelated: true
+    relatedPostsCount: 3
+    license:
+      show: false
+  comments:
+    enabled: false
+  katex:
+    enabled: true
+    delimiters:
+      - left: "$$"
+        right: "$$"
+        display: true
+      - left: "$"
+        right: "$"
+        display: false
+      - left: "\\("
+        right: "\\)"
+        display: false
+      - left: "\\["
+        right: "\\]"
+        display: true
+  mermaid:
+    enabled: true
+  gallery:
+    enabled: true
+    defaultLayout: "justified"
+    gap: 10
+    targetRowHeight: 200
+    lastRowBehavior: "center"
+    columnWidth: 200
+    columns: 4
+  lightbox:
+    enabled: true
+  codeblock:
+    collapse:
+      enabled: true
+      defaultState: "expanded"
+      autoCollapseLines: 30
+      autoCollapseHeight: 400
+      collapsedHeight: 120
+  readingProgress:
+    enabled: true
+    showOnHomepage: false
+  dateFormat:
+    full: ":date_full"
+    long: ":date_long"
+    medium: ":date_medium"
+    short: ":date_short"
+  timeFormat:
+    full: ":time_full"
+    long: ":time_long"
+    medium: ":time_medium"
+    short: ":time_short"
+
+menus:
+  main:
+    - name: "Home"
+      pageRef: "/"
+      weight: 10
+      params:
+        icon: "home"
+    - name: "Research"
+      pageRef: "/research"
+      weight: 20
+      params:
+        icon: "briefcase"
+    - name: "Blog"
+      pageRef: "/blog"
+      weight: 30
+      params:
+        icon: "posts"
+  footer:
+    - name: "RSS Feed"
+      url: "/index.xml"
+      weight: 10
+      params:
+        icon: "rss"

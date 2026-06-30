@@ -1,0 +1,12 @@
+{{ $recentPostsCount := .Site.Params.home.recentPostsCount | default 5 }}
+{{ $mainSections := .Site.MainSections | default (slice "blog" "research") }}
+{{ $posts := where .Site.RegularPages "Section" "in" $mainSections }}
+{{ $posts = first $recentPostsCount (sort $posts "Date" "desc") }}
+
+{{ partial "content/post-list.html" (dict
+  "posts" $posts
+  "title" (T "home.recentPosts")
+  "showTitle" true
+  "showViewAll" false
+  )
+}}

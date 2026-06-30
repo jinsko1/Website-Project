@@ -1,0 +1,114 @@
+{{- $tocConfig := partial "config/toc.html" . -}}
+{{- if and .IsPage $tocConfig.enabled -}}
+  <aside
+    id="toc-container"
+    class="toc-{{ $tocConfig.position }}"
+    data-position="{{ $tocConfig.position }}"
+    hidden
+  >
+    <div
+      id="toc-center"
+      class="pointer-events-none fixed top-28 right-0 left-0 z-40 mx-auto w-full max-w-4xl px-4 transition-all duration-300"
+    >
+      <div class="pointer-events-auto relative mx-auto w-fit">
+        <button
+          id="toc-center-toggle"
+          class="bg-card/80 border-border text-muted-foreground hover:text-primary hover:bg-primary/10 ring-offset-background focus-visible:ring-ring flex cursor-pointer items-center gap-2 rounded-full border px-4 py-1.5 text-sm shadow-sm backdrop-blur-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+          type="button"
+        >
+          {{ partial "features/icon.html" (dict "name" "list" "size" "sm" "ariaLabel" "") }}
+          <span id="toc-center-title" class="max-w-[200px] truncate">{{ T "ui.toc" }}</span>
+          {{ partial "features/icon.html" (dict "name" "chevron-down" "size" "xs" "ariaLabel" "") }}
+        </button>
+
+        <div
+          id="toc-center-dropdown"
+          class="bg-card border-border scrollbar-hide absolute top-full left-1/2 mt-2 hidden max-h-[60vh] w-[280px] origin-top -translate-x-1/2 scale-95 overflow-y-auto rounded-xl border p-4 opacity-0 shadow-lg transition-all"
+        >
+          <nav id="TableOfContents" class="text-sm">
+            <ul id="toc-generated-list" class="list-none pl-0"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    (() => {
+      function slugify(text) {
+        return text
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, "")
+          .replace(/\s+/g, "-")
+          .replace(/-+/g, "-");
+      }
+
+      function initGeneratedToc() {
+        const container = document.getElementById("toc-container");
+        const list = document.getElementById("toc-generated-list");
+        const dropdown = document.getElementById("toc-center-dropdown");
+        const toggle = document.getElementById("toc-center-toggle");
+        const title = document.getElementById("toc-center-title");
+        const article = document.querySelector("article.prose, article .prose, .prose");
+        if (!container || !list || !dropdown || !toggle || !article) return;
+
+        const headings = Array.from(article.querySelectorAll("h1, h2, h3, h4"))
+          .filter((heading) => heading.textContent.trim().length > 0);
+        if (headings.length < 2) return;
+
+        list.innerHTML = "";
+        headings.forEach((heading, index) => {
+          if (!heading.id) {
+            heading.id = slugify(heading.textContent) || `heading-${index + 1}`;
+          }
+
+          const level = Number(heading.tagName.slice(1));
+          const item = document.createElement("li");
+          item.className = "my-1.5";
+          item.style.paddingLeft = `${Math.max(0, level - 1) * 0.75}rem`;
+
+          const link = document.createElement("a");
+          link.href = `#${heading.id}`;
+          link.textContent = heading.textContent.trim();
+          link.className = "text-muted-foreground hover:bg-primary/10 hover:text-primary block truncate rounded-md px-2 py-1 transition-colors";
+          link.addEventListener("click", () => dropdown.classList.add("hidden", "opacity-0", "scale-95"));
+
+          item.appendChild(link);
+          list.appendChild(item);
+        });
+
+        container.hidden = false;
+        toggle.addEventListener("click", () => {
+          const opening = dropdown.classList.contains("hidden");
+          dropdown.classList.toggle("hidden", !opening);
+          dropdown.classList.toggle("opacity-0", !opening);
+          dropdown.classList.toggle("scale-95", !opening);
+          dropdown.classList.toggle("opacity-100", opening);
+          dropdown.classList.toggle("scale-100", opening);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+          const active = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+          if (!active) return;
+          const activeLink = list.querySelector(`a[href="#${active.target.id}"]`);
+          list.querySelectorAll("a").forEach((link) => link.classList.remove("active", "text-primary", "font-medium"));
+          if (activeLink) {
+            activeLink.classList.add("active", "text-primary", "font-medium");
+            title.textContent = activeLink.textContent;
+          }
+        }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 1] });
+
+        headings.forEach((heading) => observer.observe(heading));
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initGeneratedToc, { once: true });
+      } else {
+        initGeneratedToc();
+      }
+    })();
+  </script>
+{{- end -}}

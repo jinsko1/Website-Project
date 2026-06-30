@@ -1,2 +1,13 @@
 /.quarto/
 _site/
+
+# Quarto output
+public/
+public-hugo/
+.hugo_build.lock
+
+# Hugo/Pandoc generated output
+.hugo-content/
+
+# Local vendored theme checkout
+themes/
