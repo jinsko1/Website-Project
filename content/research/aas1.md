@@ -2,12 +2,12 @@
 title: "AAS Trial 1 / Standard Operating Procedure"
 date: "2026-06-05"
 type: posts
+categories: 
+    - "Lehr Lab"
 slug: "aas1"
 url: "/research/aas1/"
 aliases: ["/research/aas1.html"]
 ---
-
-
 *Quantification of Iron in E. coli Cells by Atomic Absorption Spectroscopy*
 
 ## Purpose
@@ -63,6 +63,7 @@ This protocol describes the use of atomic absorption spectroscopy (AAS) to quant
 
 $$
 y = ax^2 + bx + c
+
 $$
 
 where $x$ is iron concentration in ppm and $y$ is absorbance.
@@ -75,8 +76,9 @@ where $x$ is iron concentration in ppm and $y$ is absorbance.
 
 The calibration standards used for this example are shown below. A second-order polynomial trendline was fit in R using the model $y \sim x + x^2$.
 
+
 | Concentration, x (ppm) | Absorbance, y |
-| ---------------------: | ------------: |
+| -----------------------: | --------------: |
 |                  0.000 |        0.0006 |
 |                  0.974 |        0.0490 |
 |                  1.948 |        0.1071 |
@@ -93,10 +95,12 @@ The fitted calibration equation was:
 
 $$
 y = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4}
+
 $$
 
 $$
 R^2 = 0.9999
+
 $$
 
 ## Unknown Sample Calculation
@@ -105,30 +109,35 @@ The unknown sample was measured twice:
 
 $$
 A_1 = 0.3515, \qquad A_2 = 0.3517
+
 $$
 
 The average absorbance was:
 
 $$
 \bar{A} = \frac{0.3515 + 0.3517}{2} = 0.3516
+
 $$
 
 Substituting $y = 0.3516$ into the calibration equation:
 
 $$
 0.3516 = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4}
+
 $$
 
 Rearranging:
 
 $$
 -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 3.5250502 \times 10^{-1} = 0
+
 $$
 
 Solving the quadratic gives two mathematical roots. The root within the calibration range is:
 
 $$
 x = 6.913389~\mathrm{ppm}
+
 $$
 
 Since ppm is treated as mg/L:
@@ -136,6 +145,7 @@ Since ppm is treated as mg/L:
 $$
 6.913389~\mathrm{mg/L} \times 0.0500~\mathrm{L}
 = 0.345669~\mathrm{mg~Fe}
+
 $$
 
 Convert milligrams of iron to grams:
@@ -144,6 +154,7 @@ $$
 0.345669~\mathrm{mg~Fe} \times
 \frac{1~\mathrm{g}}{1000~\mathrm{mg}}
 = 3.45669 \times 10^{-4}~\mathrm{g~Fe}
+
 $$
 
 Normalize to the cell mass used to prepare the sample:
@@ -151,12 +162,14 @@ Normalize to the cell mass used to prepare the sample:
 $$
 \frac{3.45669 \times 10^{-4}~\mathrm{g~Fe}}{9.20~\mathrm{g~cells}}
 = 3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells}
+
 $$
 
 Rounded to three significant figures:
 
 $$
 \boxed{3.76 \times 10^{-5}~\mathrm{g~Fe/g~cells}}
+
 $$
 
 ## Expected Range Check
@@ -167,12 +180,14 @@ Using Avogadro's constant:
 
 $$
 N_A = 6.02214076 \times 10^{23}~\mathrm{atoms~mol^{-1}}
+
 $$
 
 and the molar mass of iron:
 
 $$
 M_{\mathrm{Fe}} = 55.845~\mathrm{g/mol}
+
 $$
 
 For $10^5$ iron atoms per cell:
@@ -183,6 +198,7 @@ $$
 \frac{1~\mathrm{mol~Fe}}{6.02214076 \times 10^{23}~\mathrm{atoms~Fe}}
 =
 1.66054 \times 10^{-19}~\mathrm{mol~Fe~cell^{-1}}
+
 $$
 
 $$
@@ -191,6 +207,7 @@ $$
 55.845~\mathrm{g/mol}
 =
 9.27344 \times 10^{-18}~\mathrm{g~Fe~cell^{-1}}
+
 $$
 
 $$
@@ -198,12 +215,14 @@ $$
 {1.0 \times 10^{-12}~\mathrm{g~cell~cell^{-1}}}
 =
 9.27344 \times 10^{-6}~\mathrm{g~Fe/g~cells}
+
 $$
 
 For $10^6$ iron atoms per cell, the value is ten-fold higher:
 
 $$
 9.27344 \times 10^{-5}~\mathrm{g~Fe/g~cells}
+
 $$
 
 Therefore, the expected range is:
@@ -214,25 +233,28 @@ $$
 \frac{\mathrm{g~Fe}}{\mathrm{g~cells}}
 \le
 9.27344 \times 10^{-5}
+
 $$
 
 The measured value from the unknown sample was:
 
 $$
 3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells}
+
 $$
 
 This result falls within the expected literature-based range.
 
 ## Result Summary
 
-| Quantity                    |                                                                 Value |
-| --------------------------- | --------------------------------------------------------------------: |
-| Average unknown absorbance  |                                                                0.3516 |
-| Calculated Fe concentration |                                                          6.913389 ppm |
-| Unknown sample volume       |                                                              0.0500 L |
-| Total Fe in unknown         |                                          $3.45669 \times 10^{-4}$ g |
-| Cell mass represented       |                                                                9.20 g |
-| Measured Fe per cell mass   |                               $3.75728 \times 10^{-5}$ g Fe/g cells |
+
+| Quantity                    |                                                             Value |
+| ----------------------------- | ------------------------------------------------------------------: |
+| Average unknown absorbance  |                                                            0.3516 |
+| Calculated Fe concentration |                                                      6.913389 ppm |
+| Unknown sample volume       |                                                          0.0500 L |
+| Total Fe in unknown         |                                        $3.45669 \times 10^{-4}$ g |
+| Cell mass represented       |                                                            9.20 g |
+| Measured Fe per cell mass   |                             $3.75728 \times 10^{-5}$ g Fe/g cells |
 | Expected range              | $9.27344 \times 10^{-6}$ to $9.27344 \times 10^{-5}$ g Fe/g cells |
-| Interpretation              |                                                 Within expected range |
+| Interpretation              |                                             Within expected range |

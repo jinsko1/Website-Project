@@ -2,12 +2,12 @@
 title: "Colony Counting using YOLOv8n"
 date: "2026-05-12"
 type: posts
+categories: 
+    - "Yep Lab"
 slug: "colony_counter"
 url: "/research/colony_counter/"
 aliases: ["/research/colony_counter.html"]
 ---
-
-
 Model used is YOLOv8n pretrained on colonies [@wangColonyYOLOLightweightMicroColony2025], but optimized for our use. The process is as follows:
 
 ```mermaid
@@ -48,13 +48,14 @@ It has trouble with the smallest colonies, which is expected since these cases w
 
 I chose the model because it is the smallest and fastest YOLOv8 model, which is ideal for our application where we need to process a large number of images efficiently. It also isn't too old of a model. At the end of training, `best.pt` ended with:
 
-Precision:  0.866\
-Recall:     0.788\
-mAP50:      0.845\
-mAP50-95:   0.484\
-Planned: 50 epochs\
-Actually completed: 46 epochs\
+Precision:  0.866
+Recall:     0.788
+mAP50:      0.845
+mAP50-95:   0.484
+Planned: 50 epochs
+Actually completed: 46 epochs
 Best model: epoch 36\
 
 # Detecting the plate
+
 Hough Circle Transform is used to find the circular shape of the Petri dish in the image. This allows us to create a mask that isolates the area of interest (the inside of the dish) and eliminates any background noise that could interfere with colony detection. From what I understand the method converts the image to grayscale, applies a Gaussian blur to reduce noise, and draws circles of differing radii based on the detected edges. The point at which most circles overlap is likely the center of the dish, and the radius can be determined from the distance to the edge of the dish.

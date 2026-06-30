@@ -2,7 +2,7 @@ on:
   push:
     branches: main
 
-name: Quarto Publish
+name: Hugo Publish
 
 jobs:
   build-deploy:
@@ -13,14 +13,26 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
 
-      - name: Render Website
-        run: quarto render --to html
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
+      - name: Install Hugo Narrow
+        run: git clone https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
+
+      - name: Build citation-processed content
+        run: python3 scripts/build_hugo_content.py
+
+      - name: Build Hugo site
+        run: hugo --minify --destination public --cleanDestinationDir
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./public

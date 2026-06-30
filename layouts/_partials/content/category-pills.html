@@ -1,0 +1,28 @@
+{{- $page := .page -}}
+{{- $linked := .linked | default false -}}
+{{- $terms := $page.GetTerms "categories" -}}
+{{- $rawCategories := $page.Params.categories -}}
+
+{{- if $terms -}}
+  <div class="post-categories flex flex-wrap items-center gap-1.5">
+    {{- range $terms -}}
+      {{- if $linked -}}
+        <a href="{{ .RelPermalink }}" class="border-border bg-muted/40 text-muted-foreground hover:bg-muted hover:text-foreground inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium transition-colors">
+          {{ .LinkTitle }}
+        </a>
+      {{- else -}}
+        <span class="border-border bg-muted/40 text-muted-foreground inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium">
+          {{ .LinkTitle }}
+        </span>
+      {{- end -}}
+    {{- end -}}
+  </div>
+{{- else if $rawCategories -}}
+  <div class="post-categories flex flex-wrap items-center gap-1.5">
+    {{- range $rawCategories -}}
+      <span class="border-border bg-muted/40 text-muted-foreground inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium">
+        {{ . }}
+      </span>
+    {{- end -}}
+  </div>
+{{- end -}}

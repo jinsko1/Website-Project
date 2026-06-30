@@ -2,17 +2,18 @@
 title: "Issues with Biofilm Formation"
 date: "2025-10-27"
 type: posts
+categories: 
+    - "Yep Lab"
 slug: "biofilm-issues"
 url: "/research/biofilm-issues/"
 aliases: ["/research/biofilm-issues.html"]
 ---
-
-
 In the lab, Kelsey and I have been running into issues with the biofilm assay. Regardless of the incubation period, the E. coli strains that are supposed to form biofilms aren’t doing so. After a couple of failed attempts, we also tried growing Pseudomonas, which is known for robust biofilm formation, but this trial also resulted in no observable biofilm. By testing these two strains, we could assess whether the problem lies with the E. coli strains we were using or whether it stems from a systemic error in our protocol.
 
 Given the fact that Pseudomonas also failed to form observable biofilms, we concluded that the error most likely originates in the protocol. Since I’ve never done this before, in the subsequent passages I attempt to explicate and justify the steps in the biofilm procedure and where we might have erred.
 
 ## The Canonical Biofilm Assay Protocol
+
 The following procedure comes out of the Microtiter Dish Biofilm Formation Assay [@otooleMicrotiterDishBiofilm2011]. Most of the passage below comes out of the paper verbatim. I'm just pasting it here for convenience.
 
 > Dilute the overnight culture 1:100 into fresh medium. Add 100 μL of the dilution per well in a 96 well dish; 4-8 replicate wells for each treatment. Incubate 4-24 hrs at 37°C.
@@ -22,10 +23,13 @@ The following procedure comes out of the Microtiter Dish Biofilm Formation Assay
 > Add 125 μL of 30% acetic acid in water to each well of the microtiter plate to solubilize the CV. Incubate the microtiter plate at room temperature for 10-15 min. Transfer 125 μL of the solubilized CV to a new flat bottomed microtiter dish. Quantify absorbance in a plate reader at 550 nm using 30% acetic acid in water as the blank.
 
 ## Potential Errors in Protocol
+
 I’m not sure why we use 24-well plates rather than 96-well plates. I’m also not sure why we aspirate the supernatant instead of dumping the plate as described above (I’ll ask during lab meeting). I’m likewise unsure why we use ethanol instead of acetic acid to solubilize the bound crystal violet. In any case, here are potential errors that may have occurred based on the procedure above:
 
 ### Washing and Rinsing
+
 In the current procedure, we aspirate the supernatant rather than dumping it. Weaker biofilms may be prone to being sheared off during aspiration. Dumping the plate also standardizes how much supernatant is removed, whereas aspiration may introduce more technical variability.
 
 ### 96-well-plate
+
 Using the 96 well plate might yield better results. With a smaller well, I'd figure attachment becomes easier and hence, accidental shearing of the biofilms becomes less likely. I'll ask about this.

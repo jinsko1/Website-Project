@@ -33,12 +33,24 @@
             </h2>
 
             {{ if .Date }}
-              <div class="text-muted-foreground mb-3 text-sm">
+              <div class="text-muted-foreground mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
                 <time datetime="{{ .Date.Format `2006-01-02` }}">
                   {{ partial "helpers/date.html" (dict "date" .Date "variant" "long") }}
                 </time>
+
+                {{ if .ReadingTime }}
+                  <span>{{ T "article.readingTime" (dict "count" .ReadingTime) }}</span>
+                {{ end }}
+
+                {{ if .WordCount }}
+                  <span>{{ T "article.wordCount" (dict "count" .WordCount) }}</span>
+                {{ end }}
               </div>
             {{ end }}
+
+            <div class="mb-3">
+              {{ partial "content/category-pills.html" (dict "page" . "linked" false) }}
+            </div>
 
             {{ if $summary }}
               <p class="text-muted-foreground text-sm leading-relaxed">
