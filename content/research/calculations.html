@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-12">
 
-<title>Research – Jin Saeki Ko</title>
+<title>Calculations for AAS – Jin Saeki Ko</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,21 +27,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e273511d09b17b40736144097ac5380.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1e273511d09b17b40736144097ac5380.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -56,35 +55,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -116,18 +86,18 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../mobile.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jin Saeki Ko</span>
     </a>
   </div>
@@ -137,15 +107,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -159,14 +129,13 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(20)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Calculations for AAS</h1>
 </div>
 
 
@@ -174,6 +143,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 12, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -183,338 +158,79 @@ window.Quarto = {
 </header>
 
 
-<p>Literature review and explanations of my own research, for my own understanding.</p>
+<p>The reported amount of of iron in WT <em>E. coli</em> is around 10^5 to 10^6 atoms per cell <span class="citation" data-cites="williamsDpsFunctionsKey2023">[@williamsDpsFunctionsKey2023]</span>.</p>
+<section id="converting-atoms-per-cell-to-micrograms-per-gram-of-cells" class="level2">
+<h2 class="anchored" data-anchor-id="converting-atoms-per-cell-to-micrograms-per-gram-of-cells">Converting atoms per cell to micrograms per gram of cells</h2>
+<p>Using</p>
+<p><span class="math display">\[
+10^5 \,\text{atoms Fe/cell}
+\]</span></p>
+<p>the iron mass per cell is</p>
+<p><span class="math display">\[
+m_{\mathrm{Fe,cell}} = 10^5 \times \frac{55.845}{6.022\times10^{23}} \,\mathrm{g}
+\]</span></p>
+<p><span class="math display">\[
+m_{\mathrm{Fe,cell}} \approx 9.27\times10^{-18} \,\mathrm{g}
+\]</span></p>
+<p>If the wet mass of an <em>E. coli</em> cell is</p>
+<p><span class="math display">\[
+m_{\mathrm{cell}} \approx 0.95 \,\mathrm{pg} = 0.95\times10^{-12} \,\mathrm{g}
+\]</span></p>
+<p>then the iron content per gram of wet cells is</p>
+<p><span class="math display">\[
+\frac{9.27\times10^{-18}}{0.95\times10^{-12}}
+= 9.76\times10^{-6} \,\mathrm{g/g}
+\]</span></p>
+<p>which is</p>
+<p><span class="math display">\[
+9.76\times10^{-6} \,\mathrm{g/g}
+\times 10^6 \,\mu\mathrm{g}/\mathrm{g}
+= 9.8 \,\mu\mathrm{g}/\mathrm{g}
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+\boxed{10^5 \,\text{atoms Fe/cell} \approx 9.8 \,\mu\mathrm{g\ of\ Fe}/\mathrm{g \ wet \ cells}}
+\]</span></p>
+</section>
+<section id="maximum-final-volume-allowed-for-all-harvested-e.-coli-cells" class="level2">
+<h2 class="anchored" data-anchor-id="maximum-final-volume-allowed-for-all-harvested-e.-coli-cells">Maximum final volume allowed for all harvested <em>E. coli</em> cells</h2>
+<p>Detection threshold:</p>
+<p><span class="math display">\[
+5 \,\mu\mathrm{g\ Fe}/\mathrm{mL}
+\]</span></p>
+<p>I’m using the low-end estimate for wet <em>E. coli</em> iron content,</p>
+<p><span class="math display">\[
+c_{\mathrm{Fe}} \approx 10 \,\mu\mathrm{g\ Fe}/\mathrm{g\ of\ cells}
+\]</span></p>
+<p>I harvested</p>
+<p><span class="math display">\[
+m_{\mathrm{cells}} = 3 \,\mathrm{g}
+\]</span></p>
+<p>So the minimum expected total Fe in my full sample is</p>
+<p><span class="math display">\[
+m_{\mathrm{Fe}} = 3 \times 10 = 30 \,\mu\mathrm{g}
+\]</span></p>
+<p>If the final volume is (V) mL, then the Fe concentration will be</p>
+<p><span class="math display">\[
+C_{\mathrm{Fe}} = \frac{30}{V} \,\mu\mathrm{g}/\mathrm{mL}
+\]</span></p>
+<p>To stay above the detection threshold,</p>
+<p><span class="math display">\[
+\frac{30}{V} \geq 5
+\]</span></p>
+<p>Therefore, using the low-end estimate, the <strong>largest final volume</strong> I can dilute my full 3 g cell sample into while still staying above the detection limit is:</p>
+<p><span class="math display">\[
+\boxed{6 \,\mathrm{mL}}
+\]</span></p>
+<hr>
+<p>Minimum detection threshold for the AASpectrometer is 5ppm = 5 mg/L. Yielded 3 grams in most recent trial with tonB, the strain with the least amount of iron content (supposedly). Need to know how much iron is in each cell (probably better to underestimate since its ton B), in order to determine how much cell is needed to reach the 5 mg/L threshold. From there, need to determine how much volume to put the cells in to keep it above threshold.</p>
+<p>Side note: I recently reread an article from a <a href="ironQuant/">previous post</a> that showed ~2 fold increase in iron content from log to stationary phase. This is shown in the figure below, panel A. WT is W3110. White bar is the log phase and the black bar is the stationary phase. The increase in iron content is substantial, around 2 fold, but no significance is reported. I’m currently harvesting the cells at stationary phase, 2x, but I cannot assume this trend applies across all the tested strains. Just something to keep in mind.</p>
+<p><img src="../../research/images/furIron.png" class="img-fluid" data-fig-cap="Iron content from log to stationary phase in WT"></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table table-hover">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-Reading Time
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1780617600000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1601" data-listing-title-sort="AAS Trial 1 / Standard Operating Procedure" data-listing-filename-sort="aas1.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-06-05</span>
-</td>
-<td>
-<a href="./content/research/aas1.html" class="title listing-title">AAS Trial 1 / Standard Operating Procedure</a>
-</td>
-<td>
-<span class="listing-reading-time">9 min</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-date-sort="1780617600000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1601" data-listing-title-sort="AAS Trial 1 / Standard Operating Procedure" data-listing-filename-sort="aas1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-06-05</span>
-</td>
-<td>
-<a href="./research/aas1.html" class="title listing-title">AAS Trial 1 / Standard Operating Procedure</a>
-</td>
-<td>
-<span class="listing-reading-time">9 min</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1778544000000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410" data-listing-title-sort="Colony Counting using YOLOv8n" data-listing-filename-sort="colony_counter.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-05-12</span>
-</td>
-<td>
-<a href="./content/research/colony_counter.html" class="title listing-title">Colony Counting using YOLOv8n</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1778544000000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410" data-listing-title-sort="Colony Counting using YOLOv8n" data-listing-filename-sort="colony_counter.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-05-12</span>
-</td>
-<td>
-<a href="./research/colony_counter.html" class="title listing-title">Colony Counting using YOLOv8n</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-date-sort="1775952000000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356" data-listing-title-sort="Calculations for AAS" data-listing-filename-sort="calculations.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-04-12</span>
-</td>
-<td>
-<a href="./content/research/calculations.html" class="title listing-title">Calculations for AAS</a>
-</td>
-<td>
-<span class="listing-reading-time">2 min</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-date-sort="1775952000000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356" data-listing-title-sort="Calculations for AAS" data-listing-filename-sort="calculations.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-04-12</span>
-</td>
-<td>
-<a href="./research/calculations.html" class="title listing-title">Calculations for AAS</a>
-</td>
-<td>
-<span class="listing-reading-time">2 min</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-date-sort="1774915200000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="506" data-listing-title-sort="Revision to the Biofilm Assay: The Bladder Cell Invasion Protocol" data-listing-filename-sort="newbiofilm.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-03-31</span>
-</td>
-<td>
-<a href="./content/research/newbiofilm.html" class="title listing-title">Revision to the Biofilm Assay: The Bladder Cell Invasion Protocol</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1774915200000" data-listing-file-modified-sort="1782782535048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="506" data-listing-title-sort="Revision to the Biofilm Assay: The Bladder Cell Invasion Protocol" data-listing-filename-sort="newbiofilm.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-03-31</span>
-</td>
-<td>
-<a href="./research/newbiofilm.html" class="title listing-title">Revision to the Biofilm Assay: The Bladder Cell Invasion Protocol</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-date-sort="1771027200000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1194" data-listing-title-sort="Iron Quantification using Atomic Absorption Spectroscopy" data-listing-filename-sort="ironQuant.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-02-14</span>
-</td>
-<td>
-<a href="./content/research/ironQuant.html" class="title listing-title">Iron Quantification using Atomic Absorption Spectroscopy</a>
-</td>
-<td>
-<span class="listing-reading-time">6 min</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-date-sort="1771027200000" data-listing-file-modified-sort="1782782535048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1194" data-listing-title-sort="Iron Quantification using Atomic Absorption Spectroscopy" data-listing-filename-sort="ironQuant.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2026-02-14</span>
-</td>
-<td>
-<a href="./research/ironQuant.html" class="title listing-title">Iron Quantification using Atomic Absorption Spectroscopy</a>
-</td>
-<td>
-<span class="listing-reading-time">6 min</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-date-sort="1762732800000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="587" data-listing-title-sort="ASM 2025" data-listing-filename-sort="asm2025.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-11-10</span>
-</td>
-<td>
-<a href="./content/research/asm2025.html" class="title listing-title">ASM 2025</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-date-sort="1762732800000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="587" data-listing-title-sort="ASM 2025" data-listing-filename-sort="asm2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-11-10</span>
-</td>
-<td>
-<a href="./research/asm2025.html" class="title listing-title">ASM 2025</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="508" data-listing-title-sort="Issues with Biofilm Formation" data-listing-filename-sort="biofilm-issues.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-27</span>
-</td>
-<td>
-<a href="./content/research/biofilm-issues.html" class="title listing-title">Issues with Biofilm Formation</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="508" data-listing-title-sort="Issues with Biofilm Formation" data-listing-filename-sort="biofilm-issues.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-27</span>
-</td>
-<td>
-<a href="./research/biofilm-issues.html" class="title listing-title">Issues with Biofilm Formation</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="14" data-listing-date-sort="1759449600000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-title-sort="LB, ∆fur, and Stationary Phase" data-listing-filename-sort="stationary-phase.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-03</span>
-</td>
-<td>
-<a href="./content/research/stationary-phase.html" class="title listing-title">LB, ∆fur, and Stationary Phase</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="15" data-listing-date-sort="1759449600000" data-listing-file-modified-sort="1782782535048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-title-sort="LB, ∆fur, and Stationary Phase" data-listing-filename-sort="stationary-phase.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-10-03</span>
-</td>
-<td>
-<a href="./research/stationary-phase.html" class="title listing-title">LB, ∆fur, and Stationary Phase</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="16" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523" data-listing-title-sort="∆waaF and Colanic Acid as a Surfactant" data-listing-filename-sort="9-17-2025.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-09-21</span>
-</td>
-<td>
-<a href="./content/research/9-17-2025.html" class="title listing-title">∆waaF and Colanic Acid as a Surfactant</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="17" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1782782534928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523" data-listing-title-sort="∆waaF and Colanic Acid as a Surfactant" data-listing-filename-sort="9-17-2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-09-21</span>
-</td>
-<td>
-<a href="./research/9-17-2025.html" class="title listing-title">∆waaF and Colanic Acid as a Surfactant</a>
-</td>
-<td>
-<span class="listing-reading-time">3 min</span>
-</td>
-
-</tr>
-
-<tr data-index="18" data-listing-date-sort="1755388800000" data-listing-file-modified-sort="1782782534926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="908" data-listing-title-sort="The Yep Lab: Iron and the Motility of CFT073" data-listing-filename-sort="8-17-2025.md" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-08-17</span>
-</td>
-<td>
-<a href="./content/research/8-17-2025.html" class="title listing-title">The Yep Lab: Iron and the Motility of CFT073</a>
-</td>
-<td>
-<span class="listing-reading-time">5 min</span>
-</td>
-
-</tr>
-
-<tr data-index="19" data-listing-date-sort="1755388800000" data-listing-file-modified-sort="1782782534927" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="908" data-listing-title-sort="The Yep Lab: Iron and the Motility of CFT073" data-listing-filename-sort="8-17-2025.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">2025-08-17</span>
-</td>
-<td>
-<a href="./research/8-17-2025.html" class="title listing-title">The Yep Lab: Iron and the Motility of CFT073</a>
-</td>
-<td>
-<span class="listing-reading-time">5 min</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

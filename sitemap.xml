@@ -2,94 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jinsko.com/research.html</loc>
-    <lastmod>2026-06-29T18:14:23.384Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.927Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog.html</loc>
-    <lastmod>2026-06-29T18:14:23.380Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.922Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/biofilm-issues.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/asm2025.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/colony_counter.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/newbiofilm.html</loc>
-    <lastmod>2026-06-29T18:14:23.523Z</lastmod>
+    <lastmod>2026-06-30T01:22:15.048Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/9-17-2025.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/books.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/spices.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/08-29-25.html</loc>
-    <lastmod>2026-06-29T18:14:23.380Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/blog_post.html</loc>
-    <lastmod>2026-06-29T18:14:23.381Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/rss.html</loc>
-    <lastmod>2026-06-29T18:14:23.382Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/jamaseries.html</loc>
-    <lastmod>2026-06-29T18:14:23.382Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/sham.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jinsko.com/blog/sec_systems.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.925Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/blog/diabetic-ketoacidosis.html</loc>
-    <lastmod>2026-06-29T18:14:23.381Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.923Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/sec_systems.html</loc>
+    <lastmod>2026-06-30T01:22:14.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/08-29-25.html</loc>
+    <lastmod>2026-06-30T01:22:14.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/blog_post.html</loc>
+    <lastmod>2026-06-30T01:22:14.923Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/rss.html</loc>
+    <lastmod>2026-06-30T01:22:14.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/ironQuant.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/stationary-phase.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/8-17-2025.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/9-17-2025.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/asm2025.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/spices.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/sec_systems.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/jamaseries.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/blog_post.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/diabetic-ketoacidosis.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/08-29-25.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/rss.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/sham.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/blog/surrogate.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/aas1.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/calculations.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/newbiofilm.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/biofilm-issues.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/content/research/colony_counter.html</loc>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/jamaseries.html</loc>
+    <lastmod>2026-06-30T01:22:14.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/sham.html</loc>
+    <lastmod>2026-06-30T01:22:14.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/surrogate.html</loc>
+    <lastmod>2026-06-30T01:22:14.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/blog/spices.html</loc>
+    <lastmod>2026-06-30T01:22:14.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jinsko.com/HUGO_MIGRATION.html</loc>
+    <lastmod>2026-06-30T01:22:14.918Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/quotes.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.927Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/calculations.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/8-17-2025.html</loc>
-    <lastmod>2026-06-29T18:14:23.384Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.927Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/stationary-phase.html</loc>
-    <lastmod>2026-06-29T18:14:23.523Z</lastmod>
+    <lastmod>2026-06-30T01:22:15.048Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/aas1.html</loc>
-    <lastmod>2026-06-29T18:14:23.385Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.928Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/research/ironQuant.html</loc>
-    <lastmod>2026-06-29T18:14:23.523Z</lastmod>
+    <lastmod>2026-06-30T01:22:15.048Z</lastmod>
   </url>
   <url>
     <loc>https://jinsko.com/index.html</loc>
-    <lastmod>2026-06-29T18:14:23.383Z</lastmod>
+    <lastmod>2026-06-30T01:22:14.926Z</lastmod>
   </url>
 </urlset>
