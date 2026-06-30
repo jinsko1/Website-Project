@@ -61,12 +61,9 @@ This protocol describes the use of atomic absorption spectroscopy (AAS) to quant
 4. Measure each calibration standard and record the absorbance.
 5. Fit the calibration data using a second-order polynomial model:
 
-$$
-y = ax^2 + bx + c
+\[ y = ax^2 + bx + c \]
 
-$$
-
-where $x$ is iron concentration in ppm and $y$ is absorbance.
+where \(x\) is iron concentration in ppm and \(y\) is absorbance.
 
 6. Measure the unknown sample at least twice. Average the absorbance values.
 7. Solve the polynomial calibration equation for the unknown concentration.
@@ -74,7 +71,7 @@ where $x$ is iron concentration in ppm and $y$ is absorbance.
 
 ## Calibration Data and Curve
 
-The calibration standards used for this example are shown below. A second-order polynomial trendline was fit in R using the model $y \sim x + x^2$.
+The calibration standards used for this example are shown below. A second-order polynomial trendline was fit in R using the model \(y \sim x + x^2\).
 
 
 | Concentration, x (ppm) | Absorbance, y |
@@ -93,155 +90,79 @@ The calibration standards used for this example are shown below. A second-order 
 
 The fitted calibration equation was:
 
-$$
-y = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4}
+\[ y = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4} \]
 
-$$
-
-$$
-R^2 = 0.9999
-
-$$
+\[ R^2 = 0.9999 \]
 
 ## Unknown Sample Calculation
 
 The unknown sample was measured twice:
 
-$$
-A_1 = 0.3515, \qquad A_2 = 0.3517
-
-$$
+\[ A_1 = 0.3515, \qquad A_2 = 0.3517 \]
 
 The average absorbance was:
 
-$$
-\bar{A} = \frac{0.3515 + 0.3517}{2} = 0.3516
+\[ \bar{A} = \frac{0.3515 + 0.3517}{2} = 0.3516 \]
 
-$$
+Substituting \(y = 0.3516\) into the calibration equation:
 
-Substituting $y = 0.3516$ into the calibration equation:
-
-$$
-0.3516 = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4}
-
-$$
+\[ 0.3516 = -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 9.0502 \times 10^{-4} \]
 
 Rearranging:
 
-$$
--8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 3.5250502 \times 10^{-1} = 0
-
-$$
+\[ -8.0236 \times 10^{-4}x^2 + 5.6536 \times 10^{-2}x - 3.5250502 \times 10^{-1} = 0 \]
 
 Solving the quadratic gives two mathematical roots. The root within the calibration range is:
 
-$$
-x = 6.913389~\mathrm{ppm}
-
-$$
+\[ x = 6.913389~\mathrm{ppm} \]
 
 Since ppm is treated as mg/L:
 
-$$
-6.913389~\mathrm{mg/L} \times 0.0500~\mathrm{L}
-= 0.345669~\mathrm{mg~Fe}
-
-$$
+\[ 6.913389~\mathrm{mg/L} \times 0.0500~\mathrm{L} = 0.345669~\mathrm{mg~Fe} \]
 
 Convert milligrams of iron to grams:
 
-$$
-0.345669~\mathrm{mg~Fe} \times
-\frac{1~\mathrm{g}}{1000~\mathrm{mg}}
-= 3.45669 \times 10^{-4}~\mathrm{g~Fe}
-
-$$
+\[ 0.345669~\mathrm{mg~Fe} \times \frac{1~\mathrm{g}}{1000~\mathrm{mg}} = 3.45669 \times 10^{-4}~\mathrm{g~Fe} \]
 
 Normalize to the cell mass used to prepare the sample:
 
-$$
-\frac{3.45669 \times 10^{-4}~\mathrm{g~Fe}}{9.20~\mathrm{g~cells}}
-= 3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells}
-
-$$
+\[ \frac{3.45669 \times 10^{-4}~\mathrm{g~Fe}}{9.20~\mathrm{g~cells}} = 3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells} \]
 
 Rounded to three significant figures:
 
-$$
-\boxed{3.76 \times 10^{-5}~\mathrm{g~Fe/g~cells}}
-
-$$
+\[ \boxed{3.76 \times 10^{-5}~\mathrm{g~Fe/g~cells}} \]
 
 ## Expected Range Check
 
-Andrews et al. report that the iron content of *E. coli* ranges from approximately $10^5$ to $10^6$ iron atoms per cell, depending on growth conditions [@andrewsBacterialIronHomeostasis2003a]. Phillips, Kondev, and Theriot list a common rule-of-thumb mass for one *E. coli* cell as 1 pg, or $1.0 \times 10^{-12}$ g [@phillipsPhysicalBiologyCell2012]. These literature-supported values are used as inputs for the expected-range calculation below.
+Andrews et al. report that the iron content of *E. coli* ranges from approximately \(10^5\) to \(10^6\) iron atoms per cell, depending on growth conditions [^ref-andrewsBacterialIronHomeostasis2003a]. Phillips, Kondev, and Theriot list a common rule-of-thumb mass for one *E. coli* cell as 1 pg, or \(1.0 \times 10^{-12}\) g [^ref-phillipsPhysicalBiologyCell2012]. These literature-supported values are used as inputs for the expected-range calculation below.
 
 Using Avogadro's constant:
 
-$$
-N_A = 6.02214076 \times 10^{23}~\mathrm{atoms~mol^{-1}}
-
-$$
+\[ N_A = 6.02214076 \times 10^{23}~\mathrm{atoms~mol^{-1}} \]
 
 and the molar mass of iron:
 
-$$
-M_{\mathrm{Fe}} = 55.845~\mathrm{g/mol}
+\[ M_{\mathrm{Fe}} = 55.845~\mathrm{g/mol} \]
 
-$$
+For \(10^5\) iron atoms per cell:
 
-For $10^5$ iron atoms per cell:
+\[ 10^5~\mathrm{atoms~Fe~cell^{-1}} \times \frac{1~\mathrm{mol~Fe}}{6.02214076 \times 10^{23}~\mathrm{atoms~Fe}} = 1.66054 \times 10^{-19}~\mathrm{mol~Fe~cell^{-1}} \]
 
-$$
-10^5~\mathrm{atoms~Fe~cell^{-1}}
-\times
-\frac{1~\mathrm{mol~Fe}}{6.02214076 \times 10^{23}~\mathrm{atoms~Fe}}
-=
-1.66054 \times 10^{-19}~\mathrm{mol~Fe~cell^{-1}}
+\[ 1.66054 \times 10^{-19}~\mathrm{mol~Fe~cell^{-1}} \times 55.845~\mathrm{g/mol} = 9.27344 \times 10^{-18}~\mathrm{g~Fe~cell^{-1}} \]
 
-$$
+\[ \frac{9.27344 \times 10^{-18}~\mathrm{g~Fe~cell^{-1}}} {1.0 \times 10^{-12}~\mathrm{g~cell~cell^{-1}}} = 9.27344 \times 10^{-6}~\mathrm{g~Fe/g~cells} \]
 
-$$
-1.66054 \times 10^{-19}~\mathrm{mol~Fe~cell^{-1}}
-\times
-55.845~\mathrm{g/mol}
-=
-9.27344 \times 10^{-18}~\mathrm{g~Fe~cell^{-1}}
+For \(10^6\) iron atoms per cell, the value is ten-fold higher:
 
-$$
-
-$$
-\frac{9.27344 \times 10^{-18}~\mathrm{g~Fe~cell^{-1}}}
-{1.0 \times 10^{-12}~\mathrm{g~cell~cell^{-1}}}
-=
-9.27344 \times 10^{-6}~\mathrm{g~Fe/g~cells}
-
-$$
-
-For $10^6$ iron atoms per cell, the value is ten-fold higher:
-
-$$
-9.27344 \times 10^{-5}~\mathrm{g~Fe/g~cells}
-
-$$
+\[ 9.27344 \times 10^{-5}~\mathrm{g~Fe/g~cells} \]
 
 Therefore, the expected range is:
 
-$$
-9.27344 \times 10^{-6}
-\le
-\frac{\mathrm{g~Fe}}{\mathrm{g~cells}}
-\le
-9.27344 \times 10^{-5}
-
-$$
+\[ 9.27344 \times 10^{-6} \le \frac{\mathrm{g~Fe}}{\mathrm{g~cells}} \le 9.27344 \times 10^{-5} \]
 
 The measured value from the unknown sample was:
 
-$$
-3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells}
-
-$$
+\[ 3.75728 \times 10^{-5}~\mathrm{g~Fe/g~cells} \]
 
 This result falls within the expected literature-based range.
 
@@ -253,8 +174,13 @@ This result falls within the expected literature-based range.
 | Average unknown absorbance  |                                                            0.3516 |
 | Calculated Fe concentration |                                                      6.913389 ppm |
 | Unknown sample volume       |                                                          0.0500 L |
-| Total Fe in unknown         |                                        $3.45669 \times 10^{-4}$ g |
+| Total Fe in unknown         |                                        \(3.45669 \times 10^{-4}\) g |
 | Cell mass represented       |                                                            9.20 g |
-| Measured Fe per cell mass   |                             $3.75728 \times 10^{-5}$ g Fe/g cells |
-| Expected range              | $9.27344 \times 10^{-6}$ to $9.27344 \times 10^{-5}$ g Fe/g cells |
+| Measured Fe per cell mass   |                             \(3.75728 \times 10^{-5}\) g Fe/g cells |
+| Expected range              | \(9.27344 \times 10^{-6}\) to \(9.27344 \times 10^{-5}\) g Fe/g cells |
 | Interpretation              |                                             Within expected range |
+
+## References
+
+[^ref-andrewsBacterialIronHomeostasis2003a]: Andrews, Simon C., Andrea K. Robinson, and Francisco Rodríguez-Quiñones. 2003. “Bacterial Iron Homeostasis.” *FEMS Microbiology Reviews* 27 (2-3): 215–37. <https://doi.org/10.1016/S0168-6445(03)00055-X>.
+[^ref-phillipsPhysicalBiologyCell2012]: Phillips, Rob, Jane Kondev, Julie Theriot, Hernan G. Garcia, and Nigel Orme. 2012. *Physical Biology of the Cell*. 2nd ed. Garland Science. <https://doi.org/10.1201/9781134111589>.

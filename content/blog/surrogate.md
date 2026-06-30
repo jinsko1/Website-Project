@@ -18,7 +18,7 @@ But alas, it is rather intuitive to use surrogate endpoints. If one believes tha
 
 The question then becomes: how does one establish a causal association between the surrogate and the significant outcome?
 
-A researcher must first eliminate—and the reader must confirm this elimination—variables that may affect the association, namely potential prognostic factors. The JAMA article that I previously referred to [@bucherUsersGuidesMedical] provides a great example: osteoporosis in post-menopausal women. If measuring bone density as a surrogate, you must eliminate factors such as:
+A researcher must first eliminate—and the reader must confirm this elimination—variables that may affect the association, namely potential prognostic factors. The JAMA article that I previously referred to[^ref-bucherUsersGuidesMedical] provides a great example: osteoporosis in post-menopausal women. If measuring bone density as a surrogate, you must eliminate factors such as:
 
 > maternal history of hip fracture, previous fractures from any site, poor self-rated health, use of longacting benzodiazepines, impaired visual function, and reduced physical activity
 
@@ -26,12 +26,19 @@ Only then is the association independent, though this is not necessarily the onl
 
 > We can confidently rely on surrogate end points only when long-term randomized trials have consistently demonstrated that modification of the surrogate is associated with concomitant modifications in the target outcome of interest.
 
-Here's a good example of the failure of a surrogate:
+Here’s a good example of the failure of a surrogate:
 
 > Trials of angiotensin-converting enzyme inhibitors in heart failure treatment have demonstrated parallel increases in exercise capacity and decreases in mortality, suggesting that clinicians may be able to rely on exercise capacity as a valid surrogate.
 
-![1782789778639](image/surrogate/1782789778639.png)
+<figure>
+<img src="/blog/images/surrogate/1782789778639.png" alt="Surrogate endpoint failure example" />
+<figcaption aria-hidden="true">Surrogate endpoint failure example</figcaption>
+</figure>
 
-When researchers tried to increase excercise capacity to decrease mortality from heart failure using milrinone and epoprostenol, RCTs showed an increased significant cardiovascular mortality. Here, excercise capacity was a failed surrogate. It's also important to note how many RCTs show discordant results on the veracity of a surrogate.
+When researchers tried to increase excercise capacity to decrease mortality from heart failure using milrinone and epoprostenol, RCTs showed an increased significant cardiovascular mortality. Here, excercise capacity was a failed surrogate. It’s also important to note how many RCTs show discordant results on the veracity of a surrogate.
 
 Additional posts may follow considering how vast the subject is.
+
+## References
+
+[^ref-bucherUsersGuidesMedical]: Bucher, Heiner C, Gordon H Guyatt, Deborah J Cook, Anne Holbrook, and Finlay A McAlister. n.d. “Users’ Guides to the Medical Literature: Surrogate End Points.”

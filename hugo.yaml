@@ -1,9 +1,8 @@
 baseURL: "https://jinsko.com/"
-languageCode: "en-us"
+locale: "en-us"
 defaultContentLanguage: "en"
 title: "Jin Saeki Ko"
 theme: "hugo-narrow"
-contentDir: ".hugo-content"
 enableEmoji: true
 
 mainSections: ["blog", "research"]
@@ -31,18 +30,27 @@ markup:
     renderer:
       unsafe: true
     extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["$", "$"]
+            - ["\\(", "\\)"]
       extras:
         delete:
-          enable: true
+          enable: false
         insert:
           enable: true
         mark:
           enable: true
         subscript:
-          enable: true
+          enable: false
         superscript:
-          enable: true
-      strikethrough: true
+          enable: false
+      strikethrough: false
   highlight:
     codeFences: true
     guessSyntax: false

@@ -18,7 +18,7 @@
 {{- else if $page.Params.description -}}
   {{- $summaryContent = $page.Params.description | plainify | truncate 180 -}}
 {{- else if $page.Summary -}}
-  {{- $summaryContent = $page.Summary | plainify | replaceRE `Generated from content/ by scripts/build_hugo_content.py\\. Do not edit directly\\.` `` | truncate 180 -}}
+  {{- $summaryContent = $page.Summary | plainify | truncate 180 -}}
 {{- end -}}
 
 <article class="group">

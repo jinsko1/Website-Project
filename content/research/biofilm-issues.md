@@ -14,7 +14,7 @@ Given the fact that Pseudomonas also failed to form observable biofilms, we conc
 
 ## The Canonical Biofilm Assay Protocol
 
-The following procedure comes out of the Microtiter Dish Biofilm Formation Assay [@otooleMicrotiterDishBiofilm2011]. Most of the passage below comes out of the paper verbatim. I'm just pasting it here for convenience.
+The following procedure comes out of the Microtiter Dish Biofilm Formation Assay[^ref-otooleMicrotiterDishBiofilm2011]. Most of the passage below comes out of the paper verbatim. I’m just pasting it here for convenience.
 
 > Dilute the overnight culture 1:100 into fresh medium. Add 100 μL of the dilution per well in a 96 well dish; 4-8 replicate wells for each treatment. Incubate 4-24 hrs at 37°C.
 
@@ -32,4 +32,8 @@ In the current procedure, we aspirate the supernatant rather than dumping it. We
 
 ### 96-well-plate
 
-Using the 96 well plate might yield better results. With a smaller well, I'd figure attachment becomes easier and hence, accidental shearing of the biofilms becomes less likely. I'll ask about this.
+Using the 96 well plate might yield better results. With a smaller well, I’d figure attachment becomes easier and hence, accidental shearing of the biofilms becomes less likely. I’ll ask about this.
+
+## References
+
+[^ref-otooleMicrotiterDishBiofilm2011]: O’Toole, George A. 2011. “Microtiter Dish Biofilm Formation Assay.” *Journal of Visualized Experiments*, no. 47 (January): 2437. <https://doi.org/10.3791/2437>.

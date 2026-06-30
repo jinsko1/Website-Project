@@ -19,14 +19,8 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
-
       - name: Install Hugo Narrow
         run: git clone https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
-
-      - name: Build citation-processed content
-        run: python3 scripts/build_hugo_content.py
 
       - name: Build Hugo site
         run: hugo --minify --destination public --cleanDestinationDir

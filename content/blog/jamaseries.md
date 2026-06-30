@@ -10,15 +10,15 @@ aliases: ["/blog/jamaseries.html"]
 ---
 There's a series from JAMA that goes over how to read clinical trials. The series is written by individuals who are widely recognized in the field of evidence-based medicine. The entire series is a valuable resource for navigating literature in general, but there's a total of six relevant parts to the series, specifically on how to read clinical trials:
 
-I: [how to get started](https://jamanetwork.com/journals/jama/article-abstract/409068) [@oxmanUsersGuidesMedicala]
-II-A: [validity of therapy/prevention studies](https://jamanetwork.com/journals/jama/article-abstract/409494) [@sackettUsersGuidesMedical]
-II-B: [results and whether they help your patients](https://jamanetwork.com/journals/jama/fullarticle/361625) [@sackettUsersGuidesMedicala]
+I: [how to get started](https://jamanetwork.com/journals/jama/article-abstract/409068) [^ref-oxmanUsersGuidesMedicala]
+II-A: [validity of therapy/prevention studies](https://jamanetwork.com/journals/jama/article-abstract/409494) [^ref-sackettUsersGuidesMedical]
+II-B: [results and whether they help your patients](https://jamanetwork.com/journals/jama/fullarticle/361625) [^ref-sackettUsersGuidesMedicala]
 XIX-A: [surrogate endpoints](https://jamanetwork.com/journals/jama/fullarticle/191311)
 XIX-B: [drug class effect](https://jamanetwork.com/journals/jama/fullarticle/191982)\
 
 I'm skipping a few parts because they're rather long and irrelevant to clinical trials. I'm not interested. Part 1 is not worth talking about since it merely orients you to the series, save the table below which is a pithy summary of the series.
 
-![](/blog/images/clinicaltrial.png){fig-cap="Guide to reading clinical trials from JAMA"}
+![Guide to reading clinical trials from JAMA](/blog/images/clinicaltrial.png)
 
 # Part II-A: Are the Results of the Study Valid?
 
@@ -36,7 +36,7 @@ Upon further reading the article, a strange point was made:
 
 As the authors state, I found this quite strange. If you want to evaluate the efficacy of a therapy, the noncompliant patient seems like noise, since they did not take the treatment. However, the authors argue that excluding noncompliant patients can bias results, as it may not reflect real-world scenarios in which patients often do not adhere to treatment. The principle is to retain prognostic factors, known and unknown.
 
-Good studies should also be double-blinded. Very simple. This helps minimize bias in reporting and assessing outcomes. Of course, this comes with its nuances; recently there was a trial in the literature describing vagus nerve stimulation for the reduction of inflammation in rheumatoid arthritis, purportedly double-blinded [@tesserVagusNervemediatedNeuroimmune2026]. Now this was a device implanted that sent electrical impulses to the vagus nerve. The problem is that the device may produce perceptible sensations, which could unblind patients and investigators. So even though the study was technically double-blinded, it may not have been truly blinded.
+Good studies should also be double-blinded. Very simple. This helps minimize bias in reporting and assessing outcomes. Of course, this comes with its nuances; recently there was a trial in the literature describing vagus nerve stimulation for the reduction of inflammation in rheumatoid arthritis, purportedly double-blinded [^ref-tesserVagusNervemediatedNeuroimmune2026]. Now this was a device implanted that sent electrical impulses to the vagus nerve. The problem is that the device may produce perceptible sensations, which could unblind patients and investigators. So even though the study was technically double-blinded, it may not have been truly blinded.
 
 # Part II-B: What are the Results and How Can They Help My Patients?
 
@@ -48,31 +48,19 @@ Couple ways of representing the treatment effect that the article lists:
 
 **Abolute risk reduction (ARR)** is the difference in event rates between the control and treatment groups.
 
-$$
-ARR = control\_event\_rate - experimental\_event\_rate
-
-$$
+\[ ARR = control\_event\_rate - experimental\_event\_rate \]
 
 For example, if 10% of patients in the control group have an event and 5% in the treatment group have an event, the ARR is 5%.
 
-$$
-ARR = 0.10 - 0.05 = 0.05
-
-$$
+\[ ARR = 0.10 - 0.05 = 0.05 \]
 
 **Relative risk (RR)** is self explanatory. It is the ratio of the event rate in the treatment group to the event rate in the control group.
 
-$$
-RR = \frac{EER}{CER}
-
-$$
+\[ RR = \frac{EER}{CER} \]
 
 **Relative risk reduction (RRR)** is merely the complement of the relative risk:
 
-$$
-RRR = 1 - RR
-
-$$
+\[ RRR = 1 - RR \]
 
 Many trials usually use RRR to report treatment effect.
 
@@ -99,3 +87,10 @@ We consider NNT on top of the treatment effect and its precision because its imp
 If we need to treat 400 patients to prevent one death, then the NNT is 400. If we need to treat 10 patients to prevent one death, then the NNT is 10. The lower the NNT, the more effective the treatment.
 
 Of course, even if the NNT is high, the treatment may still be worth it if the treatment is cheap and safe. Conversely, if the NNT is low but the treatment is expensive or has significant side effects, then it may not be worth it.
+
+## References
+
+[^ref-oxmanUsersGuidesMedicala]: Oxman, Andrew D, and David L Sackett. n.d. “Users’ Guides to the Medical Literature: How to Get Started.”
+[^ref-sackettUsersGuidesMedical]: Sackett, David L, and Deborah J Cook. n.d.a. “Users’ Guides to the Medical Literature: How to Use an Article About Therapy or Prevention Part A.”
+[^ref-sackettUsersGuidesMedicala]: ———. n.d.b. “Users’ Guides to the Medical Literature: How to Use an Article About Therapy or Prevention Part B.”
+[^ref-tesserVagusNervemediatedNeuroimmune2026]: Tesser, John R. P., Angela R. Crowley, Emily Jane Box, Joshua P. June, Pendleton Brewster Wickersham, Guillermo J. Valenzuela, Norman B. Gaylis, et al. 2026. “Vagus Nerve-Mediated Neuroimmune Modulation for Rheumatoid Arthritis: A Pivotal Randomized Controlled Trial.” *Nature Medicine* 32 (1): 369–78. <https://doi.org/10.1038/s41591-025-04114-7>.

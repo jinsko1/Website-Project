@@ -8,9 +8,7 @@ slug: "spices"
 url: "/blog/spices/"
 aliases: ["/blog/spices.html"]
 ---
-
-
-What follows is an argument for the more liberal forms of the SPICES model of medical education [@hardenEducationalStrategiesCurriculum1984]. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and therefore still relevant.
+What follows is an argument for the more liberal forms of the SPICES model of medical education[^ref-hardenEducationalStrategiesCurriculum1984]. The paper itself is relatively old, but many medical schools, especially in the States, have still not seriously re-evaluated their curriculum. Even though newer schools tend to be more liberal in their approach, the inertia of older programs makes the framework oddly current, and therefore still relevant.
 
 The SPICES model is a way of describing a curriculum by placing it on six continua. The acronym stands for student-centered versus teacher-centered learning, problem-based versus information-gathering learning, integrated versus discipline-based teaching, community-based versus hospital-based education, electives versus a standard programme, and systematic versus apprenticeship or opportunistic training. The point is not that every school must live at one extreme, but that schools should be honest about where they sit and whether that position makes sense.
 
@@ -49,3 +47,7 @@ I also argue briefly for an elective-based curriculum. Electives add an element 
 ### Systematic vs Apprenticeship
 
 Finally, I consider the systematic approach superior to the apprenticeship or opportunistic approach, because uniform coverage matters. Opportunistic learning depends on chance: which patients arrive, which cases happen to be on the ward, which attending happens to teach, and how service pressures distort teaching. A systematic curriculum is a commitment to ensuring that required experiences and competencies are covered rather than left to luck. In real medical settings, gaps are not just personal deficiencies; they become risks that bleed into patient care. If education is supposed to be ethical, then it cannot rely on accident.
+
+## References
+
+[^ref-hardenEducationalStrategiesCurriculum1984]: Harden, R. M., Susette Sowden, and W. R. Dunn. 1984. “Educational Strategies in Curriculum Development: The SPICES Model.” *Medical Education* 18 (4): 284–97. <https://doi.org/10.1111/j.1365-2923.1984.tb01024.x>.

@@ -22,7 +22,7 @@
           {{ else if .Params.description }}
             {{ $summary = .Params.description | plainify | truncate 180 }}
           {{ else if .Summary }}
-            {{ $summary = .Summary | plainify | replaceRE `Generated from content/ by scripts/build_hugo_content.py\\. Do not edit directly\\.` `` | truncate 180 }}
+            {{ $summary = .Summary | plainify | truncate 180 }}
           {{ end }}
 
           <article class="border-border hover:bg-muted/30 rounded-lg border p-6 transition-colors">

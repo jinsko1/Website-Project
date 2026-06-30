@@ -8,22 +8,26 @@ slug: "newbiofilm"
 url: "/research/newbiofilm/"
 aliases: ["/research/newbiofilm.html"]
 ---
-Since we were having issues with the biofilm formation, as expounded upon in a [previous post](biofilm-issues/), Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were propsed, and the rationale behind them.
+Since we were having issues with the biofilm formation, as expounded upon in a [previous post](biofilm-issues/), Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were propsed, and the rationale behind them.
 
----
+------------------------------------------------------------------------
 
-Throughout, I'll be referring to a paper studying decreased expression of fimbriae and its effects on the pathogenesis of CFT073 [@crepinDecreasedExpressionType2012]. The paper is a good example of the bladder cell invasion protocol, and the rationale behind it.
+Throughout, I’ll be referring to a paper studying decreased expression of fimbriae and its effects on the pathogenesis of CFT073[^ref-crepinDecreasedExpressionType2012]. The paper is a good example of the bladder cell invasion protocol, and the rationale behind it.
 
 The bladder cell invasion protocol is a method used to assess the ability of bacteria to associate/invade bladder cells, which is an important aspect of urinary tract infections. Whereas the original canonical biofilm assay focuses on the ability of bacteria to form biofilms on abiotic surfaces, the bladder cell invasion protocol is designed to evaluate bacterial interactions with host cells, which may provide more relevant insights into the pathogenesis of UTIs.
 
-In this proposed procedure, we would prepare a confluent monolayer of human bladder epithelial cells (such as cell line 5637) in a 24 well plate. The monolayer is necessary, as exposed plastic surfaces or a multilayer of cells may confound the results. We would then inoculate the wells with a standardized bacterial suspension. Though the paper calls for bacteria at mid-log phase, I don't find this necessary, as we are interested in quantifying iron uptake, and CFT073 does not seem to be expelling iron at this stage. I must admit that we would be compromising on the external validity, as the mid-log phase is more representative of the bacterial state during infection, but harvesting the cells at mid-log results in low yield of cell growth. It's inefficient.
+In this proposed procedure, we would prepare a confluent monolayer of human bladder epithelial cells (such as cell line 5637) in a 24 well plate. The monolayer is necessary, as exposed plastic surfaces or a multilayer of cells may confound the results. We would then inoculate the wells with a standardized bacterial suspension. Though the paper calls for bacteria at mid-log phase, I don’t find this necessary, as we are interested in quantifying iron uptake, and CFT073 does not seem to be expelling iron at this stage. I must admit that we would be compromising on the external validity, as the mid-log phase is more representative of the bacterial state during infection, but harvesting the cells at mid-log results in low yield of cell growth. It’s inefficient.
 
 The paper then goes on to state that the epithelial cells were kept in RPMI 1640 supplemented with 10% fetal bovine serum. Standard nutrient media for mammalian cell culture.
 
-We'd wash the cells in PBS prior to inoculation, to remove any residual media that may interfere with bacterial adhesion and growth. After inoculation, we would incubate the plates for a specified period (e.g., 1-2 hours) to allow for bacterial adhesion and invasion. After incubation, we would wash the wells again to remove non-adherent bacteria. To quantify the number of bacteria that have adhered to or invaded the bladder cells, we would lyse the host cells using a suitable lysis buffer, and then plate the lysates on agar plates to count colony-forming units (CFUs). This will give us a measure of the bacterial load associated with the bladder cells.
+We’d wash the cells in PBS prior to inoculation, to remove any residual media that may interfere with bacterial adhesion and growth. After inoculation, we would incubate the plates for a specified period (e.g., 1-2 hours) to allow for bacterial adhesion and invasion. After incubation, we would wash the wells again to remove non-adherent bacteria. To quantify the number of bacteria that have adhered to or invaded the bladder cells, we would lyse the host cells using a suitable lysis buffer, and then plate the lysates on agar plates to count colony-forming units (CFUs). This will give us a measure of the bacterial load associated with the bladder cells.
 
 Interestingly, though this probably has absolutely nothing to do with what we want to study, the paper also describes a antibiotic protection assay to differentiate between adherent and invasive bacteria. After the initial incubation and washing steps, they treated the wells with amikacin, killing extracellular bacteria. This allowed them to specifically quantify the invasive bacteria by lysing the host cells and plating the lysates for CFU counts.
 
----
+------------------------------------------------------------------------
 
-We'll try this protocol out and see how it goes. It's a bit more labor-intensive than the original biofilm assay, but it may provide more relevant insights.
+We’ll try this protocol out and see how it goes. It’s a bit more labor-intensive than the original biofilm assay, but it may provide more relevant insights.
+
+## References
+
+[^ref-crepinDecreasedExpressionType2012]: Crépin, Sébastien, Sébastien Houle, Marie-Ève Charbonneau, Michaël Mourez, Josée Harel, and Charles M. Dozois. 2012. “Decreased Expression of Type 1 Fimbriae by a *Pst* Mutant of Uropathogenic Escherichia Coli Reduces Urinary Tract Infection.” Edited by A. Camilli. *Infection and Immunity* 80 (8): 2802–15. <https://doi.org/10.1128/IAI.00162-12>.
