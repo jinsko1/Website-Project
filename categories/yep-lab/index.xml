@@ -5,7 +5,7 @@
 &lt;li&gt;0.6% (w/v) Eiken agar (not regular agar!)&lt;/li&gt;
 &lt;li&gt;0.5% (w/v) Glucose (add from a sterile 20% glucose solution after autoclaving)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Reccomendation:&lt;br&gt;
+&lt;p&gt;Recomendation:&lt;br&gt;
 Make 1500mL: 15g tryp, 7.5g yeast, 15g NaCl, 9g agar in total (do not add to batch media)&lt;br&gt;
 Partition into 12 bottles with 120mL&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; in each (0.75g agar each)&lt;/p&gt;</description></item><item><title>Proposed Assay for CA Supplementation</title><link>https://jinsko.com/research/proposed-assay-for-ca-supplementation/</link><pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/research/proposed-assay-for-ca-supplementation/</guid><description>&lt;p&gt;The following tests the hypothesis that the nonswarming strain fails to swarm under an immobilizing lack of surfactant. Provided this is true, external supplementation of CA should rescue the nonswarming phenotype. &lt;a
  href="https://jinsko.com/research/9-17-2025/"&gt;Context&lt;/a&gt; provided.&lt;/p&gt;
@@ -30,7 +30,7 @@ Partition into 12 bottles with 120mL&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" c
 &lt;/pre&gt;
 
 &lt;p&gt;Flowchart outlines the steps involved in the colony counting process using YOLOv8n. Below are some sample images obtained from using the model to count colonies on our plates/public datasets. Does a pretty good job overall. We can further optimize the model (though this requires labelling of our data) and the filtering process to improve accuracy, but this is a solid starting point for our colony counting needs.&lt;/p&gt;</description></item><item><title>Revision to the Biofilm Assay: The Bladder Cell Invasion Protocol</title><link>https://jinsko.com/research/newbiofilm/</link><pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/research/newbiofilm/</guid><description>&lt;p&gt;Since we were having issues with the biofilm formation, as expounded upon in a &lt;a
- href="biofilm-issues/"&gt;previous post&lt;/a&gt;, Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were propsed, and the rationale behind them.&lt;/p&gt;
+ href="biofilm-issues/"&gt;previous post&lt;/a&gt;, Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were proposed, and the rationale behind them.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Throughout, I’ll be referring to a paper studying decreased expression of fimbriae and its effects on the pathogenesis of CFT073&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;. The paper is a good example of the bladder cell invasion protocol, and the rationale behind it.&lt;/p&gt;</description></item><item><title>ASM 2025</title><link>https://jinsko.com/research/asm2025/</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><guid>https://jinsko.com/research/asm2025/</guid><description>&lt;p&gt;This short informal post is long overdue, but I’ll excuse myself since this website wasn’t up and running in June, when I attended the conference—and besides, I’ve been busy with other things.&lt;/p&gt;
 &lt;p&gt;I had the chance to attend ASM 2025 in LA back in June. I presented my findings along with my lab partner, and overall I’d say it was a pretty good experience.&lt;/p&gt;
