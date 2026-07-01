@@ -13,7 +13,7 @@ categories:
 - 0.6% (w/v) Eiken agar (not regular agar!) 
 - 0.5% (w/v) Glucose (add from a sterile 20% glucose solution after autoclaving)
 
-Reccomendation:  
+Recomendation:  
 Make 1500mL: 15g tryp, 7.5g yeast, 15g NaCl, 9g agar in total (do not add to batch media)  
 Partition into 12 bottles with 120mL[^ref-just] in each (0.75g agar each)
 

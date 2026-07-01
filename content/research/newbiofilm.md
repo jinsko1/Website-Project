@@ -8,7 +8,7 @@ slug: "newbiofilm"
 url: "/research/newbiofilm/"
 aliases: ["/research/newbiofilm.html"]
 ---
-Since we were having issues with the biofilm formation, as expounded upon in a [previous post](biofilm-issues/), Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were propsed, and the rationale behind them.
+Since we were having issues with the biofilm formation, as expounded upon in a [previous post](biofilm-issues/), Dr. Yep decided to make some revisions to the protocol. This post will be a brief overview of the changes that were proposed, and the rationale behind them.
 
 ------------------------------------------------------------------------
 
