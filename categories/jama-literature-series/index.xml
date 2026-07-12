@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JAMA Literature Series on Jin Saeki Ko</title><link>https://jinsko.com/categories/jama-literature-series/</link><description>Recent content in JAMA Literature Series on Jin Saeki Ko</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jinsko.com/categories/jama-literature-series/index.xml" rel="self" type="application/rss+xml"/><item><title>Grading Drugs Within a Class: Level 1-2 of Evidence</title><link>https://jinsko.com/blog/grading-drugs-within-a-class-level-1-2-of-evidence/</link><pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/blog/grading-drugs-within-a-class-level-1-2-of-evidence/</guid><description>&lt;p&gt;The paper&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; categorizes levels of evidence for comparison of drugs within a class from 1-4, each with unique threats to validity. Levels 3 and 4 will be discussed later.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Superiority trial&lt;/dt&gt;
+&lt;dd&gt;Is Drug A better than Drug B or placebo?&lt;/dd&gt;
+&lt;dt&gt;Equivalence trial&lt;/dt&gt;
+&lt;dd&gt;Are Drug A and Drug B close enough in effect that we can treat them as clinically equivalent?&lt;/dd&gt;
+&lt;dt&gt;Noninferiority trial&lt;/dt&gt;
+&lt;dd&gt;Is Drug A not unacceptably worse than Drug B? Though the two may appear to be roughly similar, this is different from the equivalence trial since the study works under the acknowledgement that Drug A is worse. How acceptable that is, upon a multitude of factors, is another consideration.&lt;/dd&gt;
+&lt;dt&gt;Primary Prevention Trial&lt;/dt&gt;
+&lt;dd&gt;whether a treatment prevents a disease or event before it has happened for the first time.&lt;/dd&gt;
+&lt;dt&gt;Secondary Prevention Trial&lt;/dt&gt;
+&lt;dd&gt;whether a treatment prevents recurrence/complications after the person already had the disease/event.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="level-1"&gt;Level 1&lt;a href="#level-1" class="heading-anchor" aria-label="Link to this section"&gt;&lt;svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This includes RCTs that compare drugs head-to-head via clinically important outcomes. Trials that conduct such studies are referred to as Level 1 in the literature.&lt;/p&gt;</description></item><item><title>Assuming the Drug Class Effect</title><link>https://jinsko.com/blog/assuming-the-drug-class-effect/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/blog/assuming-the-drug-class-effect/</guid><description>&lt;p&gt;It is understood, broadly speaking, that drugs of the same class confer the same merits/risks, though one may be more efficacious and safer than the other. The drug class paper from the JAMA series talks about how to discern, using the literature, the superior drug by providing a hierarchy for grading studies&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Drug Class&lt;/dt&gt;
+&lt;dd&gt;drugs that share a similar structure and mechanism of action, therefore conferring roughly similar pharmacologic effects. Further, as discussed subsequently, extrapolation using the heuristic is known as the Drug Class Effect.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;When comparing trials studying different drugs of the same class, RRR&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt; should be consulted rather than the absolute treatment effects (such as ARR or NNT) on account of potential baseline risk differing between trials; ARR will vary quite a bit, regardless of the relative efficacy of the drug, making it a useless metric.&lt;/p&gt;</description></item><item><title>Surrogate endpoints in clinical trials</title><link>https://jinsko.com/blog/surrogate/</link><pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/blog/surrogate/</guid><description>&lt;p&gt;Surrogate endpoints are endpoints that are not directly related to the clinical outcome of interest but are used as a substitute for it. They are often used in clinical trials to assess the efficacy of a treatment when the actual clinical outcome may take a long time to observe or may be difficult to measure. For instance, in a trial for a new drug to treat high blood pressure, the surrogate endpoint may be the reduction in blood pressure rather than the actual clinical outcome of interest: reduction in the risk of heart attack, stroke, or death.&lt;/p&gt;</description></item><item><title>JAMA on how to read clinical trials</title><link>https://jinsko.com/blog/jamaseries/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://jinsko.com/blog/jamaseries/</guid><description>&lt;p&gt;There&amp;rsquo;s a series from JAMA that goes over how to read clinical trials. The series is written by individuals who are widely recognized in the field of evidence-based medicine. The entire series is a valuable resource for navigating literature in general, but there&amp;rsquo;s a total of six relevant parts to the series, specifically on how to read clinical trials:&lt;/p&gt;
+&lt;p&gt;I: &lt;a
+ href="https://jamanetwork.com/journals/jama/article-abstract/409068"target="_blank"
+ class="inline-flex items-center gap-1"
+ &gt;how to get started&lt;svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;/svg&gt;
+ &lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;
+II-A: &lt;a
+ href="https://jamanetwork.com/journals/jama/article-abstract/409494"target="_blank"
+ class="inline-flex items-center gap-1"
+ &gt;validity of therapy/prevention studies&lt;svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;/svg&gt;
+ &lt;/a&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;
+II-B: &lt;a
+ href="https://jamanetwork.com/journals/jama/fullarticle/361625"target="_blank"
+ class="inline-flex items-center gap-1"
+ &gt;results and whether they help your patients&lt;svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;/svg&gt;
+ &lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;
+XIX-A: &lt;a
+ href="https://jamanetwork.com/journals/jama/fullarticle/191311"target="_blank"
+ class="inline-flex items-center gap-1"
+ &gt;surrogate endpoints&lt;svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+XIX-B: &lt;a
+ href="https://jamanetwork.com/journals/jama/fullarticle/191982"target="_blank"
+ class="inline-flex items-center gap-1"
+ &gt;drug class effect&lt;svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;/svg&gt;
+ &lt;/a&gt;\&lt;/p&gt;</description></item></channel></rss>
