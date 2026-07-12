@@ -3,6 +3,7 @@ title: "Surrogate endpoints in clinical trials"
 date: "2026-06-29"
 categories: 
     - "Medicine"
+    - "JAMA Literature Series"
 type: posts
 slug: "surrogate"
 url: "/blog/surrogate/"

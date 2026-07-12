@@ -4,6 +4,7 @@ date: "2026-07-05"
 type: posts
 categories: 
     - "Medicine"
+    - "JAMA Literature Series"
 ---
 
 It is understood, broadly speaking, that drugs of the same class confer the same merits/risks, though one may be more efficacious and safer than the other. The drug class paper from the JAMA series talks about how to discern, using the literature, the superior drug by providing a hierarchy for grading studies[^ref-drugclass].

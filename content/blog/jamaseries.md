@@ -3,6 +3,7 @@ title: "JAMA on how to read clinical trials"
 date: "2026-05-27"
 categories: 
     - "Medicine"
+    - "JAMA Literature Series"
 type: posts
 slug: "jamaseries"
 url: "/blog/jamaseries/"
