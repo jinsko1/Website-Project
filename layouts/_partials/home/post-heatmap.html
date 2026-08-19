@@ -1,0 +1,136 @@
+{{- $mainSections := site.MainSections | default (slice "blog" "research") -}}
+{{- $posts := where site.RegularPages "Section" "in" $mainSections -}}
+{{- $today := time.Now -}}
+{{- $rangeStart := $today.AddDate 0 0 -364 -}}
+{{- $startDate := $rangeStart.AddDate 0 0 (mul -1 (int $rangeStart.Weekday)) -}}
+{{- $todayKey := $today.Format "2006-01-02" -}}
+{{- $startKey := $rangeStart.Format "2006-01-02" -}}
+{{- $activity := newScratch -}}
+{{- $activity.Set "days" dict -}}
+{{- $activity.Set "postCount" 0 -}}
+{{- $activity.Set "wordCount" 0 -}}
+
+{{- range $posts -}}
+  {{- $key := .Date.Format "2006-01-02" -}}
+  {{- if and (ge $key $startKey) (le $key $todayKey) -}}
+    {{- $entry := index ($activity.Get "days") $key -}}
+    {{- if $entry -}}
+      {{- $activity.SetInMap "days" $key (dict
+        "words" (add (index $entry "words") .WordCount)
+        "pages" (collections.Append . (index $entry "pages"))
+      ) -}}
+    {{- else -}}
+      {{- $activity.SetInMap "days" $key (dict "words" .WordCount "pages" (slice .)) -}}
+    {{- end -}}
+    {{- $activity.Add "postCount" 1 -}}
+    {{- $activity.Add "wordCount" .WordCount -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $days := $activity.Get "days" -}}
+{{- $postCount := $activity.Get "postCount" -}}
+{{- $wordCount := $activity.Get "wordCount" -}}
+
+<section class="post-heatmap" aria-labelledby="post-heatmap-title">
+  <div class="post-heatmap-heading">
+    <div>
+      <h2 id="post-heatmap-title">Posting activity</h2>
+      <p>
+        {{ $postCount }} {{ cond (eq $postCount 1) "post" "posts" }} and
+        {{ lang.FormatNumber 0 $wordCount }} words published in the last year
+      </p>
+    </div>
+  </div>
+
+  <div class="post-heatmap-scroll" tabindex="0" aria-label="Posting activity calendar; scroll horizontally to see all weeks">
+    <div class="post-heatmap-calendar">
+      <div class="post-heatmap-weeks">
+        {{- range $weekIndex := seq 0 52 -}}
+          {{- $weekStart := $startDate.AddDate 0 0 (mul $weekIndex 7) -}}
+          {{- $weekEnd := $weekStart.AddDate 0 0 6 -}}
+          {{- $showFirstMonth := and
+            (eq $weekIndex 0)
+            (le $rangeStart.Day 7)
+            (eq $rangeStart.Month $weekStart.Month)
+          -}}
+          {{- $startsMonth := eq $weekStart.Day 1 -}}
+          <div class="post-heatmap-week">
+            {{- if or $showFirstMonth $startsMonth (ne $weekStart.Month $weekEnd.Month) -}}
+              <span class="post-heatmap-month" aria-hidden="true">
+                {{- if or $showFirstMonth $startsMonth -}}
+                  {{- $weekStart.Format "Jan" -}}
+                {{- else -}}
+                  {{- $weekEnd.Format "Jan" -}}
+                {{- end -}}
+              </span>
+            {{- end -}}
+
+            {{- range $dayIndex := seq 0 6 -}}
+              {{- $date := $weekStart.AddDate 0 0 $dayIndex -}}
+              {{- $key := $date.Format "2006-01-02" -}}
+              {{- $entry := index $days $key -}}
+              {{- $isOutsideRange := or (lt $key $startKey) (gt $key $todayKey) -}}
+              {{- $words := 0 -}}
+              {{- $level := 0 -}}
+              {{- $tooltip := printf "%s — No posts" ($date.Format "January 2, 2006") -}}
+
+              {{- with $entry -}}
+                {{- $words = index . "words" -}}
+                {{- $pages := index . "pages" -}}
+                {{- $count := len $pages -}}
+                {{- if lt $words 500 -}}
+                  {{- $level = 1 -}}
+                {{- else if lt $words 1000 -}}
+                  {{- $level = 2 -}}
+                {{- else if lt $words 2000 -}}
+                  {{- $level = 3 -}}
+                {{- else if lt $words 4000 -}}
+                  {{- $level = 4 -}}
+                {{- else -}}
+                  {{- $level = 5 -}}
+                {{- end -}}
+                {{- $titles := slice -}}
+                {{- range $pages -}}
+                  {{- $titles = $titles | append .Title -}}
+                {{- end -}}
+                {{- $tooltip = printf "%s — %d %s — %s words — %s"
+                  ($date.Format "January 2, 2006")
+                  $count
+                  (cond (eq $count 1) "post" "posts")
+                  (lang.FormatNumber 0 $words)
+                  (delimit $titles "; ")
+                -}}
+              {{- end -}}
+
+              {{- if $isOutsideRange -}}
+                <span class="post-heatmap-day is-outside-range" aria-hidden="true"></span>
+              {{- else if and $entry (eq (len (index $entry "pages")) 1) -}}
+                {{- $page := index (index $entry "pages") 0 -}}
+                <a
+                  class="post-heatmap-day level-{{ $level }}"
+                  href="{{ $page.RelPermalink }}"
+                  title="{{ $tooltip }}"
+                  aria-label="{{ $tooltip }}"
+                ></a>
+              {{- else -}}
+                <span
+                  class="post-heatmap-day level-{{ $level }}"
+                  title="{{ $tooltip }}"
+                  {{ with $entry }}role="img" tabindex="0" aria-label="{{ $tooltip }}"{{ end }}
+                ></span>
+              {{- end -}}
+            {{- end -}}
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+
+  <div class="post-heatmap-legend" aria-label="Word count intensity legend">
+    <span>Less</span>
+    {{- range seq 0 5 }}
+      <span class="post-heatmap-day level-{{ . }}" aria-hidden="true"></span>
+    {{- end }}
+    <span>More words</span>
+  </div>
+</section>

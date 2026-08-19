@@ -24,9 +24,153 @@
   text-align: center;
 }
 
+.post-heatmap {
+  --heatmap-cell: 11px;
+  --heatmap-gap: 3px;
+  --heatmap-level-0: color-mix(in oklab, var(--color-muted) 78%, var(--color-border));
+  --heatmap-level-1: color-mix(in oklab, var(--color-primary) 18%, var(--color-muted));
+  --heatmap-level-2: color-mix(in oklab, var(--color-primary) 36%, var(--color-muted));
+  --heatmap-level-3: color-mix(in oklab, var(--color-primary) 56%, var(--color-muted));
+  --heatmap-level-4: color-mix(in oklab, var(--color-primary) 76%, var(--color-muted));
+  --heatmap-level-5: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.post-heatmap-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-heatmap-heading h2 {
+  margin: 0 0 0.25rem;
+  color: var(--color-foreground);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.post-heatmap-heading p {
+  margin: 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.875rem;
+}
+
+.post-heatmap-scroll {
+  max-width: 100%;
+  padding: 1rem;
+  overflow-x: auto;
+  direction: rtl;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: var(--color-card);
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.post-heatmap-scroll:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.post-heatmap-calendar {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  min-width: 100%;
+  direction: ltr;
+}
+
+.post-heatmap-weeks {
+  display: flex;
+  gap: var(--heatmap-gap);
+}
+
+.post-heatmap-week {
+  position: relative;
+  display: grid;
+  flex: 0 0 var(--heatmap-cell);
+  grid-template-rows: repeat(7, var(--heatmap-cell));
+  gap: var(--heatmap-gap);
+  padding-top: 1.35rem;
+}
+
+.post-heatmap-month {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.625rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.post-heatmap-day {
+  display: inline-block;
+  width: var(--heatmap-cell);
+  height: var(--heatmap-cell);
+  box-sizing: border-box;
+  border: 1px solid color-mix(in oklab, var(--color-border) 72%, transparent);
+  border-radius: 2px;
+  background: var(--heatmap-level-0);
+}
+
+a.post-heatmap-day {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+a.post-heatmap-day:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.35);
+  box-shadow: 0 0 0 1px var(--color-card);
+}
+
+a.post-heatmap-day:focus-visible,
+.post-heatmap-day[tabindex]:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--color-foreground);
+  outline-offset: 1px;
+}
+
+.post-heatmap-day.level-1 { background: var(--heatmap-level-1); }
+.post-heatmap-day.level-2 { background: var(--heatmap-level-2); }
+.post-heatmap-day.level-3 { background: var(--heatmap-level-3); }
+.post-heatmap-day.level-4 { background: var(--heatmap-level-4); }
+.post-heatmap-day.level-5 { background: var(--heatmap-level-5); }
+
+.post-heatmap-day.is-outside-range {
+  border-color: transparent;
+  background: transparent;
+}
+
+.post-heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--heatmap-gap);
+  margin-top: 0.75rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.6875rem;
+}
+
+.post-heatmap-legend > span:first-child {
+  margin-right: 0.25rem;
+}
+
+.post-heatmap-legend > span:last-child {
+  margin-left: 0.25rem;
+}
+
 @media (max-width: 640px) {
   .prose div[data-layout-ncol="2"],
   .prose div[layout-ncol="2"] {
     grid-template-columns: 1fr;
+  }
+
+  .post-heatmap-scroll {
+    padding: 0.875rem;
   }
 }
