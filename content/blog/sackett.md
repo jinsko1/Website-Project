@@ -4,7 +4,7 @@ date: "2026-08-27"
 type: posts
 ---
 
-When reading papers and textbooks, the titular figures appear most repeatedly.
+When reading papers and textbooks, the following figures appear most repeatedly.
 
 ### Sackett
 
