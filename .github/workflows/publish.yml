@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Hugo Narrow
         # Keep the theme compatible with hugo.yaml and the site's custom layouts.
-        run: git clone --depth 1 --branch v1.3.13 https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
+        run: git clone --depth 1 --branch v2.1.4 https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
 
       - name: Build Hugo site
         run: hugo --minify --destination public --cleanDestinationDir

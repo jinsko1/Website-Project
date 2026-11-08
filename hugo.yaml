@@ -109,8 +109,7 @@ params:
   post:
     showRelated: true
     relatedPostsCount: 3
-    license:
-      show: false
+    license: ""
   comments:
     enabled: false
   katex:

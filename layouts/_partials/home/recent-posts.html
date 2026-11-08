@@ -3,10 +3,13 @@
 {{ $posts := where .Site.RegularPages "Section" "in" $mainSections }}
 {{ $posts = first $recentPostsCount (sort $posts "Date" "desc") }}
 
-{{ partial "content/post-list.html" (dict
-  "posts" $posts
-  "title" (T "home.recentPosts")
-  "showTitle" true
-  "showViewAll" false
-  )
-}}
+{{ if $posts }}
+  <section class="site-recent-posts" aria-labelledby="recent-posts-title">
+    <h2 id="recent-posts-title">{{ T "home.recentPosts" }}</h2>
+    <div class="site-recent-posts-list">
+      {{ range $posts }}
+        {{ partial "content/card-base.html" (dict "page" .) }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

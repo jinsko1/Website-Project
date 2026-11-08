@@ -1,3 +1,131 @@
+/* Site-owned components use v2's raw color tokens and explicit styles.
+   The theme's precompiled Tailwind bundle does not scan these templates. */
+.site-author-card {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--card);
+  color: var(--foreground);
+}
+
+.site-author-name {
+  margin: 0 0 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-author-title {
+  margin: 0 0 0.75rem;
+  color: var(--muted-foreground);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.site-author-description {
+  margin: 0 0 1rem;
+  line-height: 1.625;
+}
+
+.site-recent-posts > h2 {
+  margin: 0 0 1.5rem;
+  color: var(--foreground);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.site-recent-posts-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.site-post-card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-post-card-surface {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--card);
+}
+
+.site-post-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.5rem;
+}
+
+.site-post-card-title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.site-post-card-summary {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.site-post-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
+.site-post-card-meta > div {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.site-post-card-cover {
+  padding: 0.75rem 0.75rem 0;
+}
+
+.site-post-card-cover img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .site-post-card-surface {
+    flex-direction: row;
+  }
+
+  .site-post-card-cover {
+    order: 1;
+    flex: 0 0 16rem;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-author-card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
 .prose div[data-layout-ncol="2"],
 .prose div[layout-ncol="2"] {
   display: grid;
@@ -27,12 +155,12 @@
 .post-heatmap {
   --heatmap-cell: 11px;
   --heatmap-gap: 3px;
-  --heatmap-level-0: color-mix(in oklab, var(--color-muted) 78%, var(--color-border));
-  --heatmap-level-1: color-mix(in oklab, var(--color-primary) 18%, var(--color-muted));
-  --heatmap-level-2: color-mix(in oklab, var(--color-primary) 36%, var(--color-muted));
-  --heatmap-level-3: color-mix(in oklab, var(--color-primary) 56%, var(--color-muted));
-  --heatmap-level-4: color-mix(in oklab, var(--color-primary) 76%, var(--color-muted));
-  --heatmap-level-5: var(--color-primary);
+  --heatmap-level-0: color-mix(in oklab, var(--muted) 78%, var(--border));
+  --heatmap-level-1: color-mix(in oklab, var(--primary) 18%, var(--muted));
+  --heatmap-level-2: color-mix(in oklab, var(--primary) 36%, var(--muted));
+  --heatmap-level-3: color-mix(in oklab, var(--primary) 56%, var(--muted));
+  --heatmap-level-4: color-mix(in oklab, var(--primary) 76%, var(--muted));
+  --heatmap-level-5: var(--primary);
   margin-bottom: 3rem;
 }
 
@@ -46,7 +174,7 @@
 
 .post-heatmap-heading h2 {
   margin: 0 0 0.25rem;
-  color: var(--color-foreground);
+  color: var(--foreground);
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.4;
@@ -54,7 +182,7 @@
 
 .post-heatmap-heading p {
   margin: 0;
-  color: var(--color-muted-foreground);
+  color: var(--muted-foreground);
   font-size: 0.875rem;
 }
 
@@ -63,14 +191,14 @@
   padding: 1rem;
   overflow-x: auto;
   direction: rtl;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
-  background: var(--color-card);
-  scrollbar-color: var(--color-border) transparent;
+  background: var(--card);
+  scrollbar-color: var(--border) transparent;
 }
 
 .post-heatmap-scroll:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 
@@ -100,7 +228,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--color-muted-foreground);
+  color: var(--muted-foreground);
   font-size: 0.625rem;
   line-height: 1;
   white-space: nowrap;
@@ -111,7 +239,7 @@
   width: var(--heatmap-cell);
   height: var(--heatmap-cell);
   box-sizing: border-box;
-  border: 1px solid color-mix(in oklab, var(--color-border) 72%, transparent);
+  border: 1px solid color-mix(in oklab, var(--border) 72%, transparent);
   border-radius: 2px;
   background: var(--heatmap-level-0);
 }
@@ -124,14 +252,14 @@ a.post-heatmap-day:hover {
   position: relative;
   z-index: 1;
   transform: scale(1.35);
-  box-shadow: 0 0 0 1px var(--color-card);
+  box-shadow: 0 0 0 1px var(--card);
 }
 
 a.post-heatmap-day:focus-visible,
 .post-heatmap-day[tabindex]:focus-visible {
   position: relative;
   z-index: 1;
-  outline: 2px solid var(--color-foreground);
+  outline: 2px solid var(--foreground);
   outline-offset: 1px;
 }
 
@@ -152,7 +280,7 @@ a.post-heatmap-day:focus-visible,
   justify-content: flex-end;
   gap: var(--heatmap-gap);
   margin-top: 0.75rem;
-  color: var(--color-muted-foreground);
+  color: var(--muted-foreground);
   font-size: 0.6875rem;
 }
 
