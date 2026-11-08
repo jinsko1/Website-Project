@@ -6,21 +6,22 @@ name: Hugo Publish
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: latest
+          hugo-version: '0.169.0'
           extended: true
 
       - name: Install Hugo Narrow
-        run: git clone https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
+        # Keep the theme compatible with hugo.yaml and the site's custom layouts.
+        run: git clone --depth 1 --branch v1.3.13 https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
 
       - name: Build Hugo site
         run: hugo --minify --destination public --cleanDestinationDir

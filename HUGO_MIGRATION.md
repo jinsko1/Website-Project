@@ -30,5 +30,7 @@ If you add `styles/cell.csl`, the generator will automatically use it. Otherwise
 - Hugo Narrow is installed locally at `themes/hugo-narrow`. If you clone the repository somewhere new, reinstall it with:
 
 ```bash
-git clone https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
+git clone --depth 1 --branch v1.3.13 https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
 ```
+
+Deployment uses Hugo Extended 0.169.0 and Hugo Narrow v1.3.13. Keep these versions aligned with `.github/workflows/publish.yml`. The theme's default branch may introduce incompatible configuration and layout changes; this site's `params.post.license.show` setting uses the v1 format.
