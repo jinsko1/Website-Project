@@ -16,19 +16,19 @@ Below are some of the still frames I was able to interpret. The remaining figure
 
 This is a normal lung in which ultrasound waves reflect at increasingly deeper interfaces, getting fainter as they go.
 
-![Fig1: A lines](image/fig1devos.jpg)
+![Fig1: A lines](/blog/images/dyspnea/fig1devos.jpg)
 
 This still frame was taken in M-mode[^m-mode] while the patient was breathing. Normally, the visceral pleura moves against the parietal pleura, sliding across the surface as one breathes—unless air enters the space between the two membranes, the pleural cavity. The air consequently separates the two membranes, preventing any motion from being detected and resulting in the static A-lines shown. In pneumothorax, you wouldn't see lung sliding.
 
-![Fig3: Stratosphere or barcode signs](image/fig3devos.jpg)
+![Fig3: Stratosphere or barcode signs](/blog/images/dyspnea/fig3devos.jpg)
 
 On the other hand, in a normal lung, with the parietal and visceral pleura in contact with each other, the following image shows lung sliding.
 
-![Fig4: Seashore sign (normal lung)](image/fig4devos.jpg)
+![Fig4: Seashore sign (normal lung)](/blog/images/dyspnea/fig4devos.jpg)
 
 Sometimes, pneumothorax creates a region where the visceral and parietal pleura are separated by air, depending on the amount of air in the cavity. If the amount of air is relatively small, some of the visceral pleura may come into contact with the parietal pleura, resulting in the following image, with regions of no lung sliding (stratosphere or barcode pattern) and lung sliding (seashore pattern).
 
-![Fig5: Lung point](image/fig5devos.jpg)
+![Fig5: Lung point](/blog/images/dyspnea/fig5devos.jpg)
 
 ### Etiology
 
