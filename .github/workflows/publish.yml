@@ -1,16 +1,25 @@
+name: Hugo Publish
+
 on:
   push:
     branches: main
   pull_request:
     branches: main
+  workflow_dispatch:
 
-name: Hugo Publish
+permissions:
+  contents: read
+
+# Let an active production publish finish; keep only the latest pending run.
+# Pull-request checks have separate groups and never deploy.
+concurrency:
+  group: hugo-pages-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-24.04
-    permissions:
-      contents: write
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -26,11 +35,28 @@ jobs:
         run: git clone --depth 1 --branch v2.1.4 https://github.com/tom2almighty/hugo-narrow themes/hugo-narrow
 
       - name: Build Hugo site
+        env:
+          HUGO_ENVIRONMENT: production
         run: hugo --minify --destination public --cleanDestinationDir
 
-      - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload built site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: ./public
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish built site
+        id: deployment
+        uses: actions/deploy-pages@v5

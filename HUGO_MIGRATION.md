@@ -36,3 +36,5 @@ git clone --depth 1 --branch v2.1.4 https://github.com/tom2almighty/hugo-narrow 
 Deployment uses Hugo Extended 0.169.0 and Hugo Narrow v2.1.4. Keep these versions aligned with `.github/workflows/publish.yml`. The theme's default branch may introduce incompatible configuration and layout changes; this site's `params.post.license` setting uses the v2 string format, with an empty string to hide the license.
 
 The custom author card, recent post cards, and activity heatmap have explicit styles in `assets/css/custom/site.css`. Use v2's raw color tokens (for example, `--foreground` and `--border`); the theme's precompiled Tailwind stylesheet does not scan this site's custom templates. The table of contents uses the theme's native dock panel. The clock and briefcase icons are kept in `assets/icons/` because v2 no longer bundles them.
+
+Publishing uses a direct GitHub Pages artifact workflow. The one-time repository setting and troubleshooting limits are documented in [docs/deployment.md](docs/deployment.md).
