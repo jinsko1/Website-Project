@@ -76,9 +76,9 @@ As I approached what I surmised to be the object, its bounds dissolved silently 
 
 It writhed between my fingers, countless legs twisting and scraping like a centipede seized in a futile struggle for freedom. But my grip was practiced, and it would not be allowed to escape. Not even the most elusive individual can escape me, if ever there was one.
 
-So I stood there with the man in my grasp, under the impression that the most difficult part of the job was finally over. I should've known better. I was fumbling with the instruments used to record, relieved by the familiar monotony of routine, when suddenly its body fell completely limp—as if it had died. And in this realm—perhaps outside of this realm too—silence is something one can hear (thick waves that creep up in your sleep). And it wants you. It needs you—desperately. It creeps up from the distance and before you recognize what has happened, you've lost all ability to flounder—drown. You've been eternally condemned, stitched into your skin of infinite rooms…
+So I stood there with the man in my grasp, under the impression that the most difficult part of the job was finally over. I should've known better. I was fumbling with the instruments used to record, relieved by the familiar monotony of routine, when suddenly its body fell completely limp—as if it had died. And in this realm—perhaps outside of this realm too—silence is something one can hear (thick waves that creep up in your sleep) it creeps up from the distance and before you recognize what has happened, you've lost any right to drown you've been eternally condemned, stitched into your skin of infinite rooms.
 
-I was scared.
+And I get so scared.
 
 Suddenly, it released a ghastly screech that reverberated through my cranium, and in my abject apprehension I found it immediately necessary to quell the vile cry. By then, I was well practiced; a swift motion of the instrument, a sharp glint, though the ministry officially disapproved of such methods and took a dim view of them. In any case, so long as they did not find out, it was of no concern to me. It made my job easier, as I was able to observe what lay beneath; and besides, everything was fine so long as I stitched them back up in the end.
 

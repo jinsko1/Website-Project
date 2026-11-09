@@ -7,3 +7,7 @@ public-hugo/
 
 # Local vendored theme checkout
 themes/
+
+# Machine-specific Hugo preview setup
+.tools/
+.vscode/settings.json
