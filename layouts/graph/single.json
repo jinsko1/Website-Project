@@ -1,0 +1,40 @@
+{{- $concepts := slice -}}
+{{- $pages := where site.RegularPages "Section" "in" (slice "blog" "research") -}}
+{{- $pages = where $pages "Draft" false -}}
+{{- $texts := slice -}}
+{{- range $pages -}}
+  {{- $plain := printf "%s %s" .Title .Plain | lower | replaceRE `[^\p{L}\p{N}]+` " " | strings.TrimSpace -}}
+  {{- $title := .Title | lower | replaceRE `[^\p{L}\p{N}]+` " " | strings.TrimSpace -}}
+  {{- $texts = $texts | append (dict "page" . "text" (printf " %s " $plain) "title" $title) -}}
+{{- end -}}
+{{- range hugo.Data.medicine.graph.concepts -}}
+  {{- $concept := . -}}
+  {{- $article := false -}}
+  {{- $mentions := slice -}}
+  {{- $terms := slice .name -}}
+  {{- range .aliases -}}{{- $terms = $terms | append . -}}{{- end -}}
+  {{- with .article -}}
+    {{- with site.GetPage . -}}
+      {{- if and (not .Draft) (in $pages .) -}}{{- $article = dict "title" .Title "url" .RelPermalink -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range $texts -}}
+    {{- $entry := . -}}
+    {{- $mentioned := false -}}
+    {{- $dedicated := in (.page.Params.graphConcepts | default slice) $concept.id -}}
+    {{- range $terms -}}
+      {{- $term := . | lower | replaceRE `[^\p{L}\p{N}]+` " " | strings.TrimSpace -}}
+      {{- if $term -}}
+        {{- if strings.Contains $entry.text (printf " %s " $term) -}}{{- $mentioned = true -}}{{- end -}}
+        {{- if eq $entry.title $term -}}{{- $dedicated = true -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and $dedicated (not $article) -}}{{- $article = dict "title" .page.Title "url" .page.RelPermalink -}}{{- end -}}
+    {{- if $mentioned -}}{{- $mentions = $mentions | append (dict "title" .page.Title "url" .page.RelPermalink) -}}{{- end -}}
+  {{- end -}}
+  {{- $coverage := "unmentioned" -}}
+  {{- if $mentions -}}{{- $coverage = "mentioned" -}}{{- end -}}
+  {{- if $article -}}{{- $coverage = "article" -}}{{- end -}}
+  {{- $concepts = $concepts | append (merge $concept (dict "article" $article "mentions" $mentions "coverage" $coverage)) -}}
+{{- end -}}
+{{- dict "concepts" $concepts "relations" hugo.Data.medicine.graph.relations "sources" hugo.Data.medicine.graph.sources | jsonify -}}

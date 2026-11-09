@@ -1,0 +1,650 @@
+{
+  "concepts": [
+    {
+      "id": "renal-perfusion",
+      "name": "Renal perfusion",
+      "system": "renal",
+      "summary": "Blood flow supplying the kidneys.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology",
+      "aliases": [
+        "kidney perfusion"
+      ]
+    },
+    {
+      "id": "gfr",
+      "name": "Glomerular filtration",
+      "system": "renal",
+      "summary": "Filtration of plasma across glomerular capillaries.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology",
+      "aliases": [
+        "GFR",
+        "glomerular filtration rate"
+      ]
+    },
+    {
+      "id": "renal-acid-excretion",
+      "name": "Renal acid excretion",
+      "system": "renal",
+      "summary": "Kidney contribution to acid–base balance.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology"
+    },
+    {
+      "id": "potassium-excretion",
+      "name": "Potassium excretion",
+      "system": "renal",
+      "summary": "Renal elimination of potassium.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology"
+    },
+    {
+      "id": "volume-depletion",
+      "name": "Volume depletion",
+      "system": "renal",
+      "summary": "Loss of circulating fluid volume.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "kind": "etiology",
+      "aliases": [
+        "hypovolemia",
+        "hypovolaemia"
+      ]
+    },
+    {
+      "id": "renal-hypoperfusion",
+      "name": "Renal hypoperfusion",
+      "system": "renal",
+      "summary": "Inadequate blood flow to the kidneys.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "kind": "etiology",
+      "aliases": [
+        "kidney hypoperfusion"
+      ]
+    },
+    {
+      "id": "aki",
+      "name": "Acute kidney injury",
+      "system": "renal",
+      "summary": "Acute loss of kidney function.",
+      "article": "blog/aki",
+      "categories": [
+        "disease"
+      ],
+      "details": [
+        {
+          "name": "Serum creatinine",
+          "summary": "Blood marker used to assess kidney function.",
+          "type": "assessed_using",
+          "reference": "aki"
+        },
+        {
+          "name": "Dialysis",
+          "summary": "Renal replacement therapy for selected severe complications.",
+          "type": "may_require",
+          "reference": "aki"
+        }
+      ],
+      "kind": "disease",
+      "aliases": [
+        "AKI"
+      ]
+    },
+    {
+      "id": "oliguria",
+      "name": "Oliguria",
+      "system": "renal",
+      "summary": "Low urine output; not present in every AKI case.",
+      "categories": [
+        "finding"
+      ],
+      "kind": "manifestation"
+    },
+    {
+      "id": "hyperkalemia",
+      "name": "Hyperkalemia",
+      "system": "renal",
+      "summary": "Elevated serum potassium.",
+      "categories": [
+        "finding"
+      ],
+      "kind": "manifestation"
+    },
+    {
+      "id": "fluid-overload",
+      "name": "Fluid overload",
+      "system": "renal",
+      "summary": "Excess fluid accumulation.",
+      "categories": [
+        "finding"
+      ],
+      "kind": "manifestation",
+      "aliases": [
+        "volume overload"
+      ]
+    },
+    {
+      "id": "cardiac-output",
+      "name": "Cardiac output",
+      "system": "cardiovascular",
+      "summary": "Blood volume pumped by the heart per minute.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology"
+    },
+    {
+      "id": "heart-failure",
+      "name": "Heart failure",
+      "system": "cardiovascular",
+      "summary": "Cardiac dysfunction that can impair perfusion or cause congestion.",
+      "categories": [
+        "disease"
+      ],
+      "details": [
+        {
+          "name": "Echocardiography",
+          "summary": "Ultrasound assessment of cardiac structure and function.",
+          "type": "assessed_using",
+          "reference": "dyspnea"
+        },
+        {
+          "name": "Diuretics",
+          "summary": "Medicines used to reduce congestion in appropriate patients.",
+          "type": "treated_by",
+          "reference": "dyspnea"
+        }
+      ],
+      "kind": "disease",
+      "aliases": [
+        "congestive heart failure"
+      ]
+    },
+    {
+      "id": "pulmonary-edema",
+      "name": "Pulmonary edema",
+      "system": "cardiovascular",
+      "summary": "Fluid accumulation in the lungs.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "kind": "manifestation",
+      "aliases": [
+        "pulmonary oedema"
+      ]
+    },
+    {
+      "id": "gas-exchange",
+      "name": "Gas exchange",
+      "system": "respiratory",
+      "summary": "Transfer of oxygen and carbon dioxide across the lungs.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology"
+    },
+    {
+      "id": "ventilation",
+      "name": "Alveolar ventilation",
+      "system": "respiratory",
+      "summary": "Air movement reaching gas-exchanging alveoli.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology",
+      "aliases": [
+        "alveolar ventilation"
+      ]
+    },
+    {
+      "id": "vq-mismatch",
+      "name": "V/Q mismatch",
+      "system": "respiratory",
+      "summary": "Mismatch between alveolar ventilation and blood flow.",
+      "categories": [
+        "mechanism"
+      ],
+      "kind": "etiology",
+      "aliases": [
+        "ventilation perfusion mismatch",
+        "V/Q mismatch"
+      ]
+    },
+    {
+      "id": "hypoxemia",
+      "name": "Hypoxemia",
+      "system": "respiratory",
+      "summary": "Reduced oxygen in arterial blood.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "details": [
+        {
+          "name": "Pulse oximetry",
+          "summary": "Noninvasive estimate of peripheral oxygen saturation.",
+          "type": "assessed_using",
+          "reference": "dyspnea"
+        },
+        {
+          "name": "Supplemental oxygen",
+          "summary": "Therapy for hypoxemia when indicated.",
+          "type": "treated_by",
+          "reference": "dyspnea"
+        }
+      ],
+      "kind": "manifestation",
+      "aliases": [
+        "hypoxaemia"
+      ]
+    },
+    {
+      "id": "dyspnea",
+      "name": "Dyspnea",
+      "system": "respiratory",
+      "summary": "The experience of uncomfortable breathing.",
+      "article": "blog/dyspnea",
+      "categories": [
+        "finding"
+      ],
+      "details": [
+        {
+          "name": "Chest radiograph",
+          "summary": "Chest imaging that can help evaluate causes of dyspnea.",
+          "type": "assessed_using",
+          "reference": "dyspnea"
+        }
+      ],
+      "kind": "manifestation",
+      "aliases": [
+        "dyspnoea"
+      ]
+    },
+    {
+      "id": "pneumonia",
+      "name": "Pneumonia",
+      "system": "respiratory",
+      "summary": "Infection of lung tissue.",
+      "categories": [
+        "disease"
+      ],
+      "kind": "disease"
+    },
+    {
+      "id": "asthma",
+      "name": "Asthma",
+      "system": "respiratory",
+      "summary": "Airway disease with variable airflow obstruction.",
+      "categories": [
+        "disease"
+      ],
+      "kind": "disease"
+    },
+    {
+      "id": "pulmonary-embolism",
+      "name": "Pulmonary embolism",
+      "system": "respiratory",
+      "summary": "Obstruction of pulmonary arteries by embolic material.",
+      "categories": [
+        "disease"
+      ],
+      "kind": "disease"
+    },
+    {
+      "id": "acid-base",
+      "name": "Acid–base homeostasis",
+      "system": "integrative",
+      "summary": "Regulation of body acid–base balance.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology",
+      "aliases": [
+        "acid-base balance",
+        "acid-base physiology",
+        "acid-base homeostasis"
+      ]
+    },
+    {
+      "id": "bicarbonate",
+      "name": "Bicarbonate buffering",
+      "system": "integrative",
+      "summary": "A major extracellular buffering system.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology",
+      "aliases": [
+        "bicarbonate",
+        "bicarbonate buffer"
+      ]
+    },
+    {
+      "id": "respiratory-compensation",
+      "name": "Respiratory compensation",
+      "system": "integrative",
+      "summary": "Ventilatory adjustment in response to a metabolic disturbance.",
+      "categories": [
+        "physiology"
+      ],
+      "kind": "physiology"
+    },
+    {
+      "id": "metabolic-acidosis",
+      "name": "Metabolic acidosis",
+      "system": "integrative",
+      "summary": "Primary reduction in bicarbonate, often with acidemia.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "details": [
+        {
+          "name": "Blood gas analysis",
+          "summary": "Measurement of pH and carbon dioxide to assess acid–base disorders.",
+          "type": "assessed_using",
+          "reference": "acidosis"
+        }
+      ],
+      "kind": "manifestation"
+    },
+    {
+      "id": "dka",
+      "name": "Diabetic ketoacidosis",
+      "system": "integrative",
+      "summary": "Insulin deficiency with ketone accumulation and metabolic acidosis.",
+      "article": "blog/diabetic-ketoacidosis",
+      "categories": [
+        "disease"
+      ],
+      "details": [
+        {
+          "name": "Insulin therapy",
+          "summary": "A component of monitored DKA treatment.",
+          "type": "treated_by",
+          "reference": "dka"
+        }
+      ],
+      "kind": "disease",
+      "aliases": [
+        "DKA",
+        "diabetic ketoacidosis"
+      ]
+    },
+    {
+      "id": "insulin-deficiency",
+      "name": "Insulin deficiency",
+      "system": "integrative",
+      "summary": "Insufficient insulin for metabolic requirements.",
+      "categories": [
+        "finding",
+        "mechanism"
+      ],
+      "kind": "etiology",
+      "aliases": [
+        "lack of insulin"
+      ]
+    },
+    {
+      "id": "osmotic-diuresis",
+      "name": "Osmotic diuresis",
+      "system": "integrative",
+      "summary": "Solute-driven urinary water loss.",
+      "categories": [
+        "mechanism"
+      ],
+      "kind": "etiology"
+    }
+  ],
+  "relations": [
+    {
+      "source": "volume-depletion",
+      "type": "can_cause",
+      "target": "renal-hypoperfusion",
+      "reference": "aki"
+    },
+    {
+      "source": "heart-failure",
+      "type": "can_cause",
+      "target": "renal-hypoperfusion",
+      "reference": "aki"
+    },
+    {
+      "source": "renal-hypoperfusion",
+      "type": "can_cause",
+      "target": "aki",
+      "reference": "aki"
+    },
+    {
+      "source": "aki",
+      "type": "can_cause",
+      "target": "oliguria",
+      "reference": "aki"
+    },
+    {
+      "source": "aki",
+      "type": "can_cause",
+      "target": "hyperkalemia",
+      "reference": "aki"
+    },
+    {
+      "source": "aki",
+      "type": "can_cause",
+      "target": "fluid-overload",
+      "reference": "aki"
+    },
+    {
+      "source": "aki",
+      "type": "can_cause",
+      "target": "metabolic-acidosis",
+      "reference": "aki"
+    },
+    {
+      "source": "fluid-overload",
+      "type": "can_cause",
+      "target": "pulmonary-edema",
+      "reference": "aki"
+    },
+    {
+      "source": "renal-perfusion",
+      "type": "prerequisite_for",
+      "target": "gfr",
+      "reference": "aki"
+    },
+    {
+      "source": "gfr",
+      "type": "prerequisite_for",
+      "target": "aki",
+      "reference": "aki"
+    },
+    {
+      "source": "potassium-excretion",
+      "type": "prerequisite_for",
+      "target": "hyperkalemia",
+      "reference": "aki"
+    },
+    {
+      "source": "cardiac-output",
+      "type": "prerequisite_for",
+      "target": "renal-perfusion",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "cardiac-output",
+      "type": "prerequisite_for",
+      "target": "heart-failure",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "heart-failure",
+      "type": "can_cause",
+      "target": "pulmonary-edema",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "pulmonary-edema",
+      "type": "can_cause",
+      "target": "dyspnea",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "pneumonia",
+      "type": "can_cause",
+      "target": "dyspnea",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "asthma",
+      "type": "can_cause",
+      "target": "dyspnea",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "pulmonary-embolism",
+      "type": "can_cause",
+      "target": "dyspnea",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "vq-mismatch",
+      "type": "can_cause",
+      "target": "hypoxemia",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "gas-exchange",
+      "type": "prerequisite_for",
+      "target": "vq-mismatch",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "ventilation",
+      "type": "prerequisite_for",
+      "target": "gas-exchange",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "gas-exchange",
+      "type": "prerequisite_for",
+      "target": "dyspnea",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "pulmonary-embolism",
+      "type": "can_cause",
+      "target": "vq-mismatch",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "pulmonary-edema",
+      "type": "can_cause",
+      "target": "hypoxemia",
+      "reference": "dyspnea"
+    },
+    {
+      "source": "insulin-deficiency",
+      "type": "can_cause",
+      "target": "dka",
+      "reference": "dka"
+    },
+    {
+      "source": "dka",
+      "type": "can_cause",
+      "target": "metabolic-acidosis",
+      "reference": "dka"
+    },
+    {
+      "source": "dka",
+      "type": "can_cause",
+      "target": "osmotic-diuresis",
+      "reference": "dka"
+    },
+    {
+      "source": "osmotic-diuresis",
+      "type": "can_cause",
+      "target": "volume-depletion",
+      "reference": "dka"
+    },
+    {
+      "source": "acid-base",
+      "type": "prerequisite_for",
+      "target": "dka",
+      "reference": "dka"
+    },
+    {
+      "source": "bicarbonate",
+      "type": "prerequisite_for",
+      "target": "acid-base",
+      "reference": "acidosis"
+    },
+    {
+      "source": "renal-acid-excretion",
+      "type": "prerequisite_for",
+      "target": "acid-base",
+      "reference": "acidosis"
+    },
+    {
+      "source": "ventilation",
+      "type": "prerequisite_for",
+      "target": "respiratory-compensation",
+      "reference": "acidosis"
+    },
+    {
+      "source": "respiratory-compensation",
+      "type": "prerequisite_for",
+      "target": "acid-base",
+      "reference": "acidosis"
+    },
+    {
+      "source": "acid-base",
+      "type": "prerequisite_for",
+      "target": "aki",
+      "reference": "acidosis"
+    },
+    {
+      "source": "acid-base",
+      "type": "prerequisite_for",
+      "target": "dyspnea",
+      "reference": "acidosis"
+    },
+    {
+      "source": "metabolic-acidosis",
+      "type": "compensated_by",
+      "target": "respiratory-compensation",
+      "reference": "acidosis"
+    }
+  ],
+  "sources": {
+    "aki": {
+      "title": "Merck Manual · Acute kidney injury",
+      "url": "https://www.merckmanuals.com/professional/nephrology/acute-kidney-injury/acute-kidney-injury-aki"
+    },
+    "dyspnea": {
+      "title": "Merck Manual · Dyspnea",
+      "url": "https://www.merckmanuals.com/professional/pulmonary-disorders/symptoms-of-pulmonary-disorders/dyspnea"
+    },
+    "dka": {
+      "title": "Merck Manual · Acute complications of diabetes",
+      "url": "https://www.merckmanuals.com/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/acute-complications-of-diabetes-mellitus"
+    },
+    "acidosis": {
+      "title": "Merck Manual · Metabolic acidosis",
+      "url": "https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/metabolic-acidosis"
+    }
+  }
+}

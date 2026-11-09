@@ -177,6 +177,11 @@ menus:
       weight: 30
       params:
         icon: "posts"
+    - name: "Graph"
+      pageRef: "/graph"
+      weight: 40
+      params:
+        icon: "graph"
   footer:
     - name: "RSS Feed"
       url: "/index.xml"

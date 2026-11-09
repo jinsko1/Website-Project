@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/graph.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<section class="medical-graph" data-graph-url="{{ (.OutputFormats.Get "JSON").RelPermalink }}">
+  <header class="graph-heading"><h1>Graph</h1><p>A connected view of medicine.</p></header>
+  <div class="graph-shell">
+    <div class="graph-toolbar">
+      <div class="graph-search-wrap"><label class="graph-sr-only" for="graph-search">Find a concept</label><input id="graph-search" type="search" placeholder="Search concepts…" autocomplete="off" aria-controls="graph-results" aria-expanded="false"><div id="graph-results" hidden></div></div>
+      <label class="graph-sr-only" for="graph-mode">View</label><select id="graph-mode"><option value="overview">Full graph</option><option value="connections">Nearby</option><option value="learning">Foundations</option></select>
+      <button id="graph-reset" type="button">Reset</button><button id="graph-expand" type="button" aria-pressed="false" aria-label="Expand graph">⤢</button>
+    </div>
+    <div class="graph-map-wrap"><div id="medical-map" role="region" tabindex="0" aria-label="Medical concept graph. Drag background to pan, drag circles to move concepts, scroll to zoom. Arrow keys pan; plus and minus zoom. Search provides keyboard concept selection."></div><div class="graph-zoom" aria-label="Map controls"><button id="graph-zoom-in" aria-label="Zoom in">+</button><button id="graph-zoom-out" aria-label="Zoom out">−</button><button id="graph-fit">Fit</button></div><p id="graph-status" role="status">Loading…</p></div>
+    <div class="graph-selection"><div><p id="graph-tags" class="graph-tag"></p><h2 id="graph-title"></h2><p id="graph-summary"></p><p id="graph-study-status"></p></div><div id="graph-article"></div></div>
+  </div>
+  <div class="graph-footer"><ul class="graph-legend" aria-label="Broad concept types"><li style="--concept-color:#de7c8b">Disease</li><li style="--concept-color:#d9a554">Etiology / mechanism</li><li style="--concept-color:#6caed8">Physiology</li><li style="--concept-color:#ad94d7">Manifestation</li></ul><span>● Studied &nbsp; ◐ Mentioned &nbsp; ○ Unstudied</span></div>
+  <noscript><p>Enable JavaScript to explore the graph, or browse the <a href="{{ "blog/" | relURL }}">articles</a>.</p></noscript>
+</section>
+<script defer src="{{ "vendor/cytoscape/cytoscape-3.33.1.min.js" | relURL }}"></script>
+{{ $js := resources.Get "js/graph/medical-graph.js" | minify | fingerprint }}
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ end }}
