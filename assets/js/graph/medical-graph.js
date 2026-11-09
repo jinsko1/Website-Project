@@ -44,11 +44,12 @@
     function updateHover() {
       if(!cy)return;
       cy.batch(()=>{
-        cy.elements().removeClass('muted hovered');
+        cy.elements().removeClass('muted hovered near');
         const node=hoveredNode?cy.getElementById(hoveredNode):null;
         if(node?.visible()) {
           cy.elements().addClass('muted');
           node.closedNeighborhood().removeClass('muted');
+          node.connectedEdges().addClass('near');
           node.addClass('hovered');
         }
       });
@@ -61,7 +62,7 @@
           cy.nodes().forEach(n=>n.style('display',nodes.has(n.id())?'element':'none'));
           data.relations.forEach((r,i)=>cy.getElementById(`edge-${i}`).style('display',edges.has(r)?'element':'none'));
           const chosen=cy.getElementById(selected);
-          chosen.addClass('chosen');chosen.connectedEdges().addClass('near');
+          chosen.addClass('chosen');
         });
         updateHover();
       }
@@ -97,11 +98,12 @@
         {selector:'node[coverage = "mentioned"]',style:{'background-image':'data(halfFill)','background-fit':'contain','background-width':'100%','background-height':'100%','background-position-x':'50%','background-position-y':'50%'}},
         {selector:'node.chosen',style:{width:31,height:31,'border-width':3,'font-weight':650}},
         {selector:'node.hovered',style:{'border-width':3}},
-        {selector:'.muted',style:{opacity:.18}},
         {selector:'edge',style:{width:1,'opacity':.4,'line-color':t.edge,'target-arrow-color':t.edge,'target-arrow-shape':'triangle','curve-style':'bezier','arrow-scale':.6,'overlay-opacity':0}},
         {selector:'edge[?prerequisite]',style:{'line-style':'dashed','line-opacity':.6}},
         {selector:'edge.near',style:{opacity:.8,'line-color':'#8b96aa','target-arrow-color':'#8b96aa',width:1.5}},
-        {selector:'edge.inspected',style:{opacity:1,label:'data(label)',color:t.fg,'font-size':11,'min-zoomed-font-size':10,'text-background-color':t.bg,'text-background-opacity':1,'text-background-padding':'5px','line-color':'#6caed8','target-arrow-color':'#6caed8',width:2}}
+        {selector:'edge.inspected',style:{opacity:1,label:'data(label)',color:t.fg,'font-size':11,'min-zoomed-font-size':10,'text-background-color':t.bg,'text-background-opacity':1,'text-background-padding':'5px','line-color':'#6caed8','target-arrow-color':'#6caed8',width:2}},
+        {selector:'node.muted',style:{opacity:.18}},
+        {selector:'edge.muted',style:{opacity:.04}}
       ],layout:{name:'preset'},userPanningEnabled:true,userZoomingEnabled:true,boxSelectionEnabled:false,autoungrabify:false,minZoom:.15,maxZoom:4,wheelSensitivity:.2});
       cy.on('tap','node',e=>select(e.target.id()));
       cy.on('mouseover','edge',e=>e.target.addClass('inspected'));
